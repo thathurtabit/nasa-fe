@@ -63,7 +63,7 @@ class SearchBar extends Component {
           type="search"
           tabIndex="-1"
           placeholder={SearchPlaceholder}
-          aria-label="Search cards"
+          aria-label="Search NASA"
           value={value}
           onChange={this.handleChange}
         />

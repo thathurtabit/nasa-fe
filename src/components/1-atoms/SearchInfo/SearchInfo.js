@@ -5,7 +5,7 @@ import SearchInfoStyled, { Quote, Span } from './SearchInfo.styled';
 
 const mapStateToProps = state => ({
   searchValue: state.searchValue,
-  total: state.productCount,
+  total: state.itemCount,
 });
 
 const SearchInfo = ({ searchValue, total }) => {

@@ -9,8 +9,8 @@ import ErrorBoundary from '../../2-molecules/ErrorBoundary/ErrorBoundary';
 // Use React.lazy for lazyload / code splitting
 const Home = lazy(() => import('../../5-pages/Home/Home'));
 const Error = lazy(() => import('../../2-molecules/Error/Error'));
-const CardModal = lazy(() => import('../../3-organisms/CardModal/CardModal'));
-const CardSingle = lazy(() => import('../../5-pages/CardSingle/CardSingle'));
+const ItemModal = lazy(() => import('../../3-organisms/ItemModal/ItemModal'));
+const ItemSingle = lazy(() => import('../../5-pages/ItemSingle/ItemSingle'));
 
 const mapStateToProps = state => ({
   isLoading: state.isLoading,
@@ -51,9 +51,9 @@ class Routes extends Component {
                 <Switch location={isModal ? this.previousLocation : location}>
                   <Route exact path="/" component={() => <Home />} />
                   <Route
-                    path="/card/:id"
+                    path="/asset/:id"
                     component={() => (
-                      <CardSingle location={location.pathname} />
+                      <ItemSingle location={location.pathname} />
                     )}
                   />
                   <Route
@@ -65,8 +65,8 @@ class Routes extends Component {
             <Suspense fallback={<Loading />}>
               {isModal && (
                 <Route
-                  path="/card/:id"
-                  component={() => <CardModal location={location} />}
+                  path="/asset/:id"
+                  component={() => <ItemModal location={location} />}
                 />
               )}
             </Suspense>

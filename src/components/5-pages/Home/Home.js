@@ -1,11 +1,11 @@
 import React, { Component, Fragment, Suspense, lazy } from 'react';
 import 'whatwg-fetch';
-import memoize from 'memoize-one';
+// import memoize from 'memoize-one';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Loading from '../../1-atoms/Loading/Loading';
 import { storeResponse } from '../../../state/actions/storeResponse';
-import { setProductCount } from '../../../state/actions/setProductCount';
+import { setItemCount } from '../../../state/actions/setItemCount';
 import { NoTitle, NoDesc } from '../../../utils/constants/constants';
 import SearchBar from '../../2-molecules/SearchBar/SearchBar';
 import { upperCaseIncludes } from '../../../utils/helpers/upperCaseIncludes';
@@ -14,17 +14,17 @@ import IntroBar from '../../2-molecules/IntroBar/IntroBar';
 // Lazy load components
 const Error = lazy(() => import('../../2-molecules/Error/Error'));
 const NoItems = lazy(() => import('../../2-molecules/NoItems/NoItems'));
-const CardList = lazy(() => import('../../3-organisms/CardList/CardList'));
+const ItemList = lazy(() => import('../../3-organisms/ItemList/ItemList'));
 
 const mapStateToProps = state => ({
-  products: state.response,
+  items: state.response,
   api: state.api,
   searchValue: state.searchValue,
 });
 
 const mapDispatchToProps = dispatch => ({
   storeResponse: arr => dispatch(storeResponse(arr)),
-  setProductCount: int => dispatch(setProductCount(int)),
+  setItemCount: int => dispatch(setItemCount(int)),
 });
 
 class Home extends Component {
@@ -32,7 +32,6 @@ class Home extends Component {
     super(props);
 
     this.hasMounted = false;
-    this.memoizedFilter = this.memoizedFilter.bind(this);
 
     // Init state
     this.state = {
@@ -45,15 +44,12 @@ class Home extends Component {
     this.handleFetchData = this.handleFetchData.bind(this);
     this.handleFetchError = this.handleFetchError.bind(this);
 
-    const { api, products } = this.props;
+    const { api, items } = this.props;
 
-    if (!products.length && this.hasMounted) {
-      fetch(`${api}/search?q=moon`, {
-        credentials: 'same-origin',
-        method: 'GET',
-      })
-        .then(response => response.json())
-        .then(data => this.handleFetchData(data.collection.items))
+    if (!items.length && this.hasMounted) {
+      fetch(`${api}/search?q=earth`)
+        .then(data => data.json())
+        .then(data => this.handleFetchData(data))
         .catch(error => this.handleFetchError(error));
     }
   }
@@ -62,19 +58,21 @@ class Home extends Component {
     this.hasMounted = false;
   }
 
-  memoizedFilter = memoize((products, searchValue) =>
-    products.filter(item => upperCaseIncludes(item.title, searchValue))
-  );
-
   handleFetchData(data) {
-    const { storeResponse, products, searchValue } = this.props;
+    const { storeResponse, items, searchValue } = this.props;
 
-    if (this.hasMounted && !products.length) {
+    // Filter out Video
+    const response = data.collection.items.filter(
+      item => item.data[0].media_type !== 'video'
+    );
+
+    if (this.hasMounted && !items.length) {
       // Keep only what we need
-      const responseSelection = data.map(item => ({
-        title: item.data.title || NoTitle,
-        desc: item.data.description || NoDesc,
-        imgSrc: item.links.href,
+      const responseSelection = response.map(item => ({
+        title: item.data[0].title || NoTitle,
+        desc: item.data[0].description || NoDesc,
+        imgSrc: item.links[0].href || NoDesc,
+        itemID: item.data[0].nasa_id || NoDesc,
         link: '/asset',
       }));
       // Filter by search term
@@ -94,21 +92,19 @@ class Home extends Component {
 
   render() {
     const { hasError } = this.state;
-    const { products, searchValue, setProductCount } = this.props;
-    const filteredProducts = this.memoizedFilter(products, searchValue);
-    // Count current items
-    setProductCount(filteredProducts.length);
+    const { items, setItemCount } = this.props;
+    setItemCount(items.length);
 
     return (
       <Fragment>
         <Suspense fallback={<Loading isLoading />}>
           {hasError ? (
             <Error error="It's not you, it's us." />
-          ) : products !== null && products.length ? (
+          ) : items.length ? (
             <Fragment>
               <SearchBar />
               <IntroBar />
-              <CardList products={filteredProducts} />
+              <ItemList items={items} />
             </Fragment>
           ) : (
             <NoItems text="No items to view." />
@@ -128,8 +124,8 @@ Home.propTypes = {
   api: PropTypes.string.isRequired,
   searchValue: PropTypes.string,
   storeResponse: PropTypes.func.isRequired,
-  setProductCount: PropTypes.func.isRequired,
-  products: PropTypes.arrayOf(
+  setItemCount: PropTypes.func.isRequired,
+  items: PropTypes.arrayOf(
     PropTypes.objectOf(
       PropTypes.oneOfType([PropTypes.string, PropTypes.number])
     )

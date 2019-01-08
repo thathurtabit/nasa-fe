@@ -38,7 +38,7 @@ const theme = {
   hr: {
     borderColor: '#ccc',
   },
-  cardList: {
+  itemList: {
     maxWidth: '1300px',
   },
   thumb: {
