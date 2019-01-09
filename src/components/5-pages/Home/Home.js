@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import Loading from '../../1-atoms/Loading/Loading';
 import SearchBar from '../../2-molecules/SearchBar/SearchBar';
 import IntroBar from '../../2-molecules/IntroBar/IntroBar';
-
 import { fetchData } from '../../../state/actions/fetchData';
 
 // Lazy load components
@@ -26,11 +25,6 @@ const mapDispatchToProps = dispatch => ({
 });
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.hasMounted = false;
-  }
-
   componentDidMount() {
     this.hasMounted = true;
   }

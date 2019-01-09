@@ -16,7 +16,7 @@ export const receiveData = json => {
       : NoDesc,
     imgSrc: hasKey(item, `links[0].href`) ? item.links[0].href : NoURL,
     itemID: hasKey(item, `data[0].nasa_id`) ? item.data[0].nasa_id : null,
-    link: '/asset',
+    link: `/asset/${hasKey(item, `data[0].nasa_id`) && item.data[0].nasa_id}`,
   }));
 
   return {

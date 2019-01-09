@@ -12,8 +12,6 @@ export const ItemModalBG = styled.section`
   width: 100%;
 `;
 
-export const ModalTransition = styled.section``;
-
 const ItemModalStyled = styled.section`
   background: ${props => props.theme.colors.bodyBg};
   box-shadow: 5px 5px 0 ${props => props.theme.colors.brand};

@@ -3,17 +3,13 @@ import styled from 'styled-components';
 export const ItemContent = styled.article`
   display: flex;
   flex-direction: column;
-  padding: 30px 20px 20px;
-  width: 100%;
+  padding: 40px 40px 20px;
+  width: calc(100% - 80px);
 
   img {
     margin: 0;
     max-width: 100%;
     width: initial;
-  }
-
-  @media screen and (min-width: ${props => props.theme.breakpoints.sm}) {
-    padding: 30px;
   }
 
   @media screen and (min-width: ${props => props.theme.breakpoints.md}) {
@@ -53,24 +49,24 @@ export const ItemRight = styled.div`
     padding: 0 0 0 60px;
     text-align: left;
     width: 50%;
-  }
 
-  a {
-    margin: 0;
+    a {
+      margin: auto 0 0;
+    }
   }
 `;
 
 export const ShortDescription = styled.p`
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
   color: ${props => props.theme.colors.copy};
+  display: -webkit-box;
   font-size: ${props => props.theme.fonts.baseSize};
   margin-bottom: 40px;
   max-height: 200px;
   overflow: hidden;
-  text-transform: capitalize;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-transform: capitalize;
 `;
 
 const ItemStyled = styled.article`

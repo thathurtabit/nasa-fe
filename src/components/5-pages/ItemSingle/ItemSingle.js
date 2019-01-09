@@ -3,34 +3,51 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import ItemSingleStyled from './ItemSingle.styled';
 import Loading from '../../1-atoms/Loading/Loading';
-import { NoTitle, NoDesc } from '../../../utils/constants/constants';
+import { fetchData } from '../../../state/actions/fetchData';
+import { hasKey } from '../../../utils/helpers/hasKey';
 
 const NoItems = lazy(() => import('../../2-molecules/NoItems/NoItems'));
-const Item = lazy(() => import('../../3-organisms/Item/Item'));
 
 const mapStateToProps = state => ({
-  api: state.api,
   items: state.response,
+  searchValue: state.searchValue,
+  fetching: state.fetching,
+  fetchError: state.fetching,
+  response: state.response,
+});
+
+const mapDispatchToProps = dispatch => ({
+  fetchData: searchStr => dispatch(fetchData(searchStr)),
 });
 
 export class ItemSingle extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { isLoading: true, error: false };
-  }
+  state = {};
 
   componentDidMount() {
+    const { items, fetchData, location } = this.props;
+    const itemId = location
+      .split('/')
+      .filter(loc => loc)
+      .pop();
+
     this.hasMounted = true;
-    this.handleFetchData = this.handleFetchData.bind(this);
-    this.handleFetchError = this.handleFetchError.bind(this);
 
-    const { api, items } = this.props;
+    // If we don't have any data yet (i.e. a direct link), go fetch data, else filter it and setState
+    if (!items.length) {
+      fetchData(itemId);
+    } else {
+      this.setState({
+        item: items.filter(res => res.data[0].nasa_id === itemId)[0],
+      });
+    }
+  }
 
-    if (!items.length && this.hasMounted) {
-      fetch(api, { credentials: 'same-origin', method: 'GET' })
-        .then(response => response.json())
-        .then(data => this.handleFetchData(data.collection.items))
-        .catch(error => this.handleFetchError(error));
+  componentDidUpdate(prevProps) {
+    const { items } = this.props;
+    console.log('compDidUpdate: ', prevProps.items, items);
+
+    if (prevProps.items[0] !== items[0]) {
+      this.setState({ item: items[0] });
     }
   }
 
@@ -38,45 +55,24 @@ export class ItemSingle extends Component {
     this.hasMounted = false;
   }
 
-  handleFetchData(data) {
-    const { location, items } = this.props;
-    const itemId = location
-      .split('/')
-      .filter(loc => loc)
-      .pop();
-
-    if (this.hasMounted && !items.length) {
-      // Filter out single Item
-      const item = data.filter(prod => prod.data.nase_id === itemId)[0] || null;
-      // Keep what we need
-      const single = {
-        title: item.data.title || NoTitle,
-        desc: item.data.description || NoDesc,
-        imgSrc: item.links.href,
-        itemID: item.data.nasa_id,
-        link: '/asset',
-      };
-
-      this.setState({ single, isLoading: false });
-    }
-  }
-
-  handleFetchError(error) {
-    this.setState({ error: true, isLoading: false });
-    console.warn(error);
-  }
-
   render() {
-    const { isLoading, single, error } = this.state;
+    const { fetchError, fetching } = this.props;
+    const { item } = this.state;
 
     return (
       <ItemSingleStyled>
-        {isLoading && <Loading isLoading />}
-        <Suspense fallback={<Loading isLoading={isLoading} />}>
-          {error ? (
+        {fetching && <Loading isLoading />}
+        <Suspense fallback={<Loading isLoading />}>
+          {fetchError ? (
             <NoItems text="No items found." />
           ) : (
-            !isLoading && single !== null && <Item item={single} />
+            <div>
+              <h1>{hasKey(item, 'title') ? item.title : 'No Title'}</h1>
+              <img
+                src={hasKey(item, 'imgSrc') ? item.imgSrc : '#'}
+                alt="Yeah"
+              />
+            </div>
           )}
         </Suspense>
       </ItemSingleStyled>
@@ -84,11 +80,17 @@ export class ItemSingle extends Component {
   }
 }
 
-export default connect(mapStateToProps)(ItemSingle);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ItemSingle);
 
 ItemSingle.propTypes = {
   location: PropTypes.string.isRequired,
-  api: PropTypes.string.isRequired,
+  fetchData: PropTypes.func.isRequired,
+  fetchError: PropTypes.bool.isRequired,
+  fetching: PropTypes.bool.isRequired,
+  searchValue: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.objectOf(
       PropTypes.oneOfType([
@@ -102,4 +104,5 @@ ItemSingle.propTypes = {
 
 ItemSingle.defaultProps = {
   items: [],
+  searchValue: '',
 };

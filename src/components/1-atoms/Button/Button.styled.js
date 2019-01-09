@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 const ButtonStyled = styled.a`
   background: ${props => props.theme.button.bg};
+  border-radius: 50px;
   color: ${props => props.theme.button.text};
   display: block;
   margin: 0 auto;
   max-width: 300px;
-  padding: 15px 0;
+  padding: 10px 0;
   text-align: center;
   text-decoration: none;
   width: 100%;

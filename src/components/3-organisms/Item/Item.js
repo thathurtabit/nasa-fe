@@ -7,12 +7,7 @@ import ItemStyled, {
   ItemLeft,
   ItemRight,
 } from './Item.styled';
-import {
-  loadDelay,
-  NoDesc,
-  NoTitle,
-  FullImage,
-} from '../../../utils/constants/constants';
+import { loadDelay, FullImage } from '../../../utils/constants/constants';
 import PageTitle from '../../1-atoms/PageTitle/PageTitle';
 import ItemImage from '../../1-atoms/ItemImage/ItemImage';
 import Button from '../../1-atoms/Button/Button';
@@ -23,12 +18,12 @@ const Item = ({ item }) => (
     <ItemStyled className="item">
       <ItemContent>
         <ItemRight>
-          <PageTitle title={item.title || NoTitle} />
-          <ShortDescription>{item.desc || NoDesc}</ShortDescription>
+          <PageTitle title={item.title} />
+          <ShortDescription>{item.desc}</ShortDescription>
           <Button tabIndex="0" title={FullImage} url={item.link} external />
         </ItemRight>
         <ItemLeft>
-          <ItemImage url={item.imgSrc} title={item.title || NoTitle} />
+          <ItemImage url={item.imgSrc} title={item.title} />
         </ItemLeft>
       </ItemContent>
       <Return text="More Items" />
