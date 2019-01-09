@@ -6,10 +6,10 @@ import { connect } from 'react-redux';
 import Loading from '../../1-atoms/Loading/Loading';
 import { storeResponse } from '../../../state/actions/storeResponse';
 import { setItemCount } from '../../../state/actions/setItemCount';
-import { NoTitle, NoDesc } from '../../../utils/constants/constants';
+import { NoTitle, NoDesc, NoURL } from '../../../utils/constants/constants';
 import SearchBar from '../../2-molecules/SearchBar/SearchBar';
-import { upperCaseIncludes } from '../../../utils/helpers/upperCaseIncludes';
 import IntroBar from '../../2-molecules/IntroBar/IntroBar';
+import { hasKey } from '../../../utils/helpers/hasKey';
 
 // Lazy load components
 const Error = lazy(() => import('../../2-molecules/Error/Error'));
@@ -65,30 +65,26 @@ class Home extends Component {
   }
 
   handleFetchData(data) {
-    const { storeResponse, searchValue } = this.props;
+    const { storeResponse } = this.props;
 
     // Filter out Video
     const response = data.collection.items.filter(
       item => item.data[0].media_type !== 'video'
     );
 
-    console.log(response);
-
-    // Keep only what we need
+    // Check for required values, and keep only what we need
     const responseSelection = response.map(item => ({
-      title: item.data[0].title || NoTitle,
-      desc: item.data[0].description || NoDesc,
-      imgSrc: item.links[0].href || NoDesc,
-      itemID: item.data[0].nasa_id || NoDesc,
+      title: hasKey(item, `data[0].title`) ? item.data[0].title : NoTitle,
+      desc: hasKey(item, `data[0].description`)
+        ? item.data[0].description
+        : NoDesc,
+      imgSrc: hasKey(item, `links[0].href`) ? item.links[0].href : NoURL,
+      itemID: hasKey(item, `data[0].nasa_id`) ? item.data[0].nasa_id : null,
       link: '/asset',
     }));
-    // Filter by search term
-    const filteredSelection = responseSelection.filter(item =>
-      upperCaseIncludes(item.title, searchValue)
-    );
 
     // set response to Redux state
-    storeResponse(searchValue.length ? filteredSelection : responseSelection);
+    storeResponse(responseSelection);
   }
 
   handleFetchError(error) {
