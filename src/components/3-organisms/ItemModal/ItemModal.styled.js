@@ -20,7 +20,7 @@ const ItemModalStyled = styled.section`
   display: flex;
   height: 90vh;
   left: 50%;
-  max-height: 520px;
+  max-height: 500px;
   max-width: 500px;
   opacity: 0;
   overflow-y: auto;

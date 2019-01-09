@@ -43,8 +43,6 @@ export class ItemModal extends Component {
       .pop();
     const itemData = items.filter(item => item.itemID === itemURLID)[0];
 
-    console.log('itemData: ', itemData);
-
     this.setState({ item: itemData, isLoading: false });
 
     this.modalRef.current.focus();

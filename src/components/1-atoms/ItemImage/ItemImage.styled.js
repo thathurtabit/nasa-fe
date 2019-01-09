@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const IMG = styled.img`
   border: ${props =>
-    props.thumb ? `2px solid ${props.theme.links.hover}` : '0'};
+    props.thumb ? `2px solid ${props.theme.colors.bodyBg}` : '0'};
   border-top: 0;
   border-left: 0;
   box-shadow: ${props =>

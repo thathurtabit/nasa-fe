@@ -28,7 +28,8 @@ export const ItemLeft = styled.div`
   order: 1;
 
   @media screen and (min-width: ${props => props.theme.breakpoints.md}) {
-    max-width: 50%;
+    overflow: hidden;
+    width: 50%;
   }
 `;
 
@@ -40,17 +41,29 @@ export const ItemRight = styled.div`
     align-self: stretch;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    flex: 1;
+    justify-content: flex-start;
     padding: 0 0 0 60px;
     text-align: left;
-    flex: 1;
+    width: 50%;
+  }
+
+  a {
+    margin: 0;
   }
 `;
 
 export const ShortDescription = styled.p`
   color: ${props => props.theme.colors.copy};
   font-size: ${props => props.theme.fonts.baseSize};
+  margin-bottom: 40px;
+  max-height: 200px;
+  overflow: hidden;
   text-transform: capitalize;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 const ItemStyled = styled.article`

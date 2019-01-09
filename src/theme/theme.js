@@ -2,30 +2,33 @@ const theme = {
   colors: {
     bodyBg: '#fafafa',
     copy: '#505050',
-    brand: '#f79cc0',
-    title: '#ee447d',
+    brand: '#0066b3',
+    title: '#0066b3',
     header: '#fff',
   },
   fonts: {
     baseSize: '16px',
     fontFamily: 'Poppins, sans-serif',
   },
+  logo: {
+    fill: '#ed151f',
+  },
   button: {
-    bg: '#ee447d',
+    bg: '#0066b3',
     text: '#fff',
-    hover: '#d43168',
-    active: '#d43168',
+    hover: '#003f6f',
+    active: '#003f6f',
   },
   input: {
     bg: '#fff',
     border: '#eee',
     hover: '#999',
-    focus: '#ffa2c1',
+    focus: '#ed151f',
   },
   links: {
     link: '#505050',
-    hover: '#ffa2c1',
-    active: '#ffa2c1',
+    hover: '#ed151f',
+    active: '#ed151f',
   },
   return: {
     bg: '#888',
