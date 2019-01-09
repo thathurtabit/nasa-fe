@@ -37,17 +37,23 @@ class Home extends Component {
     this.state = {
       hasError: false,
     };
+
+    // Bind methods to class
+    this.handleFetchData = this.handleFetchData.bind(this);
+    this.handleFetchError = this.handleFetchError.bind(this);
   }
 
   componentDidMount() {
     this.hasMounted = true;
-    this.handleFetchData = this.handleFetchData.bind(this);
-    this.handleFetchError = this.handleFetchError.bind(this);
+  }
 
-    const { api, items } = this.props;
+  componentDidUpdate(prevProps) {
+    const { api, searchValue } = this.props;
 
-    if (!items.length && this.hasMounted) {
-      fetch(`${api}/search?q=earth`)
+    console.log('search: ', searchValue, 'prev: ', prevProps.searchValue);
+
+    if (prevProps.searchValue !== searchValue) {
+      fetch(`${api}/search?q=${searchValue}`)
         .then(data => data.json())
         .then(data => this.handleFetchData(data))
         .catch(error => this.handleFetchError(error));
@@ -59,30 +65,30 @@ class Home extends Component {
   }
 
   handleFetchData(data) {
-    const { storeResponse, items, searchValue } = this.props;
+    const { storeResponse, searchValue } = this.props;
 
     // Filter out Video
     const response = data.collection.items.filter(
       item => item.data[0].media_type !== 'video'
     );
 
-    if (this.hasMounted && !items.length) {
-      // Keep only what we need
-      const responseSelection = response.map(item => ({
-        title: item.data[0].title || NoTitle,
-        desc: item.data[0].description || NoDesc,
-        imgSrc: item.links[0].href || NoDesc,
-        itemID: item.data[0].nasa_id || NoDesc,
-        link: '/asset',
-      }));
-      // Filter by search term
-      const filteredSelection = responseSelection.filter(item =>
-        upperCaseIncludes(item.title, searchValue)
-      );
+    console.log(response);
 
-      // set response to Redux state
-      storeResponse(searchValue.length ? filteredSelection : responseSelection);
-    }
+    // Keep only what we need
+    const responseSelection = response.map(item => ({
+      title: item.data[0].title || NoTitle,
+      desc: item.data[0].description || NoDesc,
+      imgSrc: item.links[0].href || NoDesc,
+      itemID: item.data[0].nasa_id || NoDesc,
+      link: '/asset',
+    }));
+    // Filter by search term
+    const filteredSelection = responseSelection.filter(item =>
+      upperCaseIncludes(item.title, searchValue)
+    );
+
+    // set response to Redux state
+    storeResponse(searchValue.length ? filteredSelection : responseSelection);
   }
 
   handleFetchError(error) {
@@ -98,16 +104,16 @@ class Home extends Component {
     return (
       <Fragment>
         <Suspense fallback={<Loading isLoading />}>
+          <SearchBar />
           {hasError ? (
             <Error error="It's not you, it's us." />
           ) : items.length ? (
             <Fragment>
-              <SearchBar />
               <IntroBar />
               <ItemList items={items} />
             </Fragment>
           ) : (
-            <NoItems text="No items to view." />
+            <NoItems text="Assets will apear here" />
           )}
         </Suspense>
       </Fragment>

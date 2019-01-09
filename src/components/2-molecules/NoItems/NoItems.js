@@ -8,7 +8,7 @@ const NoItems = ({ text }) => (
   <NoItemsStyled>
     {/* eslint-disable jsx-a11y/accessible-emoji */}
     <Emoji role="img" aria-label="Server problem">
-      🥣
+      🛰️
     </Emoji>
     {/* eslint-enable jsx-a11y/accessible-emoji */}
     <PageTitle title={NoItemsTitle} />

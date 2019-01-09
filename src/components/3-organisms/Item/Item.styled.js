@@ -4,6 +4,13 @@ export const ItemContent = styled.article`
   display: flex;
   flex-direction: column;
   padding: 30px 20px 20px;
+  width: 100%;
+
+  img {
+    margin: 0;
+    max-width: 100%;
+    width: initial;
+  }
 
   @media screen and (min-width: ${props => props.theme.breakpoints.sm}) {
     padding: 30px;

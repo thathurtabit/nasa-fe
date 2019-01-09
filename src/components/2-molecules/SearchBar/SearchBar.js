@@ -29,7 +29,7 @@ class SearchBar extends Component {
     this.state = { value: searchValue };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.emitChangeDebounced = debounce(this.emitChange, 300);
+    this.emitChangeDebounced = debounce(this.emitChange, 1000);
   }
 
   componentWillUnmount() {
