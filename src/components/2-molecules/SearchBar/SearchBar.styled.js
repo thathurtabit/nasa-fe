@@ -33,6 +33,10 @@ export const SearchBarSubmit = styled.button`
   &:hover,
   &:focus {
     background: ${props => props.theme.links.hover};
+
+    svg {
+      fill: ${props => props.theme.colors.bodyBg};
+    }
   }
 `;
 

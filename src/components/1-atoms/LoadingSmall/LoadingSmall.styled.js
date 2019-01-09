@@ -38,7 +38,7 @@ const LoadingStyled = styled.div`
 
   div {
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
-    background: ${props => props.theme.colors.brand};
+    background: ${props => props.theme.loader.dots};
     border-radius: 50%;
     height: 11px;
     position: absolute;

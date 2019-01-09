@@ -27,6 +27,10 @@ const ItemListStyled = styled.ul`
   @media screen and (min-width: ${props => props.theme.breakpoints.lg}) {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  @media screen and (min-width: ${props => props.theme.breakpoints.xl}) {
+    grid-template-columns: repeat(5, 1fr);
+  }
 `;
 
 export default ItemListStyled;

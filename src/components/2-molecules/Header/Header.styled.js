@@ -5,7 +5,6 @@ export const Link = styled(NavLink)`
   color: ${props => props.theme.colors.brand};
   display: inline-block;
   font-size: calc(${props => props.theme.fonts.baseSize} - 3px);
-  max-width: 100px;
   height: ${props => props.theme.header.height}px;
   padding: 0 20px;
   position: relative;
@@ -14,6 +13,19 @@ export const Link = styled(NavLink)`
 
   &.active {
     color: ${props => props.theme.links.active};
+  }
+
+  &:hover,
+  &.ative:hover {
+    text-decoration: none;
+
+    svg {
+      fill: ${props => props.theme.logo.alt};
+    }
+
+    span {
+      color: ${props => props.theme.logo.alt};
+    }
   }
 `;
 

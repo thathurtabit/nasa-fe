@@ -11,7 +11,11 @@ const theme = {
     fontFamily: 'Poppins, sans-serif',
   },
   logo: {
-    fill: '#ed151f',
+    fill: '#0066b3',
+    alt: '#ed151f',
+  },
+  loader: {
+    dots: '#ccc',
   },
   button: {
     bg: '#0066b3',
@@ -23,12 +27,12 @@ const theme = {
     bg: '#fff',
     border: '#eee',
     hover: '#999',
-    focus: '#ed151f',
+    focus: '#0066b3',
   },
   links: {
     link: '#505050',
-    hover: '#ed151f',
-    active: '#ed151f',
+    hover: '#0066b3',
+    active: '#003f6f',
   },
   return: {
     bg: '#888',

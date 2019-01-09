@@ -10,15 +10,15 @@ const IMG = styled.img`
   display: block;
   margin: 0 auto;
   max-width: 100%;
-  max-height: 100%:
+  max-height: 100%;
   opacity: 0;
-  transform: scale(0.95);
-  transition: box-shadow ${props => props.theme.thumb.transition.duration}
+  transform: scale(0.97);
+  transition: opacity ${props => props.theme.thumb.transition.duration}
       ${props => props.theme.transition.easeOut},
-    transform ${props => props.theme.thumb.transition.duration}
-      ${props => props.theme.transition.easeOutBack},
-    opacity ${props => props.theme.thumb.transition.duration}
-      ${props => props.theme.transition.easeOut};
+    box-shadow ${props => props.theme.thumb.transition.duration}
+      ${props => props.theme.transition.easeOut},
+    transform ${props => props.theme.thumb.transition.duration};
+  ${props => props.theme.transition.easeOutBack};
   width: 200px;
 
   @media screen and (min-width: ${props => props.theme.breakpoints.md}) {
@@ -33,7 +33,7 @@ const IMG = styled.img`
 
   &.thumb-enter-done {
     opacity: 1;
-    transform:  scale(1);
+    transform: scale(1);
   }
 `;
 
