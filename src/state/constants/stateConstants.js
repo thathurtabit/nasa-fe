@@ -1,4 +1,6 @@
-export const ON_LOAD = 'ON_LOAD';
+export const REQUEST_DATA = 'REQUEST_DATA';
+export const RECEIVE_DATA = 'RECEIVE_DATA';
+export const REQUEST_DATA_ERROR = 'REQUEST_DATA_ERROR';
 export const STORE_RESPONSE = 'STORE_RESPONSE';
 export const SET_ITEM_COUNT = 'SET_ITEM_COUNT';
 export const TOGGLE_MODAL = 'TOGGLE_MODAL';

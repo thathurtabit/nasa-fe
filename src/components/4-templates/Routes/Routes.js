@@ -1,7 +1,6 @@
 import React, { Component, Fragment, Suspense, lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 import RoutesWrapper, { Content } from './Routes.styled';
 import Loading from '../../1-atoms/Loading/Loading';
 import ErrorBoundary from '../../2-molecules/ErrorBoundary/ErrorBoundary';
@@ -11,10 +10,6 @@ const Home = lazy(() => import('../../5-pages/Home/Home'));
 const Error = lazy(() => import('../../2-molecules/Error/Error'));
 const ItemModal = lazy(() => import('../../3-organisms/ItemModal/ItemModal'));
 const ItemSingle = lazy(() => import('../../5-pages/ItemSingle/ItemSingle'));
-
-const mapStateToProps = state => ({
-  isLoading: state.isLoading,
-});
 
 class Routes extends Component {
   constructor(props) {
@@ -77,10 +72,10 @@ class Routes extends Component {
   }
 }
 
-export default connect(mapStateToProps)(Routes);
+// export default connect(mapStateToProps)(Routes);
+export default Routes;
 
 Routes.propTypes = {
-  isLoading: PropTypes.bool.isRequired,
   location: PropTypes.objectOf(
     PropTypes.oneOfType([PropTypes.object, PropTypes.string])
   ).isRequired,

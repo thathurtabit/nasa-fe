@@ -7,39 +7,39 @@ describe('rootReducer', () => {
     expect(reducer(initState, {})).toEqual(initState);
   });
 
-  it('should handle ON_LOAD', () => {
+  it('should handle REQUEST_DATA', () => {
     expect(
       reducer(initState, {
-        type: types.ON_LOAD,
-        payload: false,
+        type: types.REQUEST_DATA,
+        payload: true,
       })
     ).toEqual({
       ...initState,
-      loading: false,
+      fetching: true,
     });
   });
 
-  it('should handle STORE_RESPONSE', () => {
+  it('should handle REQUEST_DATA_ERROR', () => {
     expect(
       reducer(initState, {
-        type: types.STORE_RESPONSE,
+        type: types.REQUEST_DATA_ERROR,
+        payload: true,
+      })
+    ).toEqual({
+      ...initState,
+      fetchError: true,
+    });
+  });
+
+  it('should handle RECEIVED_DATA', () => {
+    expect(
+      reducer(initState, {
+        type: types.RECEIVE_DATA,
         payload: {},
       })
     ).toEqual({
       ...initState,
       response: {},
-    });
-  });
-
-  it('should handle SET_PRODUCT_COUNT', () => {
-    expect(
-      reducer(initState, {
-        type: types.SET_PRODUCT_COUNT,
-        payload: 200,
-      })
-    ).toEqual({
-      ...initState,
-      productCount: 200,
     });
   });
 

@@ -1,15 +1,12 @@
 import React, { Component, Fragment, Suspense, lazy } from 'react';
 import 'whatwg-fetch';
-// import memoize from 'memoize-one';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Loading from '../../1-atoms/Loading/Loading';
-import { storeResponse } from '../../../state/actions/storeResponse';
-import { setItemCount } from '../../../state/actions/setItemCount';
-import { NoTitle, NoDesc, NoURL } from '../../../utils/constants/constants';
 import SearchBar from '../../2-molecules/SearchBar/SearchBar';
 import IntroBar from '../../2-molecules/IntroBar/IntroBar';
-import { hasKey } from '../../../utils/helpers/hasKey';
+
+import { fetchData } from '../../../state/actions/fetchData';
 
 // Lazy load components
 const Error = lazy(() => import('../../2-molecules/Error/Error'));
@@ -18,29 +15,20 @@ const ItemList = lazy(() => import('../../3-organisms/ItemList/ItemList'));
 
 const mapStateToProps = state => ({
   items: state.response,
-  api: state.api,
   searchValue: state.searchValue,
+  fetching: state.fetching,
+  fetchError: state.fetching,
+  response: state.response,
 });
 
 const mapDispatchToProps = dispatch => ({
-  storeResponse: arr => dispatch(storeResponse(arr)),
-  setItemCount: int => dispatch(setItemCount(int)),
+  fetchData: searchStr => dispatch(fetchData(searchStr)),
 });
 
 class Home extends Component {
   constructor(props) {
     super(props);
-
     this.hasMounted = false;
-
-    // Init state
-    this.state = {
-      hasError: false,
-    };
-
-    // Bind methods to class
-    this.handleFetchData = this.handleFetchData.bind(this);
-    this.handleFetchError = this.handleFetchError.bind(this);
   }
 
   componentDidMount() {
@@ -48,15 +36,10 @@ class Home extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { api, searchValue } = this.props;
+    const { fetchData, searchValue } = this.props;
 
-    console.log('search: ', searchValue, 'prev: ', prevProps.searchValue);
-
-    if (prevProps.searchValue !== searchValue) {
-      fetch(`${api}/search?q=${searchValue}`)
-        .then(data => data.json())
-        .then(data => this.handleFetchData(data))
-        .catch(error => this.handleFetchError(error));
+    if (prevProps.searchValue !== searchValue && this.hasMounted) {
+      fetchData(searchValue);
     }
   }
 
@@ -64,48 +47,19 @@ class Home extends Component {
     this.hasMounted = false;
   }
 
-  handleFetchData(data) {
-    const { storeResponse } = this.props;
-
-    // Filter out Video
-    const response = data.collection.items.filter(
-      item => item.data[0].media_type !== 'video'
-    );
-
-    // Check for required values, and keep only what we need
-    const responseSelection = response.map(item => ({
-      title: hasKey(item, `data[0].title`) ? item.data[0].title : NoTitle,
-      desc: hasKey(item, `data[0].description`)
-        ? item.data[0].description
-        : NoDesc,
-      imgSrc: hasKey(item, `links[0].href`) ? item.links[0].href : NoURL,
-      itemID: hasKey(item, `data[0].nasa_id`) ? item.data[0].nasa_id : null,
-      link: '/asset',
-    }));
-
-    // set response to Redux state
-    storeResponse(responseSelection);
-  }
-
-  handleFetchError(error) {
-    this.setState({ hasError: true });
-    console.warn(error);
-  }
-
   render() {
-    const { hasError } = this.state;
-    const { items, setItemCount } = this.props;
-    setItemCount(items.length);
+    const { items, fetchError, fetching } = this.props;
 
     return (
       <Fragment>
         <Suspense fallback={<Loading isLoading />}>
           <SearchBar />
-          {hasError ? (
+          {fetchError ? (
             <Error error="It's not you, it's us." />
           ) : items.length ? (
             <Fragment>
               <IntroBar />
+              {fetching && <Loading isLoading />}
               <ItemList items={items} />
             </Fragment>
           ) : (
@@ -123,10 +77,10 @@ export default connect(
 )(Home);
 
 Home.propTypes = {
-  api: PropTypes.string.isRequired,
+  fetchData: PropTypes.func.isRequired,
+  fetchError: PropTypes.bool.isRequired,
+  fetching: PropTypes.bool.isRequired,
   searchValue: PropTypes.string,
-  storeResponse: PropTypes.func.isRequired,
-  setItemCount: PropTypes.func.isRequired,
   items: PropTypes.arrayOf(
     PropTypes.objectOf(
       PropTypes.oneOfType([PropTypes.string, PropTypes.number])

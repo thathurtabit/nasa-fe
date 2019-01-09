@@ -18,7 +18,6 @@ const ItemModalStyled = styled.section`
   background: ${props => props.theme.colors.bodyBg};
   box-shadow: 5px 5px 0 ${props => props.theme.colors.brand};
   display: flex;
-  height: 90vh;
   left: 50%;
   max-height: 500px;
   max-width: 500px;
