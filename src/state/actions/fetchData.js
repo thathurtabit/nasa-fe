@@ -4,9 +4,13 @@ import { requestDataError } from './requestDataError';
 import initState from '../store/initState';
 
 export const fetchData = searchValue => dispatch => {
-  if (!searchValue.length) return;
+  const { search, type } = searchValue;
+  const mediaType = type.length ? `&media_type=${type}` : '';
+
+  if (!search.length) return;
+
   dispatch(requestData());
-  return fetch(`${initState.api}/search?q=${searchValue}`)
+  return fetch(`${initState.api}/search?q=${search}${mediaType}`)
     .then(response => {
       if (!response.ok) {
         dispatch(receiveData(response));

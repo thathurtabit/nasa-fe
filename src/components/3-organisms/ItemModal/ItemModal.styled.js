@@ -39,7 +39,7 @@ const ItemModalStyled = styled.section`
 
   @media screen and (min-width: ${props => props.theme.breakpoints.md}) {
     box-shadow: 10px 10px 0 ${props => props.theme.colors.brand};
-    max-width: 800px;
+    max-width: ${props => props.theme.breakpoints.lg};
   }
 
   @media screen and (min-width: ${props => props.theme.breakpoints.lg}) {

@@ -9,11 +9,12 @@ const mapStateToProps = state => ({
 });
 
 const SearchInfo = ({ searchValue, total }) => {
+  const { search } = searchValue;
   const content = () => {
-    if (searchValue.length) {
+    if (search.length) {
       return (
         <SearchInfoStyled>
-          <Quote>{searchValue}</Quote> has <Span>{total}</Span> results
+          <Quote>{search}</Quote> has <Span>{total}</Span> results
         </SearchInfoStyled>
       );
     }
@@ -30,7 +31,7 @@ export default connect(mapStateToProps)(SearchInfo);
 
 SearchInfo.propTypes = {
   total: PropTypes.number.isRequired,
-  searchValue: PropTypes.string,
+  searchValue: PropTypes.objectOf(PropTypes.string),
 };
 
 SearchInfo.defaultProps = {

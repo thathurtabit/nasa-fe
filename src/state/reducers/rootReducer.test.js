@@ -7,6 +7,30 @@ describe('rootReducer', () => {
     expect(reducer(initState, {})).toEqual(initState);
   });
 
+  it('should handle SET_SEARCH', () => {
+    expect(
+      reducer(initState, {
+        type: types.SET_SEARCH,
+        payload: 'Search',
+      })
+    ).toEqual({
+      ...initState,
+      searchValue: 'Search',
+    });
+  });
+
+  it('should handle SET_FILTER', () => {
+    expect(
+      reducer(initState, {
+        type: types.SET_FILTER,
+        payload: 'video',
+      })
+    ).toEqual({
+      ...initState,
+      filteredMediaType: 'video',
+    });
+  });
+
   it('should handle REQUEST_DATA', () => {
     expect(
       reducer(initState, {

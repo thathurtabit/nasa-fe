@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const SearchBarWrap = styled.section`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+`;
+
 export const SearchBarInput = styled.input`
   border: 2px solid ${props => props.theme.input.border};
   border-right: 0;

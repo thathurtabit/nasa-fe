@@ -8,6 +8,11 @@ const rootReducer = (state = {}, action) => {
         searchValue: action.payload,
         response: action.payload.length ? state.response : [],
       };
+    case types.SET_FILTER:
+      return {
+        ...state,
+        filteredMediaType: action.payload.length ? action.payload : '',
+      };
     case types.REQUEST_DATA:
       return { ...state, fetching: true };
     case types.REQUEST_DATA_ERROR:

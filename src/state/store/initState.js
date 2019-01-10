@@ -2,7 +2,8 @@ const initState = {
   api: 'https://images-api.nasa.gov',
   fetching: false,
   fetchError: false,
-  searchValue: '',
+  filteredMediaType: '',
+  searchValue: { search: '', type: '' },
   response: [],
 };
 

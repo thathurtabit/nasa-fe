@@ -74,7 +74,7 @@ Home.propTypes = {
   fetchData: PropTypes.func.isRequired,
   fetchError: PropTypes.bool.isRequired,
   fetching: PropTypes.bool.isRequired,
-  searchValue: PropTypes.string,
+  searchValue: PropTypes.objectOf(PropTypes.string),
   items: PropTypes.arrayOf(
     PropTypes.objectOf(
       PropTypes.oneOfType([PropTypes.string, PropTypes.number])

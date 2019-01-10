@@ -5,13 +5,16 @@ import debounce from 'lodash.debounce';
 import SearchBarStyled, {
   SearchBarInput,
   SearchBarSubmit,
+  SearchBarWrap,
 } from './SearchBar.styled';
 import SearchIcon from '../../1-atoms/SearchIcon/SearchIcon';
 import { SearchPlaceholder } from '../../../utils/constants/constants';
 import { setSearch } from '../../../state/actions/setSearch';
+import FilterBar from '../FilterBar/FilterBar';
 
 const mapStateToProps = state => ({
   searchValue: state.searchValue,
+  filter: state.filteredMediaType,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -26,7 +29,7 @@ class SearchBar extends Component {
 
     this.setSearch = setSearch;
 
-    this.state = { value: searchValue };
+    this.state = { value: searchValue.search };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.emitChangeDebounced = debounce(this.emitChange, 1000);
@@ -47,30 +50,35 @@ class SearchBar extends Component {
 
   handleSubmit(event) {
     const { value } = this.state;
-    this.setSearch(value);
+    const { filter } = this.props;
+    this.setSearch({ search: value, type: filter });
     event.preventDefault();
   }
 
   emitChange(value) {
-    this.setSearch(value);
+    const { filter } = this.props;
+    this.setSearch({ search: value, type: filter });
   }
 
   render() {
     const { value } = this.state;
     return (
-      <SearchBarStyled role="search" onSubmit={this.handleSubmit}>
-        <SearchBarInput
-          type="search"
-          tabIndex="-1"
-          placeholder={SearchPlaceholder}
-          aria-label="Search NASA"
-          value={value}
-          onChange={this.handleChange}
-        />
-        <SearchBarSubmit type="submit" aria-label="Submit">
-          <SearchIcon width="20" height="20" title="Search" />
-        </SearchBarSubmit>
-      </SearchBarStyled>
+      <SearchBarWrap>
+        <SearchBarStyled role="search" onSubmit={this.handleSubmit}>
+          <SearchBarInput
+            type="search"
+            tabIndex="-1"
+            placeholder={SearchPlaceholder}
+            aria-label="Search NASA"
+            value={value}
+            onChange={this.handleChange}
+          />
+          <SearchBarSubmit type="submit" aria-label="Submit">
+            <SearchIcon width="20" height="20" title="Search" />
+          </SearchBarSubmit>
+        </SearchBarStyled>
+        <FilterBar />
+      </SearchBarWrap>
     );
   }
 }
@@ -82,5 +90,6 @@ export default connect(
 
 SearchBar.propTypes = {
   setSearch: PropTypes.func.isRequired,
-  searchValue: PropTypes.string.isRequired,
+  filter: PropTypes.string.isRequired,
+  searchValue: PropTypes.objectOf(PropTypes.string).isRequired,
 };

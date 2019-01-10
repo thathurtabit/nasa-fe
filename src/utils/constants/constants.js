@@ -1,9 +1,14 @@
 export const ErrorTitle = 'Houston, we have a problem';
-export const NoItemsTitle = 'Search for NASA media assets';
+export const NoItemsTitle = 'Search NASA media';
 export const NoTitle = 'No title';
 export const NoURL = '#';
 export const NoDesc = 'No description available for this item.';
-export const ReturnText = 'Search for more';
+export const ReturnText = 'Return for more';
 export const FullImage = 'Learn more';
-export const SearchPlaceholder = 'NASA Asset Search';
+export const SearchPlaceholder = 'NASA Media Search';
+export const mediaType = {
+  video: 'video',
+  image: 'image',
+  audio: 'audio',
+};
 export const loadDelay = 250;
