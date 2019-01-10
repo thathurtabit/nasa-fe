@@ -21,6 +21,7 @@ const ItemModalStyled = styled.section`
   max-width: 500px;
   opacity: 0;
   overflow-y: auto;
+  overflow-wrap: break-word;
   position: fixed;
   top: 50%;
   transform: translate(-50%, -45%);
