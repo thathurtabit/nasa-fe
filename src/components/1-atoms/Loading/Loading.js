@@ -1,11 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import LoaderStyled from './Loading.styled';
-
-const mapStateToProps = state => ({
-  isLoading: state.isLoading,
-});
 
 const Loading = ({ isLoading }) => (
   <LoaderStyled isLoading={isLoading} aria-label="Loading">
@@ -67,7 +62,7 @@ const Loading = ({ isLoading }) => (
   </LoaderStyled>
 );
 
-export default connect(mapStateToProps)(Loading);
+export default Loading;
 
 Loading.propTypes = {
   isLoading: PropTypes.bool,

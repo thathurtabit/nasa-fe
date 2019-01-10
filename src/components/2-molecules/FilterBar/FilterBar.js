@@ -25,7 +25,6 @@ const FilterBar = ({
 }) => {
   const handleFilterClick = e => {
     const clickValue = e.target.textContent;
-    console.log(clickValue);
 
     setFilter(filteredMediaType === clickValue ? '' : clickValue);
     setSearch({

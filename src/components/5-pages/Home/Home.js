@@ -46,10 +46,10 @@ class Home extends Component {
 
     return (
       <Fragment>
-        {fetching && <Loading isLoading />}
+        <Loading isLoading={fetching} />
         <Suspense fallback={<Loading isLoading />}>
           <SearchBar />
-          {fetchError ? (
+          {fetchError.length ? (
             <Error error="It's not you, it's us." />
           ) : items.length ? (
             <Fragment>
@@ -57,7 +57,7 @@ class Home extends Component {
               <ItemList items={items} />
             </Fragment>
           ) : (
-            <NoItems text="Assets will apear here" />
+            !fetching && <NoItems text="Assets will apear here" />
           )}
         </Suspense>
       </Fragment>
