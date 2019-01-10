@@ -2,10 +2,12 @@ import { requestData } from './requestData';
 import { receiveData } from './receiveData';
 import { requestDataError } from './requestDataError';
 import initState from '../store/initState';
+import { hasKey } from '../../utils/helpers/hasKey';
 
 export const fetchData = searchValue => dispatch => {
   const { search, type } = searchValue;
-  const mediaType = type.length ? `&media_type=${type}` : '';
+  const hasType = hasKey(type, 'length') && type.length;
+  const mediaType = hasType ? `&media_type=${type}` : '';
 
   if (!search.length) return;
 

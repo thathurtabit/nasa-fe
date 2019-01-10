@@ -48,20 +48,9 @@ export const SearchBarSubmit = styled.button`
 
 const SearchBar = styled.form`
   display: flex;
-  margin: 20px auto 40px;
+  margin: 0 auto 15px;
   max-width: 300px;
   position: relative;
-  top: -25px;
-
-  &::after {
-    border-top: 5px dotted ${props => props.theme.hr.borderColor};
-    bottom: -30px;
-    content: '';
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    width: 30px;
-  }
 
   &:hover,
   &:focus {

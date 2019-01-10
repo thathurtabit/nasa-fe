@@ -9,12 +9,13 @@ const mapStateToProps = state => ({
 });
 
 const SearchInfo = ({ searchValue, total }) => {
-  const { search } = searchValue;
+  const { search, type } = searchValue;
   const content = () => {
     if (search.length) {
       return (
         <SearchInfoStyled>
-          <Quote>{search}</Quote> has <Span>{total}</Span> results
+          <Quote>{search}</Quote> has <Span>{total}</Span> {type} result
+          {total > 1 && 's'}
         </SearchInfoStyled>
       );
     }

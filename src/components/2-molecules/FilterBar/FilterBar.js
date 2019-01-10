@@ -36,9 +36,12 @@ const FilterBar = ({
 
   return (
     <FilterBarStyled onClick={e => handleFilterClick(e)}>
-      Filter by:
       {Object.keys(mediaType).map(type => (
-        <Filter key={uuidv1()} active={filteredMediaType === type}>
+        <Filter
+          key={uuidv1()}
+          title={`Filter results by ${type}`}
+          active={filteredMediaType === type}
+        >
           {type}
         </Filter>
       ))}

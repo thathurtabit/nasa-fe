@@ -19,7 +19,6 @@ const NoItems = lazy(() => import('../../2-molecules/NoItems/NoItems'));
 
 const mapStateToProps = state => ({
   items: state.response,
-  searchValue: state.searchValue,
   fetching: state.fetching,
   fetchError: state.fetching,
   response: state.response,
@@ -27,7 +26,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   fetchData: searchStr => dispatch(fetchData(searchStr)),
-  setSearch: searchStr => dispatch(setSearch(searchStr)),
+  setSearch: searchObj => dispatch(setSearch(searchObj)),
 });
 
 export class ItemSingle extends Component {
@@ -44,8 +43,8 @@ export class ItemSingle extends Component {
 
     // If we don't have any data yet (i.e. a direct link), go fetch data, else filter it and setState
     if (!items.length) {
-      fetchData(itemId);
-      setSearch(itemId);
+      setSearch({ search: itemId, type: '' });
+      fetchData({ search: itemId, type: '' });
     } else {
       this.setState({
         item: items.filter(res => res.data[0].nasa_id === itemId)[0],
@@ -102,7 +101,6 @@ ItemSingle.propTypes = {
   fetchData: PropTypes.func.isRequired,
   fetchError: PropTypes.bool.isRequired,
   fetching: PropTypes.bool.isRequired,
-  searchValue: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.objectOf(
       PropTypes.oneOfType([
@@ -116,5 +114,4 @@ ItemSingle.propTypes = {
 
 ItemSingle.defaultProps = {
   items: [],
-  searchValue: '',
 };

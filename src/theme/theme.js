@@ -5,6 +5,7 @@ const theme = {
     brand: '#0066b3',
     title: '#0066b3',
     header: '#fff',
+    white: '#fff',
   },
   fonts: {
     baseSize: '16px',

@@ -5,7 +5,7 @@ export const NoURL = '#';
 export const NoDesc = 'No description available for this item.';
 export const ReturnText = 'Return for more';
 export const FullImage = 'Learn more';
-export const SearchPlaceholder = 'NASA Media Search';
+export const SearchPlaceholder = 'Search';
 export const mediaType = {
   video: 'video',
   image: 'image',
