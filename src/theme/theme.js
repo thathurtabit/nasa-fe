@@ -50,6 +50,8 @@ const theme = {
     maxWidth: '1300px',
   },
   thumb: {
+    boxShadow: '3px 3px 0 rgba(0,0,0,0.05)',
+    boxShadowHover: '5px 5px 0 #0066b3',
     transition: {
       duration: '0.2s',
     },

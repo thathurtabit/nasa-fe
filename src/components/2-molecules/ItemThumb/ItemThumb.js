@@ -3,9 +3,16 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import 'intersection-observer';
 import { InView } from 'react-intersection-observer';
-import ItemThumbStyled, { ItemLink } from './ItemThumb.styled';
+import ItemThumbStyled, {
+  ItemLink,
+  ThumbTitle,
+  IconWrap,
+} from './ItemThumb.styled';
 import LoadingSmall from '../../1-atoms/LoadingSmall/LoadingSmall';
 import { toggleModal } from '../../../state/actions/toggleModal';
+import { mediaType } from '../../../utils/constants/constants';
+import IconVideo from '../../1-atoms/IconVideo/IconVideo';
+import IconAudio from '../../1-atoms/IconAudio/IconAudio';
 
 const LazyThumb = lazy(() => import('../../1-atoms/ItemImage/ItemImage'));
 
@@ -18,7 +25,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const ItemThumb = ({ item, modalOpen, toggleModal, num }) => {
-  const { title, imgSrc, itemID } = item;
+  const { title, href, itemID, type } = item;
   const body = document.querySelector('body');
 
   // Breaking out of React
@@ -45,7 +52,20 @@ const ItemThumb = ({ item, modalOpen, toggleModal, num }) => {
                 title={title}
                 onClick={() => toggleModal(true)}
               >
-                <LazyThumb url={imgSrc} title={title} thumb />
+                {type === mediaType.image && (
+                  <LazyThumb url={href} title={title} thumb />
+                )}
+                {type === mediaType.video && (
+                  <IconWrap thumb>
+                    <IconVideo title={type} />
+                  </IconWrap>
+                )}
+                {type === mediaType.audio && (
+                  <IconWrap thumb>
+                    <IconAudio title={type} />
+                  </IconWrap>
+                )}
+                <ThumbTitle>{title}</ThumbTitle>
               </ItemLink>
             </Suspense>
           )}

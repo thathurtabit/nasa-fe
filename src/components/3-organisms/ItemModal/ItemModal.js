@@ -74,7 +74,7 @@ export class ItemModal extends Component {
                   <Button title={FullImage} url={item.link} external />
                 </ItemRight>
                 <ItemLeft>
-                  <ItemImage url={item.imgSrc} title={item.title} />
+                  <ItemImage url={item.href} title={item.title} />
                 </ItemLeft>
               </ItemContent>
             )}

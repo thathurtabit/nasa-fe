@@ -9,7 +9,7 @@ const rotate = keyframes`
   }
 `;
 
-const loaderSize = 100;
+const loaderSize = 50;
 
 const LoaderStyled = styled.section`
   animation: ${rotate} 1s ease-out alternate infinite;

@@ -69,7 +69,7 @@ export class ItemSingle extends Component {
     const { item } = this.state;
     const title = hasKey(item, 'title') ? item.title : NoTitle;
     const desc = hasKey(item, 'desc') ? item.desc : NoDesc;
-    const imgSrc = hasKey(item, 'imgSrc') ? item.imgSrc : NoURL;
+    const href = hasKey(item, 'href') ? item.href : NoURL;
 
     return (
       <ItemSingleStyled>
@@ -81,7 +81,7 @@ export class ItemSingle extends Component {
             <Fragment>
               <Title>{title}</Title>
               <Description>{desc}</Description>
-              <ItemImage title={title} url={imgSrc} />
+              <ItemImage title={title} url={href} />
               <Return text={ReturnText} />
             </Fragment>
           )}

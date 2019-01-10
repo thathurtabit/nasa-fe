@@ -5,8 +5,7 @@ const IMG = styled.img`
     props.thumb ? `2px solid ${props.theme.colors.bodyBg}` : '0'};
   border-top: 0;
   border-left: 0;
-  box-shadow: ${props =>
-    props.thumb ? '5px 5px 0 rgba(0, 0, 0, 0.05)' : 'none'};
+  box-shadow: ${props => (props.thumb ? props.theme.thumb.boxShadow : 'none')};
   display: block;
   margin: 0 auto;
   max-width: 100%;
@@ -17,8 +16,8 @@ const IMG = styled.img`
       ${props => props.theme.transition.easeOut},
     box-shadow ${props => props.theme.thumb.transition.duration}
       ${props => props.theme.transition.easeOut},
-    transform ${props => props.theme.thumb.transition.duration};
-  ${props => props.theme.transition.easeOutBack};
+    transform ${props => props.theme.thumb.transition.duration}
+      ${props => props.theme.transition.easeOut};
 
   @media screen and (min-width: ${props => props.theme.breakpoints.md}) {
     width: ${props => (props.thumb ? '250px' : '100%')};
@@ -27,7 +26,7 @@ const IMG = styled.img`
   a:focus &,
   &:hover {
     box-shadow: ${props =>
-      props.thumb ? `10px 10px 0 ${props.theme.colors.brand}` : 'none'};
+      props.thumb ? props.theme.thumb.boxShadowHover : 'none'};
   }
 
   &.image-enter-done {
