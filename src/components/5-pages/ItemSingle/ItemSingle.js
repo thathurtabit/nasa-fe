@@ -6,7 +6,8 @@ import Loading from '../../1-atoms/Loading/Loading';
 import { fetchData } from '../../../state/actions/fetchData';
 import { setSearch } from '../../../state/actions/setSearch';
 import { hasKey } from '../../../utils/helpers/hasKey';
-import { NoTitle, NoDesc } from '../../../utils/constants/constants';
+import { NoTitle, NoDesc, NoURL } from '../../../utils/constants/constants';
+import ItemImage from '../../1-atoms/ItemImage/ItemImage';
 
 const NoItems = lazy(() => import('../../2-molecules/NoItems/NoItems'));
 
@@ -61,6 +62,9 @@ export class ItemSingle extends Component {
   render() {
     const { fetchError, fetching } = this.props;
     const { item } = this.state;
+    const title = hasKey(item, 'title') ? item.title : NoTitle;
+    const desc = hasKey(item, 'desc') ? item.desc : NoDesc;
+    const imgSrc = hasKey(item, 'imgSrc') ? item.imgSrc : NoURL;
 
     return (
       <ItemSingleStyled>
@@ -70,14 +74,9 @@ export class ItemSingle extends Component {
             <NoItems text="No items found." />
           ) : (
             <Fragment>
-              <Title>{hasKey(item, 'title') ? item.title : NoTitle}</Title>
-              <Description>
-                {hasKey(item, 'desc') ? item.desc : NoDesc}
-              </Description>
-              <img
-                src={hasKey(item, 'imgSrc') ? item.imgSrc : '#'}
-                alt="Yeah"
-              />
+              <Title>{title}</Title>
+              <Description>{desc}</Description>
+              <ItemImage title={title} url={imgSrc} />
             </Fragment>
           )}
         </Suspense>

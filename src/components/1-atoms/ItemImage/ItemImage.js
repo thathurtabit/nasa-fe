@@ -9,32 +9,46 @@ export default class ItemImage extends Component {
   constructor(props) {
     super(props);
     this.state = { isLoading: true };
+
+    // Note: Must be a prettier way of doing this
+    this.img = new Image();
+
+    this.handleLoadImage = this.handleLoadImage.bind(this);
   }
 
   componentDidMount() {
-    // Only show images once load has complete
-    // Note: Must be a prettier way of doing this
-    const img = new Image();
+    this.handleLoadImage();
+  }
+
+  componentDidUpdate(prevProps) {
     const { url } = this.props;
-    img.src = url;
-    img.onload = () =>
-      setTimeout(() => this.setState({ isLoading: false }), 100);
+    // Only show images once load has complete
+    if (prevProps.url !== url) {
+      this.handleLoadImage();
+    }
+  }
+
+  handleLoadImage() {
+    const { url } = this.props;
+    this.img.src = url;
+    this.img.onload = () => this.setState({ isLoading: false });
   }
 
   render() {
     const { isLoading } = this.state;
     const { title, url, thumb } = this.props;
+
     return (
       <Fragment>
         {isLoading && <LoadingSmall />}
         {!isLoading && (
           <CSSTransition
             in={!isLoading}
-            classNames="thumb"
+            classNames="image"
             appear
             timeout={loadDelay}
           >
-            <IMG className="thumb" src={url} alt={title} thumb={thumb} />
+            <IMG className="image" src={url} alt={title} thumb={thumb} />
           </CSSTransition>
         )}
       </Fragment>
@@ -50,5 +64,5 @@ ItemImage.propTypes = {
 
 ItemImage.defaultProps = {
   thumb: false,
-  title: 'Item',
+  title: 'NASA Image',
 };

@@ -31,7 +31,7 @@ const IMG = styled.img`
       props.thumb ? `10px 10px 0 ${props.theme.colors.brand}` : 'none'};
   }
 
-  &.thumb-enter-done {
+  &.image-enter-done {
     opacity: 1;
     transform: scale(1);
   }
