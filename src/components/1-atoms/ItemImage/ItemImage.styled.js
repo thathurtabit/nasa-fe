@@ -19,7 +19,6 @@ const IMG = styled.img`
       ${props => props.theme.transition.easeOut},
     transform ${props => props.theme.thumb.transition.duration};
   ${props => props.theme.transition.easeOutBack};
-  width: 200px;
 
   @media screen and (min-width: ${props => props.theme.breakpoints.md}) {
     width: ${props => (props.thumb ? '250px' : '100%')};

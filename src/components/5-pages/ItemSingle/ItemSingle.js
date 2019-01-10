@@ -6,8 +6,14 @@ import Loading from '../../1-atoms/Loading/Loading';
 import { fetchData } from '../../../state/actions/fetchData';
 import { setSearch } from '../../../state/actions/setSearch';
 import { hasKey } from '../../../utils/helpers/hasKey';
-import { NoTitle, NoDesc, NoURL } from '../../../utils/constants/constants';
+import {
+  NoTitle,
+  NoDesc,
+  NoURL,
+  ReturnText,
+} from '../../../utils/constants/constants';
 import ItemImage from '../../1-atoms/ItemImage/ItemImage';
+import Return from '../../1-atoms/Return/Return';
 
 const NoItems = lazy(() => import('../../2-molecules/NoItems/NoItems'));
 
@@ -77,6 +83,7 @@ export class ItemSingle extends Component {
               <Title>{title}</Title>
               <Description>{desc}</Description>
               <ItemImage title={title} url={imgSrc} />
+              <Return text={ReturnText} />
             </Fragment>
           )}
         </Suspense>

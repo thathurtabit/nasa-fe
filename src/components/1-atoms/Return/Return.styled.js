@@ -2,12 +2,13 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const ReturnStyled = styled(Link)`
-  background: ${props => props.theme.return.bg};
+  background: ${props => props.theme.button.bg};
+  border-radius: 30px;
   color: ${props => props.theme.return.text};
-  font-size: calc(${props => props.theme.fonts.baseSize} - 3px);
-  letter-spacing: 1px;
-  padding: 5px 10px;
-  text-transform: uppercase;
+  display: inline-block;
+  font-size: calc(${props => props.theme.fonts.baseSize} - 1px);
+  margin: 40px 0 0;
+  padding: 10px 30px;
 
   &:hover,
   &:focus {
