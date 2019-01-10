@@ -7,7 +7,7 @@ import ItemList from './ItemList';
 
 describe('ItemList', () => {
   it('should render correctly', () => {
-    const element = shallowWithTheme(<ItemList items={['string']} />);
+    const element = shallowWithTheme(<ItemList items={[{}]} />);
     expect(shallowToJson(element)).toMatchSnapshot();
   });
 });
