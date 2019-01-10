@@ -4,8 +4,8 @@ import { requestDataError } from './requestDataError';
 import initState from '../store/initState';
 
 export const fetchData = searchValue => dispatch => {
+  if (!searchValue.length) return;
   dispatch(requestData());
-
   return fetch(`${initState.api}/search?q=${searchValue}`)
     .then(response => {
       if (!response.ok) {

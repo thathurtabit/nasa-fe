@@ -3,7 +3,11 @@ import * as types from '../constants/stateConstants';
 const rootReducer = (state = {}, action) => {
   switch (action.type) {
     case types.SET_SEARCH:
-      return { ...state, searchValue: action.payload };
+      return {
+        ...state,
+        searchValue: action.payload,
+        response: action.payload.length ? state.response : [],
+      };
     case types.REQUEST_DATA:
       return { ...state, fetching: true };
     case types.REQUEST_DATA_ERROR:

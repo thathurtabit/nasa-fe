@@ -1,10 +1,12 @@
-import React, { Component, Suspense, lazy } from 'react';
+import React, { Component, Fragment, Suspense, lazy } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import ItemSingleStyled from './ItemSingle.styled';
+import ItemSingleStyled, { Title, Description } from './ItemSingle.styled';
 import Loading from '../../1-atoms/Loading/Loading';
 import { fetchData } from '../../../state/actions/fetchData';
+import { setSearch } from '../../../state/actions/setSearch';
 import { hasKey } from '../../../utils/helpers/hasKey';
+import { NoTitle, NoDesc } from '../../../utils/constants/constants';
 
 const NoItems = lazy(() => import('../../2-molecules/NoItems/NoItems'));
 
@@ -18,13 +20,14 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   fetchData: searchStr => dispatch(fetchData(searchStr)),
+  setSearch: searchStr => dispatch(setSearch(searchStr)),
 });
 
 export class ItemSingle extends Component {
   state = {};
 
   componentDidMount() {
-    const { items, fetchData, location } = this.props;
+    const { items, fetchData, setSearch, location } = this.props;
     const itemId = location
       .split('/')
       .filter(loc => loc)
@@ -35,6 +38,7 @@ export class ItemSingle extends Component {
     // If we don't have any data yet (i.e. a direct link), go fetch data, else filter it and setState
     if (!items.length) {
       fetchData(itemId);
+      setSearch(itemId);
     } else {
       this.setState({
         item: items.filter(res => res.data[0].nasa_id === itemId)[0],
@@ -44,7 +48,6 @@ export class ItemSingle extends Component {
 
   componentDidUpdate(prevProps) {
     const { items } = this.props;
-    console.log('compDidUpdate: ', prevProps.items, items);
 
     if (prevProps.items[0] !== items[0]) {
       this.setState({ item: items[0] });
@@ -66,13 +69,16 @@ export class ItemSingle extends Component {
           {fetchError ? (
             <NoItems text="No items found." />
           ) : (
-            <div>
-              <h1>{hasKey(item, 'title') ? item.title : 'No Title'}</h1>
+            <Fragment>
+              <Title>{hasKey(item, 'title') ? item.title : NoTitle}</Title>
+              <Description>
+                {hasKey(item, 'desc') ? item.desc : NoDesc}
+              </Description>
               <img
                 src={hasKey(item, 'imgSrc') ? item.imgSrc : '#'}
                 alt="Yeah"
               />
-            </div>
+            </Fragment>
           )}
         </Suspense>
       </ItemSingleStyled>
