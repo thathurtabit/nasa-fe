@@ -18,8 +18,8 @@ export const Span = styled.span`
 `;
 
 const SearchInfoStyled = styled.p`
+  font-size: calc(${props => props.theme.fonts.baseSize} - 2px);
   text-align: center;
-  font-size: calc(${props => props.theme.fonts.baseSize} - 1px);
 `;
 
 export default SearchInfoStyled;
