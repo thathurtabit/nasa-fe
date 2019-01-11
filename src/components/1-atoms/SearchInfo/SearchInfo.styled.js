@@ -17,7 +17,7 @@ export const Span = styled.span`
   color: ${props => props.theme.colors.title};
 `;
 
-const SearchInfoStyled = styled.p`
+const SearchInfoStyled = styled.h1`
   font-size: calc(${props => props.theme.fonts.baseSize} - 2px);
   text-align: center;
 `;

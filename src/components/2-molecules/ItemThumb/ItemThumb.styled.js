@@ -42,7 +42,7 @@ export const ItemLink = styled(Link)`
   }
 `;
 
-export const ThumbTitle = styled.h4`
+export const ThumbTitle = styled.p`
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   color: ${props => props.theme.colors.copy};

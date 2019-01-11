@@ -3,7 +3,7 @@ import IntroBarStyled from './IntroBar.styled';
 import SearchInfo from '../../1-atoms/SearchInfo/SearchInfo';
 
 const IntroBar = () => (
-  <IntroBarStyled>
+  <IntroBarStyled role="navigation">
     <SearchInfo />
   </IntroBarStyled>
 );

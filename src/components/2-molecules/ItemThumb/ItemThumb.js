@@ -10,7 +10,7 @@ import ItemThumbStyled, {
 } from './ItemThumb.styled';
 import LoadingSmall from '../../1-atoms/LoadingSmall/LoadingSmall';
 import { toggleModal } from '../../../state/actions/toggleModal';
-import { mediaType } from '../../../utils/constants/constants';
+import { mediaType, ThumbAlt } from '../../../utils/constants/constants';
 import IconVideo from '../../1-atoms/IconVideo/IconVideo';
 import IconAudio from '../../1-atoms/IconAudio/IconAudio';
 
@@ -53,7 +53,7 @@ const ItemThumb = ({ item, modalOpen, toggleModal, num }) => {
                 onClick={() => toggleModal(true)}
               >
                 {type === mediaType.image && (
-                  <LazyThumb url={href} title={title} thumb />
+                  <LazyThumb url={href} title={ThumbAlt} thumb />
                 )}
                 {type === mediaType.video && (
                   <IconWrap thumb>

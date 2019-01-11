@@ -57,7 +57,7 @@ export class ItemModal extends Component {
           <ItemModalStyled
             data-item-modal
             role="dialog"
-            aria-labelledby="modal-title"
+            aria-labelledby="article-title"
             aria-modal="true"
             tabIndex="0"
             className="modal-in"

@@ -7,7 +7,7 @@ import { NoItemsTitle } from '../../../utils/constants/constants';
 const NoItems = ({ text }) => (
   <NoItemsStyled>
     {/* eslint-disable jsx-a11y/accessible-emoji */}
-    <Emoji role="img" aria-label="Server problem">
+    <Emoji role="img" aria-label="Search NASA">
       🛰️
     </Emoji>
     {/* eslint-enable jsx-a11y/accessible-emoji */}

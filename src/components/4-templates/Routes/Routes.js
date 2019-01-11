@@ -39,7 +39,7 @@ class Routes extends Component {
 
     return (
       <Fragment>
-        <RoutesWrapper>
+        <RoutesWrapper role="main">
           <ErrorBoundary>
             <Content>
               <Suspense fallback={<Loading />}>

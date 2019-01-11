@@ -6,6 +6,7 @@ export const NoItemsTitle = 'Search NASA media';
 export const NoTitle = 'No title';
 export const NoURL = '#';
 export const NoDesc = 'No description available for this item.';
+export const ThumbAlt = 'Click for more';
 export const ReturnText = 'Return for more';
 export const FullImage = 'Learn more';
 export const SearchPlaceholder = 'Search';
