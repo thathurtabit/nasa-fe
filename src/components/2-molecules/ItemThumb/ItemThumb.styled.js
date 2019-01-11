@@ -8,13 +8,15 @@ export const IconWrap = styled.div`
   box-shadow: ${props => (props.thumb ? props.theme.thumb.boxShadow : 'none')};
   display: flex;
   flex-direction: column;
-  height: 150px;
+  height: ${props => (props.large ? '200px' : '150px')};
   justify-content: center;
+  margin: 0 auto;
   max-width: ${props => props.theme.thumb.maxWidth};
   position: relative;
   transition: box-shadow ${props => props.theme.thumb.transition.duration}
     ${props => props.theme.transition.easeOut};
-  width: 200px;
+  max-width: ${props => (props.large ? '300px' : '200px')};
+  width: 100%;
 
   svg {
     transition: fill ${props => props.theme.thumb.transition.duration}

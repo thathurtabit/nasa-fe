@@ -41,7 +41,7 @@ const FilterBar = ({
           title={`Filter results by ${type}`}
           active={filteredMediaType === type}
           role="button"
-          tabindex="0"
+          tabIndex="0"
           aria-pressed={filteredMediaType === type}
         >
           {type}

@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const ThumbLink = styled.a`
+  display: block;
+  position: relative;
+  width: 100%;
+`;
+
 export const ItemContent = styled.article`
   display: flex;
   flex-direction: column;
@@ -32,6 +38,9 @@ export const ItemLeft = styled.div`
   position: relative;
 
   @media screen and (min-width: ${props => props.theme.breakpoints.md}) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     width: 50%;
   }

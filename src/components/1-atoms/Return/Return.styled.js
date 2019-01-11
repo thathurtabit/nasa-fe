@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
-const ReturnStyled = styled(Link)`
+const ReturnStyled = styled.a`
   background: ${props => props.theme.button.bg};
   border-radius: 30px;
   color: ${props => props.theme.return.text};

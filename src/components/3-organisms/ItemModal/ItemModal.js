@@ -7,18 +7,23 @@ import {
   ShortDescription,
   ItemLeft,
   ItemRight,
+  ThumbLink,
 } from '../Item/Item.styled';
 import {
   loadDelay,
   NoDesc,
   NoTitle,
   FullImage,
+  mediaType,
 } from '../../../utils/constants/constants';
 import CloseModal from '../../1-atoms/CloseModal/CloseModal';
 import LoadingSmall from '../../1-atoms/LoadingSmall/LoadingSmall';
 import PageTitle from '../../1-atoms/PageTitle/PageTitle';
 import ItemImage from '../../1-atoms/ItemImage/ItemImage';
 import Button from '../../1-atoms/Button/Button';
+import IconVideo from '../../1-atoms/IconVideo/IconVideo';
+import IconAudio from '../../1-atoms/IconAudio/IconAudio';
+import { IconWrap } from '../../2-molecules/ItemThumb/ItemThumb.styled';
 
 const mapStateToProps = state => ({
   items: state.response,
@@ -74,7 +79,21 @@ export class ItemModal extends Component {
                   <Button title={FullImage} url={item.link} external />
                 </ItemRight>
                 <ItemLeft>
-                  <ItemImage url={item.href} title={item.title} />
+                  <ThumbLink href={item.link}>
+                    {item.type === mediaType.image && (
+                      <ItemImage url={item.href} title={item.title} />
+                    )}
+                    {item.type === mediaType.video && (
+                      <IconWrap thumb large>
+                        <IconVideo title={item.type} />
+                      </IconWrap>
+                    )}
+                    {item.type === mediaType.audio && (
+                      <IconWrap thumb large>
+                        <IconAudio title={item.type} />
+                      </IconWrap>
+                    )}
+                  </ThumbLink>
                 </ItemLeft>
               </ItemContent>
             )}

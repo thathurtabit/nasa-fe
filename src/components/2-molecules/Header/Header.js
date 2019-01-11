@@ -4,7 +4,7 @@ import Logo from '../../1-atoms/Logo/Logo';
 
 const Header = () => (
   <HeaderStyled role="banner">
-    <Link to="/">
+    <Link href="/">
       <Logo title="NASA" />
     </Link>
   </HeaderStyled>
