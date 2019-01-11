@@ -19,3 +19,4 @@ export const mediaType = {
   audio: 'audio',
 };
 export const loadDelay = 250;
+export const inputFetchDelay = 2000;

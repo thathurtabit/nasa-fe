@@ -18,12 +18,12 @@ class ErrorBoundary extends Component {
   }
 
   render() {
-    const { hasError, error } = this.state;
+    const { hasError } = this.state;
     const { children } = this.props;
 
     if (hasError) {
       // You can render any custom fallback UI
-      return <Error error={error} />;
+      return <Error error="Something went wrong." />;
     }
 
     return children;

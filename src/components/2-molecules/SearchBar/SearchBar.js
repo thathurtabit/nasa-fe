@@ -11,6 +11,7 @@ import SearchIcon from '../../1-atoms/SearchIcon/SearchIcon';
 import {
   SearchPlaceholder,
   requestType,
+  inputFetchDelay,
 } from '../../../utils/constants/constants';
 import { setSearch } from '../../../state/actions/setSearch';
 import FilterBar from '../FilterBar/FilterBar';
@@ -35,7 +36,7 @@ class SearchBar extends Component {
     this.state = { value: searchValue.search };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.emitChangeDebounced = debounce(this.emitChange, 1000);
+    this.emitChangeDebounced = debounce(this.emitChange, inputFetchDelay);
   }
 
   componentWillUnmount() {
@@ -57,7 +58,6 @@ class SearchBar extends Component {
     this.setSearch({
       search: value,
       type: filter,
-      requestType: requestType.search,
     });
     event.preventDefault();
   }

@@ -13,7 +13,6 @@ export const receiveSearchData = json => {
       : NoDesc,
     href: hasKey(item, `links[0].href`) ? item.links[0].href : NoURL,
     itemID: hasKey(item, `data[0].nasa_id`) ? item.data[0].nasa_id : null,
-    json: hasKey(item, `href`) ? item.href : null,
     type: hasKey(item, `data[0].media_type`) ? item.data[0].media_type : null,
     link: `/asset/${
       hasKey(item, `data[0].nasa_id`) ? item.data[0].nasa_id : 'null'

@@ -13,6 +13,7 @@ import { setSearch } from '../../../state/actions/setSearch';
 import { ReturnText, mediaType } from '../../../utils/constants/constants';
 import ItemImage from '../../1-atoms/ItemImage/ItemImage';
 import Return from '../../1-atoms/Return/Return';
+import { areEqual } from '../../../utils/helpers/areEqual';
 
 const NoItems = lazy(() => import('../../2-molecules/NoItems/NoItems'));
 
@@ -22,6 +23,7 @@ const mapStateToProps = state => ({
   fetching: state.fetching,
   fetchError: state.fetching,
   response: state.response,
+  searchValue: state.searchValue,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -36,7 +38,6 @@ export class ItemSingle extends Component {
       title: 'No results found',
       desc: `It's not you, it's us.`,
       href: '',
-      json: '',
       type: '',
       itemID: '',
     },
@@ -48,38 +49,30 @@ export class ItemSingle extends Component {
   };
 
   componentDidMount() {
-    const {
-      items,
-      fetchSearchData,
-      fetchAssetData,
-      setSearch,
-      location,
-    } = this.props;
-    const itemId = location
+    const { fetchSearchData, fetchAssetData, location } = this.props;
+
+    // Get location from props
+    const itemURL = decodeURI(location);
+    const itemId = itemURL
       .split('/')
       .filter(loc => loc)
       .pop();
 
     this.hasMounted = true;
 
-    // Fetch media asset data
+    // Get data on mount, data will be picked up by componentDidUpdate
+    fetchSearchData({ search: itemId, type: '' });
     fetchAssetData(itemId);
-
-    // If we don't have any data yet (i.e. a direct link), go fetch data, else filter it and setState
-    if (!items.length) {
-      setSearch({ search: '', type: '' });
-      fetchSearchData({ search: itemId, type: '' });
-    } else {
-      this.setState({
-        item: items.filter(res => res.data[0].nasa_id === itemId)[0], // filter by nasa_id
-      });
-    }
   }
 
   componentDidUpdate(prevProps) {
     const { items, assets } = this.props;
 
-    if (prevProps.items[0] !== items[0] || prevProps.assets[0] !== assets[0]) {
+    // If props have updated, update State
+    if (
+      !areEqual(prevProps.items, items) ||
+      !areEqual(prevProps.assets, assets)
+    ) {
       this.setState({ item: items[0], assets });
     }
   }
