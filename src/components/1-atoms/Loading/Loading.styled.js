@@ -26,7 +26,7 @@ const LoaderStyled = styled.section`
       ${props => props.theme.transition.easeOut},
     opacity ${props => props.theme.transition.duration}
       ${props => props.theme.transition.easeOut};
-  z-index: ${props => props.theme.zIndex.overlay};
+  z-index: ${props => (props.isLoading ? props.theme.zIndex.overlay : '-1')};
 `;
 
 export default LoaderStyled;

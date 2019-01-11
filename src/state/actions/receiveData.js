@@ -2,6 +2,12 @@ import { RECEIVE_DATA } from '../constants/stateConstants';
 import { hasKey } from '../../utils/helpers/hasKey';
 import { NoTitle, NoDesc, NoURL } from '../../utils/constants/constants';
 
+// const fetchHref = href =>
+//   fetch(href)
+//     .then(res => res.json())
+//     .then(json => json)
+//     .catch(err => err);
+
 export const receiveData = json => {
   const response = json.collection.items;
 
@@ -13,10 +19,11 @@ export const receiveData = json => {
       : NoDesc,
     href: hasKey(item, `links[0].href`) ? item.links[0].href : NoURL,
     itemID: hasKey(item, `data[0].nasa_id`) ? item.data[0].nasa_id : null,
-    type: `${
-      hasKey(item, `data[0].media_type`) ? item.data[0].media_type : null
+    json: hasKey(item, `href`) ? item.href : null,
+    type: hasKey(item, `data[0].media_type`) ? item.data[0].media_type : null,
+    link: `/asset/${
+      hasKey(item, `data[0].nasa_id`) ? item.data[0].nasa_id : 'null'
     }`,
-    link: `/asset/${hasKey(item, `data[0].nasa_id`) && item.data[0].nasa_id}`,
   }));
 
   return {

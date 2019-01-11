@@ -27,16 +27,6 @@ export const Filter = styled.button`
 
 const FilterBarStyled = styled.section`
   position: relative;
-
-  &::after {
-    border-top: 5px dotted ${props => props.theme.hr.borderColor};
-    bottom: -20px;
-    content: '';
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    width: 30px;
-  }
 `;
 
 export default FilterBarStyled;

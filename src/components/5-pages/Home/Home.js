@@ -42,18 +42,19 @@ class Home extends Component {
   }
 
   render() {
-    const { items, fetchError, fetching } = this.props;
+    const { items, fetchError, fetching, searchValue } = this.props;
+    const { search } = searchValue;
 
     return (
       <Fragment>
         <Loading isLoading={fetching} />
         <Suspense fallback={<Loading isLoading />}>
           <SearchBar />
+          {search.length > 0 && <IntroBar />}
           {fetchError.length ? (
             <Error error="It's not you, it's us." />
           ) : items.length ? (
             <Fragment>
-              <IntroBar />
               <ItemList items={items} />
             </Fragment>
           ) : (

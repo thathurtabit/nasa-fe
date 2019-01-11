@@ -10,6 +10,7 @@ export const IconWrap = styled.div`
   flex-direction: column;
   height: 150px;
   justify-content: center;
+  max-width: ${props => props.theme.thumb.maxWidth};
   position: relative;
   transition: box-shadow ${props => props.theme.thumb.transition.duration}
     ${props => props.theme.transition.easeOut};
@@ -42,11 +43,16 @@ export const ItemLink = styled(Link)`
 `;
 
 export const ThumbTitle = styled.h4`
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   color: ${props => props.theme.colors.copy};
+  display: -webkit-box;
   font-size: calc(${props => props.theme.fonts.baseSize} - 3px);
   font-weight: 300;
+  margin-bottom: 40px;
   margin-top: auto;
-  max-height: 50px;
+  max-height: 40px;
+  max-width: ${props => props.theme.thumb.maxWidth};
   overflow: hidden;
   padding-top: 20px;
 `;

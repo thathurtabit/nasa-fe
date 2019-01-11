@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const MediaWrap = styled.section`
+  position: relative;
+  min-height: 200px;
+`;
+
 export const Title = styled.h1`
   color: ${props => props.theme.colors.brand};
   font-size: calc(${props => props.theme.fonts.baseSize} + 2vmin);

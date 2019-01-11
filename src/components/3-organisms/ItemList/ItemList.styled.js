@@ -4,7 +4,7 @@ const ItemListStyled = styled.ul`
   align-items: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 70px;
+  grid-gap: 30px;
   justify-items: center;
   list-style-type: none;
   margin: 20px auto 100px;

@@ -1,16 +1,18 @@
 import React, { Component, Fragment, Suspense, lazy } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import ItemSingleStyled, { Title, Description } from './ItemSingle.styled';
+import ItemSingleStyled, {
+  Title,
+  Description,
+  MediaWrap,
+} from './ItemSingle.styled';
 import Loading from '../../1-atoms/Loading/Loading';
 import { fetchData } from '../../../state/actions/fetchData';
 import { setSearch } from '../../../state/actions/setSearch';
-import { hasKey } from '../../../utils/helpers/hasKey';
 import {
-  NoTitle,
-  NoDesc,
-  NoURL,
   ReturnText,
+  mediaType,
+  apiAssets,
 } from '../../../utils/constants/constants';
 import ItemImage from '../../1-atoms/ItemImage/ItemImage';
 import Return from '../../1-atoms/Return/Return';
@@ -30,7 +32,16 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export class ItemSingle extends Component {
-  state = {};
+  state = {
+    item: {
+      title: 'No results found',
+      desc: `It's not you, it's us.`,
+      href: '',
+      json: '',
+      type: '',
+      itemID: '',
+    },
+  };
 
   componentDidMount() {
     const { items, fetchData, setSearch, location } = this.props;
@@ -47,7 +58,7 @@ export class ItemSingle extends Component {
       fetchData({ search: itemId, type: '' });
     } else {
       this.setState({
-        item: items.filter(res => res.data[0].nasa_id === itemId)[0],
+        item: items.filter(res => res.data[0].nasa_id === itemId)[0], // filter by nasa_id
       });
     }
   }
@@ -67,9 +78,9 @@ export class ItemSingle extends Component {
   render() {
     const { fetchError, fetching } = this.props;
     const { item } = this.state;
-    const title = hasKey(item, 'title') ? item.title : NoTitle;
-    const desc = hasKey(item, 'desc') ? item.desc : NoDesc;
-    const href = hasKey(item, 'href') ? item.href : NoURL;
+    const { title, desc, href, type, itemID } = item;
+    const videoSrc = `${apiAssets}/video/${itemID}/${itemID}~orig.mp4`;
+    const audioSrc = `${apiAssets}/audio/${itemID}/${itemID}~orig.wav`;
 
     return (
       <ItemSingleStyled>
@@ -81,7 +92,23 @@ export class ItemSingle extends Component {
             <Fragment>
               <Title>{title}</Title>
               <Description>{desc}</Description>
-              <ItemImage title={title} url={href} />
+              <MediaWrap>
+                {type === mediaType.image && (
+                  <ItemImage title={title} url={href} />
+                )}
+                {type === mediaType.video && (
+                  <video controls src={videoSrc} width="100%">
+                    {/* <track default kind="subtitles" srcLang="en" src={href} /> */}
+                    Sorry, your browser does not support embedded videos.
+                  </video>
+                )}
+                {type === mediaType.audio && (
+                  <audio controls src={audioSrc} width="100%">
+                    {/* <track default kind="subtitles" srcLang="en" src={href} /> */}
+                    Sorry, your browser does not support the audio element.
+                  </audio>
+                )}
+              </MediaWrap>
               <Return text={ReturnText} />
             </Fragment>
           )}

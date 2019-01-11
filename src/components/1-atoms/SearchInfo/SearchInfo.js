@@ -15,7 +15,7 @@ const SearchInfo = ({ searchValue, total }) => {
       return (
         <SearchInfoStyled>
           <Quote>{search}</Quote> has <Span>{total}</Span> {type} result
-          {total > 1 && 's'}
+          {total !== 1 && 's'}
         </SearchInfoStyled>
       );
     }

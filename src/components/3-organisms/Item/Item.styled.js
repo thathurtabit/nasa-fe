@@ -29,6 +29,7 @@ export const ItemContent = styled.article`
 
 export const ItemLeft = styled.div`
   order: 1;
+  position: relative;
 
   @media screen and (min-width: ${props => props.theme.breakpoints.md}) {
     overflow: hidden;
@@ -64,7 +65,6 @@ export const ShortDescription = styled.p`
   font-size: ${props => props.theme.fonts.baseSize};
   margin-bottom: 40px;
   max-height: 200px;
-  overflow: hidden;
   overflow: hidden;
   text-transform: capitalize;
 `;
