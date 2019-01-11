@@ -8,7 +8,10 @@ import SearchBarStyled, {
   SearchBarWrap,
 } from './SearchBar.styled';
 import SearchIcon from '../../1-atoms/SearchIcon/SearchIcon';
-import { SearchPlaceholder } from '../../../utils/constants/constants';
+import {
+  SearchPlaceholder,
+  requestType,
+} from '../../../utils/constants/constants';
 import { setSearch } from '../../../state/actions/setSearch';
 import FilterBar from '../FilterBar/FilterBar';
 
@@ -51,13 +54,21 @@ class SearchBar extends Component {
   handleSubmit(event) {
     const { value } = this.state;
     const { filter } = this.props;
-    this.setSearch({ search: value, type: filter });
+    this.setSearch({
+      search: value,
+      type: filter,
+      requestType: requestType.search,
+    });
     event.preventDefault();
   }
 
   emitChange(value) {
     const { filter } = this.props;
-    this.setSearch({ search: value, type: filter });
+    this.setSearch({
+      search: value,
+      type: filter,
+      requestType: requestType.search,
+    });
   }
 
   render() {

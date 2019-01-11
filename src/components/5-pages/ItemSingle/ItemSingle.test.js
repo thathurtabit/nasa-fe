@@ -10,7 +10,8 @@ describe('ItemSingle', () => {
     const element = shallowWithTheme(
       <ItemSingle
         location="url"
-        fetchData={() => null}
+        fetchSearchData={() => null}
+        fetchAssetData={() => null}
         fetchError={false}
         fetching
       />

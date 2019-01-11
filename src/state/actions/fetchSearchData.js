@@ -1,10 +1,10 @@
 import { requestData } from './requestData';
-import { receiveData } from './receiveData';
+import { receiveSearchData } from './receiveSearchData';
 import { requestDataError } from './requestDataError';
 import { hasKey } from '../../utils/helpers/hasKey';
-import { api } from '../../utils/constants/constants';
+import { api, requestType } from '../../utils/constants/constants';
 
-export const fetchData = searchValue => dispatch => {
+export const fetchSearchData = searchValue => dispatch => {
   const { search, type } = searchValue;
   const hasType = hasKey(type, 'length') && type.length;
   const mediaType = hasType ? `&media_type=${type}` : '';
@@ -12,17 +12,17 @@ export const fetchData = searchValue => dispatch => {
   if (!search.length) return;
 
   dispatch(requestData());
-  return fetch(`${api}/search?q=${search}${mediaType}`)
+  return fetch(`${api}${requestType.search}${search}${mediaType}`)
     .then(response => {
       if (!response.ok) {
-        dispatch(receiveData(response));
+        dispatch(receiveSearchData(response));
         throw Error(response.statusText);
       }
       return response;
     })
     .then(response => response.json())
     .then(response => {
-      dispatch(receiveData(response));
+      dispatch(receiveSearchData(response));
     })
     .catch(error => dispatch(requestDataError(error)));
 };

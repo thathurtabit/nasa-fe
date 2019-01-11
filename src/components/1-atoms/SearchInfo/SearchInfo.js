@@ -31,10 +31,11 @@ const SearchInfo = ({ searchValue, total }) => {
 export default connect(mapStateToProps)(SearchInfo);
 
 SearchInfo.propTypes = {
-  total: PropTypes.number.isRequired,
+  total: PropTypes.number,
   searchValue: PropTypes.objectOf(PropTypes.string),
 };
 
 SearchInfo.defaultProps = {
   searchValue: null,
+  total: 0,
 };

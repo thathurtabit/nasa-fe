@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Loading from '../../1-atoms/Loading/Loading';
 import SearchBar from '../../2-molecules/SearchBar/SearchBar';
 import IntroBar from '../../2-molecules/IntroBar/IntroBar';
-import { fetchData } from '../../../state/actions/fetchData';
+import { fetchSearchData } from '../../../state/actions/fetchSearchData';
 
 // Lazy load components
 const Error = lazy(() => import('../../2-molecules/Error/Error'));
@@ -21,7 +21,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchData: searchStr => dispatch(fetchData(searchStr)),
+  fetchSearchData: searchStr => dispatch(fetchSearchData(searchStr)),
 });
 
 class Home extends Component {
@@ -30,10 +30,10 @@ class Home extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { fetchData, searchValue } = this.props;
+    const { fetchSearchData, searchValue } = this.props;
 
     if (prevProps.searchValue !== searchValue && this.hasMounted) {
-      fetchData(searchValue);
+      fetchSearchData(searchValue);
     }
   }
 
@@ -72,7 +72,7 @@ export default connect(
 )(Home);
 
 Home.propTypes = {
-  fetchData: PropTypes.func.isRequired,
+  fetchSearchData: PropTypes.func.isRequired,
   fetchError: PropTypes.bool.isRequired,
   fetching: PropTypes.bool.isRequired,
   searchValue: PropTypes.objectOf(PropTypes.string),

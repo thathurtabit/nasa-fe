@@ -17,12 +17,18 @@ const rootReducer = (state = {}, action) => {
       return { ...state, fetching: true };
     case types.REQUEST_DATA_ERROR:
       return { ...state, fetchError: action.payload, fetching: false };
-    case types.RECEIVE_DATA:
+    case types.RECEIVE_SEARCH_DATA:
       return {
         ...state,
         response: action.payload,
         fetching: false,
         itemCount: action.payload.length,
+      };
+    case types.RECEIVE_ASSET_DATA:
+      return {
+        ...state,
+        assets: action.payload,
+        fetching: false,
       };
     case types.TOGGLE_MODAL:
       return { ...state, modalOpen: action.payload };

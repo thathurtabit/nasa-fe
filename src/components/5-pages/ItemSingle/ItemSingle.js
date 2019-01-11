@@ -7,13 +7,10 @@ import ItemSingleStyled, {
   MediaWrap,
 } from './ItemSingle.styled';
 import Loading from '../../1-atoms/Loading/Loading';
-import { fetchData } from '../../../state/actions/fetchData';
+import { fetchSearchData } from '../../../state/actions/fetchSearchData';
+import { fetchAssetData } from '../../../state/actions/fetchAssetData';
 import { setSearch } from '../../../state/actions/setSearch';
-import {
-  ReturnText,
-  mediaType,
-  apiAssets,
-} from '../../../utils/constants/constants';
+import { ReturnText, mediaType } from '../../../utils/constants/constants';
 import ItemImage from '../../1-atoms/ItemImage/ItemImage';
 import Return from '../../1-atoms/Return/Return';
 
@@ -21,13 +18,15 @@ const NoItems = lazy(() => import('../../2-molecules/NoItems/NoItems'));
 
 const mapStateToProps = state => ({
   items: state.response,
+  assets: state.assets,
   fetching: state.fetching,
   fetchError: state.fetching,
   response: state.response,
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchData: searchStr => dispatch(fetchData(searchStr)),
+  fetchSearchData: searchStr => dispatch(fetchSearchData(searchStr)),
+  fetchAssetData: itemID => dispatch(fetchAssetData(itemID)),
   setSearch: searchObj => dispatch(setSearch(searchObj)),
 });
 
@@ -41,10 +40,21 @@ export class ItemSingle extends Component {
       type: '',
       itemID: '',
     },
+    assets: {
+      videoURL: '',
+      subtitle: '',
+      audioURL: '',
+    },
   };
 
   componentDidMount() {
-    const { items, fetchData, setSearch, location } = this.props;
+    const {
+      items,
+      fetchSearchData,
+      fetchAssetData,
+      setSearch,
+      location,
+    } = this.props;
     const itemId = location
       .split('/')
       .filter(loc => loc)
@@ -52,10 +62,13 @@ export class ItemSingle extends Component {
 
     this.hasMounted = true;
 
+    // Fetch media asset data
+    fetchAssetData(itemId);
+
     // If we don't have any data yet (i.e. a direct link), go fetch data, else filter it and setState
     if (!items.length) {
-      setSearch({ search: itemId, type: '' });
-      fetchData({ search: itemId, type: '' });
+      setSearch({ search: '', type: '' });
+      fetchSearchData({ search: itemId, type: '' });
     } else {
       this.setState({
         item: items.filter(res => res.data[0].nasa_id === itemId)[0], // filter by nasa_id
@@ -64,10 +77,10 @@ export class ItemSingle extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { items } = this.props;
+    const { items, assets } = this.props;
 
-    if (prevProps.items[0] !== items[0]) {
-      this.setState({ item: items[0] });
+    if (prevProps.items[0] !== items[0] || prevProps.assets[0] !== assets[0]) {
+      this.setState({ item: items[0], assets });
     }
   }
 
@@ -77,10 +90,9 @@ export class ItemSingle extends Component {
 
   render() {
     const { fetchError, fetching } = this.props;
-    const { item } = this.state;
-    const { title, desc, href, type, itemID } = item;
-    const videoSrc = `${apiAssets}/video/${itemID}/${itemID}~orig.mp4`;
-    const audioSrc = `${apiAssets}/audio/${itemID}/${itemID}~orig.wav`;
+    const { item, assets } = this.state;
+    const { title, desc, href, type } = item;
+    const { videoURL, audioURL } = assets;
 
     return (
       <ItemSingleStyled>
@@ -91,20 +103,24 @@ export class ItemSingle extends Component {
           ) : (
             <Fragment>
               <Title>{title}</Title>
-              <Description>{desc}</Description>
+              {type !== mediaType.audio ? (
+                <Description>{desc}</Description>
+              ) : (
+                <Description>Listen to the audio below</Description>
+              )}
               <MediaWrap>
                 {type === mediaType.image && (
                   <ItemImage title={title} url={href} />
                 )}
                 {type === mediaType.video && (
-                  <video controls src={videoSrc} width="100%">
-                    {/* <track default kind="subtitles" srcLang="en" src={href} /> */}
+                  <video controls src={videoURL} width="100%">
+                    {/* <track default kind="subtitles" srcLang="en" src={subtitles} /> */}
                     Sorry, your browser does not support embedded videos.
                   </video>
                 )}
                 {type === mediaType.audio && (
-                  <audio controls src={audioSrc} width="100%">
-                    {/* <track default kind="subtitles" srcLang="en" src={href} /> */}
+                  <audio controls src={audioURL} width="100%">
+                    {/* <track default kind="subtitles" srcLang="en" src={subtitles} /> */}
                     Sorry, your browser does not support the audio element.
                   </audio>
                 )}
@@ -125,8 +141,10 @@ export default connect(
 
 ItemSingle.propTypes = {
   location: PropTypes.string.isRequired,
-  fetchData: PropTypes.func.isRequired,
+  fetchSearchData: PropTypes.func.isRequired,
+  fetchAssetData: PropTypes.func.isRequired,
   fetchError: PropTypes.bool.isRequired,
+  assets: PropTypes.objectOf(PropTypes.string),
   fetching: PropTypes.bool.isRequired,
   items: PropTypes.arrayOf(
     PropTypes.objectOf(
@@ -141,4 +159,5 @@ ItemSingle.propTypes = {
 
 ItemSingle.defaultProps = {
   items: [],
+  assets: {},
 };

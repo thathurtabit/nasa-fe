@@ -1,14 +1,8 @@
-import { RECEIVE_DATA } from '../constants/stateConstants';
+import { RECEIVE_SEARCH_DATA } from '../constants/stateConstants';
 import { hasKey } from '../../utils/helpers/hasKey';
 import { NoTitle, NoDesc, NoURL } from '../../utils/constants/constants';
 
-// const fetchHref = href =>
-//   fetch(href)
-//     .then(res => res.json())
-//     .then(json => json)
-//     .catch(err => err);
-
-export const receiveData = json => {
+export const receiveSearchData = json => {
   const response = json.collection.items;
 
   // Check for required values, and keep only what we need
@@ -27,7 +21,7 @@ export const receiveData = json => {
   }));
 
   return {
-    type: RECEIVE_DATA,
+    type: RECEIVE_SEARCH_DATA,
     payload: responseFiltered,
   };
 };

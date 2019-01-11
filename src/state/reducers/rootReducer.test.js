@@ -55,15 +55,27 @@ describe('rootReducer', () => {
     });
   });
 
-  it('should handle RECEIVED_DATA', () => {
+  it('should handle RECEIVE_SEARCH_DATA', () => {
     expect(
       reducer(initState, {
-        type: types.RECEIVE_DATA,
+        type: types.RECEIVE_SEARCH_DATA,
         payload: {},
       })
     ).toEqual({
       ...initState,
       response: {},
+    });
+  });
+
+  it('should handle RECEIVE_ASSET_DATA', () => {
+    expect(
+      reducer(initState, {
+        type: types.RECEIVE_ASSET_DATA,
+        payload: {},
+      })
+    ).toEqual({
+      ...initState,
+      assets: {},
     });
   });
 

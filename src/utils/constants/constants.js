@@ -9,6 +9,10 @@ export const NoDesc = 'No description available for this item.';
 export const ReturnText = 'Return for more';
 export const FullImage = 'Learn more';
 export const SearchPlaceholder = 'Search';
+export const requestType = {
+  search: '/search?q=',
+  asset: '/asset/',
+};
 export const mediaType = {
   video: 'video',
   image: 'image',
