@@ -1,3 +1,4 @@
+import 'whatwg-fetch';
 import { requestData } from './requestData';
 import { receiveSearchData } from './receiveSearchData';
 import { requestDataError } from './requestDataError';
