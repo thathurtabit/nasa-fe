@@ -42,7 +42,7 @@ const ErrorStyled = styled.section`
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - ${props => props.theme.header.height * 10}px);
+  height: 50vh;
   justify-content: center;
   position: relative;
 `;

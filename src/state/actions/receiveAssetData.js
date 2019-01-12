@@ -5,8 +5,6 @@ import { NoURL } from '../../utils/constants/constants';
 export const receiveAssetData = json => {
   const response = json.collection.items;
 
-  console.log('assetData: ', json);
-
   // Check for required values, and keep only what we need
   const responseMapped = response.map(item =>
     hasKey(item, `href`) ? item.href : NoURL

@@ -20,6 +20,7 @@ import ItemImage from '../../1-atoms/ItemImage/ItemImage';
 import Return from '../../1-atoms/Return/Return';
 import { areEqual } from '../../../utils/helpers/areEqual';
 import { getItemID } from '../../../utils/helpers/getItemID';
+import { hasKey } from '../../../utils/helpers/hasKey';
 
 const NoItems = lazy(() => import('../../2-molecules/NoItems/NoItems'));
 
@@ -81,6 +82,10 @@ export class ItemSingle extends Component {
     const { fetchError, fetching } = this.props;
     const { item, assets } = this.state;
 
+    const title = hasKey(item, 'title') ? item.title : NoAssetTitle;
+    const type = hasKey(item, 'type') ? item.type : null;
+    const desc = hasKey(item, 'desc') ? item.desc : NoAssetSubtitle;
+
     return (
       <ItemSingleStyled>
         {fetching && <Loading isLoading />}
@@ -89,23 +94,23 @@ export class ItemSingle extends Component {
             <NoItems text="No items found." />
           ) : (
             <Fragment>
-              <Title>{item.title}</Title>
-              {item.type !== mediaType.audio ? (
-                <Description dangerouslySetInnerHTML={{ __html: item.desc }} />
+              <Title>{title}</Title>
+              {type !== mediaType.audio ? (
+                <Description dangerouslySetInnerHTML={{ __html: desc }} />
               ) : (
                 <Description>Listen to the audio below</Description>
               )}
               <MediaWrap>
-                {item.type === mediaType.image && (
+                {type === mediaType.image && (
                   <ItemImage title={item.title} url={item.href} />
                 )}
-                {item.type === mediaType.video && (
+                {type === mediaType.video && (
                   <video controls src={assets.videoURL} width="100%">
                     {/* <track default kind="subtitles" srcLang="en" src={subtitles} /> */}
                     Sorry, your browser does not support embedded videos.
                   </video>
                 )}
-                {item.type === mediaType.audio && (
+                {type === mediaType.audio && (
                   <audio controls src={assets.audioURL} width="100%">
                     {/* <track default kind="subtitles" srcLang="en" src={subtitles} /> */}
                     Sorry, your browser does not support the audio element.

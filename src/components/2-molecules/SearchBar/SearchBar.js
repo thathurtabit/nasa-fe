@@ -10,7 +10,6 @@ import SearchBarStyled, {
 import SearchIcon from '../../1-atoms/SearchIcon/SearchIcon';
 import {
   SearchPlaceholder,
-  requestType,
   inputFetchDelay,
 } from '../../../utils/constants/constants';
 import { setSearch } from '../../../state/actions/setSearch';
@@ -48,8 +47,6 @@ class SearchBar extends Component {
 
     // Update local state to give the user instant feedback...
     this.setState({ value });
-    // ... but debounce the result before pushing to redux for performance
-    this.emitChangeDebounced(value);
   }
 
   handleSubmit(event) {
@@ -67,7 +64,6 @@ class SearchBar extends Component {
     this.setSearch({
       search: value,
       type: filter,
-      requestType: requestType.search,
     });
   }
 
