@@ -60,8 +60,6 @@ export class ItemSingle extends Component {
     // Get location from props
     const itemID = getItemID(location);
 
-    console.log(itemID);
-
     // Get data on mount, data will be picked up by componentDidUpdate
     fetchSearchData({ search: itemID, type: '' });
     fetchAssetData(itemID);
@@ -93,7 +91,7 @@ export class ItemSingle extends Component {
             <Fragment>
               <Title>{item.title}</Title>
               {item.type !== mediaType.audio ? (
-                <Description>{item.desc}</Description>
+                <Description dangerouslySetInnerHTML={{ __html: item.desc }} />
               ) : (
                 <Description>Listen to the audio below</Description>
               )}

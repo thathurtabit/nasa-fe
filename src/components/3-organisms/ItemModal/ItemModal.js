@@ -44,7 +44,6 @@ export class ItemModal extends Component {
 
   componentDidMount() {
     const { location, items } = this.props;
-    console.log('Modal location: ', location);
     const itemURLID = getItemID(location);
     const itemData = items.filter(item => item.itemID === itemURLID)[0];
 
@@ -75,7 +74,9 @@ export class ItemModal extends Component {
               <ItemContent>
                 <ItemRight>
                   <PageTitle title={item.title || NoTitle} />
-                  <ShortDescription>{item.desc || NoDesc}</ShortDescription>
+                  <ShortDescription
+                    dangerouslySetInnerHTML={{ __html: item.desc || NoDesc }}
+                  />
                   <Button title={FullImage} url={item.link} external />
                 </ItemRight>
                 <ItemLeft>

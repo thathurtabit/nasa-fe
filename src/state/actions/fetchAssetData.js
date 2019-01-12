@@ -5,8 +5,6 @@ import { requestDataError } from './requestDataError';
 import { api, requestType } from '../../utils/constants/constants';
 
 export const fetchAssetData = assetID => dispatch => {
-  if (!assetID.length) return;
-
   dispatch(requestData());
   return fetch(`${api}${requestType.asset}${assetID}`)
     .then(response => {

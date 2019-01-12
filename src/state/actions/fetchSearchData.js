@@ -10,8 +10,6 @@ export const fetchSearchData = searchValue => dispatch => {
   const hasType = hasKey(type, 'length') && type.length;
   const mediaType = hasType ? `&media_type=${type}` : '';
 
-  if (!search.length) return;
-
   dispatch(requestData());
   return fetch(`${api}${requestType.search}${search}${mediaType}`)
     .then(response => {

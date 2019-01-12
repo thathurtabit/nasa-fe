@@ -31,12 +31,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    color: #ee447d;
+    color: #0066b3;
     text-decoration: none;
   }
 
   a:hover {
-    color: #ffa2c1;
+    color: #003f6f;
     text-decoration: underline;
   }
 
