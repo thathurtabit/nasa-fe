@@ -61,7 +61,7 @@ class Routes extends Component {
               {isModal && (
                 <Route
                   path="/asset/:id"
-                  component={() => <ItemModal location={location} />}
+                  component={() => <ItemModal location={location.pathname} />}
                 />
               )}
             </Suspense>

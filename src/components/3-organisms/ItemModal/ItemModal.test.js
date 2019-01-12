@@ -7,7 +7,9 @@ import { ItemModal } from './ItemModal';
 
 describe('ItemModal', () => {
   it('should render correctly', () => {
-    const element = shallowWithTheme(<ItemModal location="myLocation" />);
+    const element = shallowWithTheme(
+      <ItemModal location="myLocation" items={[{}]} />
+    );
     expect(shallowToJson(element)).toMatchSnapshot();
   });
 });

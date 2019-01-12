@@ -14,6 +14,7 @@ import { ReturnText, mediaType } from '../../../utils/constants/constants';
 import ItemImage from '../../1-atoms/ItemImage/ItemImage';
 import Return from '../../1-atoms/Return/Return';
 import { areEqual } from '../../../utils/helpers/areEqual';
+import { getItemID } from '../../../utils/helpers/getItemID';
 
 const NoItems = lazy(() => import('../../2-molecules/NoItems/NoItems'));
 
@@ -52,17 +53,13 @@ export class ItemSingle extends Component {
     const { fetchSearchData, fetchAssetData, location } = this.props;
 
     // Get location from props
-    const itemURL = decodeURI(location);
-    const itemId = itemURL
-      .split('/')
-      .filter(loc => loc)
-      .pop();
+    const itemID = getItemID(location);
 
-    this.hasMounted = true;
+    console.log(itemID);
 
     // Get data on mount, data will be picked up by componentDidUpdate
-    fetchSearchData({ search: itemId, type: '' });
-    fetchAssetData(itemId);
+    fetchSearchData({ search: itemID, type: '' });
+    fetchAssetData(itemID);
   }
 
   componentDidUpdate(prevProps) {
@@ -77,15 +74,9 @@ export class ItemSingle extends Component {
     }
   }
 
-  componentWillUnmount() {
-    this.hasMounted = false;
-  }
-
   render() {
     const { fetchError, fetching } = this.props;
     const { item, assets } = this.state;
-    const { title, desc, href, type } = item;
-    const { videoURL, audioURL } = assets;
 
     return (
       <ItemSingleStyled>
@@ -95,24 +86,24 @@ export class ItemSingle extends Component {
             <NoItems text="No items found." />
           ) : (
             <Fragment>
-              <Title>{title}</Title>
-              {type !== mediaType.audio ? (
-                <Description>{desc}</Description>
+              <Title>{item.title}</Title>
+              {item.type !== mediaType.audio ? (
+                <Description>{item.desc}</Description>
               ) : (
                 <Description>Listen to the audio below</Description>
               )}
               <MediaWrap>
-                {type === mediaType.image && (
-                  <ItemImage title={title} url={href} />
+                {item.type === mediaType.image && (
+                  <ItemImage title={item.title} url={item.href} />
                 )}
-                {type === mediaType.video && (
-                  <video controls src={videoURL} width="100%">
+                {item.type === mediaType.video && (
+                  <video controls src={assets.videoURL} width="100%">
                     {/* <track default kind="subtitles" srcLang="en" src={subtitles} /> */}
                     Sorry, your browser does not support embedded videos.
                   </video>
                 )}
-                {type === mediaType.audio && (
-                  <audio controls src={audioURL} width="100%">
+                {item.type === mediaType.audio && (
+                  <audio controls src={assets.audioURL} width="100%">
                     {/* <track default kind="subtitles" srcLang="en" src={subtitles} /> */}
                     Sorry, your browser does not support the audio element.
                   </audio>

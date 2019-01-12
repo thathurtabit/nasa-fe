@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { CSSTransition } from 'react-transition-group';
 import ItemModalStyled, { ItemModalBG } from './ItemModal.styled';
@@ -24,6 +25,7 @@ import Button from '../../1-atoms/Button/Button';
 import IconVideo from '../../1-atoms/IconVideo/IconVideo';
 import IconAudio from '../../1-atoms/IconAudio/IconAudio';
 import { IconWrap } from '../../2-molecules/ItemThumb/ItemThumb.styled';
+import { getItemID } from '../../../utils/helpers/getItemID';
 
 const mapStateToProps = state => ({
   items: state.response,
@@ -42,10 +44,8 @@ export class ItemModal extends Component {
 
   componentDidMount() {
     const { location, items } = this.props;
-    const itemURLID = location.pathname
-      .split('/')
-      .filter(loc => loc)
-      .pop();
+    console.log('Modal location: ', location);
+    const itemURLID = getItemID(location);
     const itemData = items.filter(item => item.itemID === itemURLID)[0];
 
     this.setState({ item: itemData, isLoading: false });
@@ -106,6 +106,11 @@ export class ItemModal extends Component {
 
 export default connect(mapStateToProps)(ItemModal);
 
-ItemModal.defaultProps = {
-  location: null,
+ItemModal.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  location: PropTypes.string.isRequired,
 };
+
+// ItemModal.defaultProps = {
+//   location: null,
+// };
