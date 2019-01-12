@@ -21,5 +21,15 @@ export const mediaType = {
   image: 'image',
   audio: 'audio',
 };
+export const NoSearchData = [
+  {
+    title: NoAssetTitle,
+    desc: NoAssetSubtitle,
+    href: NoURL,
+    itemID: null,
+    type: null,
+    link: 'null',
+  },
+];
 export const loadDelay = 250;
 export const inputFetchDelay = 2000;

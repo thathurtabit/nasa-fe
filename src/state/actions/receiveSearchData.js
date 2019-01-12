@@ -4,8 +4,7 @@ import {
   NoTitle,
   NoDesc,
   NoURL,
-  NoAssetTitle,
-  NoAssetSubtitle,
+  NoSearchData,
 } from '../../utils/constants/constants';
 
 export const receiveSearchData = json => {
@@ -29,16 +28,7 @@ export const receiveSearchData = json => {
       }`,
     }));
   } else {
-    responseFiltered = [
-      {
-        title: NoAssetTitle,
-        desc: NoAssetSubtitle,
-        href: NoURL,
-        itemID: null,
-        type: null,
-        link: 'null',
-      },
-    ];
+    responseFiltered = NoSearchData;
   }
 
   return {
