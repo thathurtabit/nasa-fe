@@ -1,5 +1,5 @@
 {
-  "name": "nasa-fe",
+  "name": "nasa-media.org",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -28,7 +28,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "yarn build && aws s3 sync build/ s3://nasa-fe --delete",
+    "deploy": "yarn build && aws s3 sync build/ s3://nasa-media.org --delete",
     "e2e": "cypress run",
     "analyze": "source-map-explorer build/static/js/main.*"
   },
