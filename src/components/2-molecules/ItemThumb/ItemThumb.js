@@ -56,12 +56,12 @@ const ItemThumb = ({ item, modalOpen, toggleModal, num }) => {
                   <LazyThumb url={href} title={ThumbAlt} thumb />
                 )}
                 {type === mediaType.video && (
-                  <IconWrap thumb>
+                  <IconWrap thumb type={type} itemID={itemID}>
                     <IconVideo title={type} />
                   </IconWrap>
                 )}
                 {type === mediaType.audio && (
-                  <IconWrap thumb>
+                  <IconWrap thumb type={type} ItemID={itemID}>
                     <IconAudio title={type} />
                   </IconWrap>
                 )}

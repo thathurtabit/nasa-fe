@@ -84,12 +84,22 @@ export class ItemModal extends Component {
                       <ItemImage url={item.href} title={item.title} />
                     )}
                     {item.type === mediaType.video && (
-                      <IconWrap thumb large>
+                      <IconWrap
+                        thumb
+                        large
+                        type={item.type}
+                        itemID={item.itemID}
+                      >
                         <IconVideo title={item.type} />
                       </IconWrap>
                     )}
                     {item.type === mediaType.audio && (
-                      <IconWrap thumb large>
+                      <IconWrap
+                        thumb
+                        large
+                        type={item.type}
+                        itemID={item.itemID}
+                      >
                         <IconAudio title={item.type} />
                       </IconWrap>
                     )}

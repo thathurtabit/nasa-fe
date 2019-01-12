@@ -6,7 +6,7 @@ const ButtonStyled = styled.a`
   color: ${props => props.theme.button.text};
   display: block;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 200px;
   padding: 10px 0;
   text-align: center;
   text-decoration: none;
