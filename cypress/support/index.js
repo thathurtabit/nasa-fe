@@ -14,7 +14,10 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import './commands';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+// Cypress does not currently support fetch, so remove it
+// use `Cypress` instead of `cy` so this persists across all tests

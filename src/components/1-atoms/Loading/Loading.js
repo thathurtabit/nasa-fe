@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import LoaderStyled from './Loading.styled';
 
 const Loading = ({ isLoading }) => (
-  <LoaderStyled isLoading={isLoading} aria-label="Loading">
+  <LoaderStyled data-loader isLoading={isLoading} aria-label="Loading">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="50"

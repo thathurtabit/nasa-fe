@@ -1,0 +1,2443 @@
+{
+  "collection": {
+    "links": [
+      {
+        "prompt": "Next",
+        "rel": "next",
+        "href": "https://images-api.nasa.gov/search?q=black+hole&page=2"
+      }
+    ],
+    "version": "1.0",
+    "metadata": {
+      "total_hits": 877
+    },
+    "items": [
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/behemoth-black-hole-found-in-an-unlikely-place_26209716511_o/behemoth-black-hole-found-in-an-unlikely-place_26209716511_o~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "behemoth-black-hole-found-in-an-unlikely-place_26209716511_o",
+            "keywords": [
+              "Hubble",
+              "HST",
+              "black hole",
+              "black",
+              "hole",
+              "Hubble Space Telescope"
+            ],
+            "date_created": "2016-04-06T00:00:00Z",
+            "media_type": "image",
+            "title": "Behemoth Black Hole Found in an Unlikely Place",
+            "center": "GSFC",
+            "description": "This computer-simulated image shows a supermassive black hole at the core of a galaxy. The black region in the center represents the black hole’s event horizon, where no light can escape the massive object’s gravitational grip. The black hole’s powerful gravity distorts space around it like a funhouse mirror. Light from background stars is stretched and smeared as the stars skim by the black hole.  Credits: NASA, ESA, and D. Coe, J. Anderson, and R. van der Marel (STScI)  More info: Astronomers have uncovered a near-record breaking supermassive black hole, weighing 17 billion suns, in an unlikely place: in the center of a galaxy in a sparsely populated area of the universe. The observations, made by NASA’s Hubble Space Telescope and the Gemini Telescope in Hawaii, may indicate that these monster objects may be more common than once thought.  Until now, the biggest supermassive black holes – those roughly 10 billion times the mass of our sun – have been found at the cores of very large galaxies in regions of the universe packed with other large galaxies. In fact, the current record holder tips the scale at 21 billion suns and resides in the crowded Coma galaxy cluster that consists of over 1,000 galaxies."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/behemoth-black-hole-found-in-an-unlikely-place_26209716511_o/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA04206/PIA04206~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA04206",
+            "keywords": ["black hole"],
+            "date_created": "1999-11-30T00:00:01Z",
+            "media_type": "image",
+            "title": "Black Hole Simulation",
+            "description_508": "This graphic shows the computer simulation of a black hole from start to finish. Plasma is falling slowly toward the black hole in a (at the upper left). The plasma has a magnetic field, shown by the white lines. It picks up speed as it falls toward the hole.",
+            "center": "JPL",
+            "description": "This graphic shows the computer simulation of a black hole from start to finish. Plasma is falling slowly toward the black hole in a (at the upper left). The plasma has a magnetic field, shown by the white lines. It picks up speed as it falls toward the hole in b (at the upper right), c (lower left) and d (lower right). However, the rotating black hole twists up space itself (and the magnetic field lines) and ejects electromagnetic power along the north and south poles above the black hole. The red and white color shows the immense electromagnetic power output, which eventually will pick up particles and form squirting jets. This simulation was conducted using supercomputers at Japan's National Institute for Fusion Science. http://photojournal.jpl.nasa.gov/catalog/PIA04206"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA04206/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA22085/PIA22085~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA22085",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["NuSTAR", "artist concept", "black hole"],
+            "date_created": "2017-11-02T00:00:00Z",
+            "media_type": "image",
+            "title": "Black Hole With Jet (Artist's Concept)",
+            "description_508": "This artist's concept shows a black hole with an accretion disk -- a flat structure of material orbiting the black hole -- and a jet of hot gas, called plasma.",
+            "center": "JPL",
+            "description": "This artist's concept shows a black hole with an accretion disk -- a flat structure of material orbiting the black hole -- and a jet of hot gas, called plasma.  Using NASA's NuSTAR space telescope and a fast camera called ULTRACAM on the William Herschel Observatory in La Palma, Spain, scientists have been able to measure the distance that particles in jets travel before they \"turn on\" and become bright sources of light. This distance is called the \"acceleration zone.\"  https://photojournal.jpl.nasa.gov/catalog/PIA22085"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA22085/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA20865/PIA20865~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA20865",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": [
+              "Chandra X-ray Observatory,NuSTAR",
+              "cosmos",
+              "black hole"
+            ],
+            "date_created": "2016-07-28T16:51:38Z",
+            "media_type": "image",
+            "title": "A Black Hole Choir.",
+            "description_508": "The blue dots in this field of galaxies, known as the COSMOS field, show galaxies that contain supermassive black holes emitting high-energy X-rays, as detected by NASA's Nuclear Spectroscopic Array, or NuSTAR.",
+            "center": "JPL",
+            "description": "The blue dots in this field of galaxies, known as the COSMOS field, show galaxies that contain supermassive black holes emitting high-energy X-rays. The black holes were detected by NASA's Nuclear Spectroscopic Array, or NuSTAR, which spotted 32 such black holes in this field and has observed hundreds across the whole sky so far.  The other colored dots are galaxies that host black holes emitting lower-energy X-rays, and were spotted by NASA's Chandra X-ray Observatory. Chandra data show X-rays with energies between 0.5 to 7 kiloelectron volts, while NuSTAR data show X-rays between 8 to 24 kiloelectron volts.  http://photojournal.jpl.nasa.gov/catalog/PIA20865"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA20865/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA14803/PIA14803~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA14803",
+            "secondary_creator": "NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington",
+            "keywords": ["Mercury", "MESSENGER"],
+            "date_created": "2011-08-29T21:00:54Z",
+            "media_type": "image",
+            "title": "Black Holes in Caloris",
+            "description_508": "Black Holes in Caloris",
+            "center": "JPL",
+            "description": "Black Holes in Caloris"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA14803/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000415/GSFC_20171208_Archive_e000415~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e000415",
+            "keywords": [
+              "Black Holes Collide",
+              "lisa",
+              "nasa",
+              "blackhole",
+              "ligo",
+              "nasagoddard"
+            ],
+            "album": "Test",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "date_created": "2017-12-08T00:00:00Z",
+            "title": "Black Holes Collide",
+            "center": "GSFC",
+            "description": "When two black holes collide, they release massive amounts of energy in the form of gravitational waves that last a fraction of a second and can be &quot;heard&quot; throughout the universe - if you have the right instruments.   Today we learned that the #LIGO project heard the telltale chirp of black holes colliding, fulfilling Einstein's General Theory of Relativity.   NASA's LISA mission will look for direct evidence of gravitational waves. <a href=\"http://go.nasa.gov/23ZbqoE\" rel=\"nofollow\">go.nasa.gov/23ZbqoE</a>  This video illustrates what that collision might look like."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000415/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000698/GSFC_20171208_Archive_e000698~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e000698",
+            "keywords": ["NASA Missions Monitor a Waking Black Hole"],
+            "date_created": "2015-06-30T19:06:06Z",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "title": "NASA Missions Monitor a Waking Black Hole",
+            "center": "GSFC",
+            "description": "On June 15, NASA's Swift caught the onset of a rare X-ray outburst from a stellar-mass black hole in the binary system V404 Cygni. Astronomers around the world are watching the event. In this system, a stream of gas from a star much like the sun flows toward a 10 solar mass black hole. Instead of spiraling toward the black hole, the gas accumulates in an accretion disk around it. Every couple of decades, the disk switches into a state that sends the gas rushing inward, starting a new outburst.  Read more: <a href=\"http://www.nasa.gov/feature/goddard/nasa-missions-monitor-a-waking-black-hole\" rel=\"nofollow\">www.nasa.gov/feature/goddard/nasa-missions-monitor-a-waki...</a>  Credits: NASA's Goddard Space Flight Center  Download this video in HD formats from NASA Goddard's Scientific Visualization Studio <a href=\"http://svs.gsfc.nasa.gov/cgi-bin/details.cgi?aid=11110\" rel=\"nofollow\">svs.gsfc.nasa.gov/cgi-bin/details.cgi?aid=11110</a>  "
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000698/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000149/GSFC_20171208_Archive_e000149~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e000149",
+            "keywords": [
+              "Hubble Gazes Into a Black Hole of Puzzling Light",
+              "rxj114010307"
+            ],
+            "album": "Test",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "date_created": "2017-12-08T00:00:00Z",
+            "title": "Hubble Gazes Into a Black Hole of Puzzling Light",
+            "center": "GSFC",
+            "description": "The beautiful spiral galaxy visible in the center of the image is known as RX J1140.1+0307, a galaxy in the Virgo constellation imaged by the NASA/ESA Hubble Space Telescope, and it presents an interesting puzzle. At first glance, this galaxy appears to be a normal spiral galaxy, much like the Milky Way, but first appearances can be deceptive!  The Milky Way galaxy, like most large galaxies, has a supermassive black hole at its center, but some galaxies are centered on lighter, intermediate-mass black holes. RX J1140.1+0307 is such a galaxy — in fact, it is centered on one of the lowest black hole masses known in any luminous galactic core. What puzzles scientists about this particular galaxy is that the calculations don’t add up. With such a relatively low mass for the central black hole, models for the emission from the object cannot explain the observed spectrum. There must be other mechanisms at play in the interactions between the inner and outer parts of the accretion disk surrounding the black hole.   Credit: ESA/Hubble &amp; NASA, Acknowledgement: Judy Schmidt  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA image use policy.</a></b>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASAGoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Like us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>  <b>Find us on <a href=\"http://instagrid.me/nasagoddard/?vm=grid\" rel=\"nofollow\">Instagram</a></b>    "
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000149/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA22355/PIA22355~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA22355",
+            "secondary_creator": "NRAO/AUI/NSF/NASA",
+            "keywords": [
+              "black hole",
+              "TDE",
+              "titdal disruption event",
+              "artist concept"
+            ],
+            "date_created": "2018-06-15T00:00:00Z",
+            "media_type": "image",
+            "title": "Black Hole vs. Star: A Tidal Disruption Event (Artist's Concept)",
+            "description_508": "An artist's concept of a tidal disruption event (TDE) that happens when a star passes fatally close to a supermassive black hole, which reacts by launching a relativistic jet.",
+            "center": "JPL",
+            "description": "An artist's concept of a tidal disruption event (TDE) that happens when a star passes fatally close to a supermassive black hole, which reacts by launching a relativistic jet.   https://photojournal.jpl.nasa.gov/catalog/PIA22355"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA22355/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000386/GSFC_20171208_Archive_e000386~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e000386",
+            "keywords": [
+              "Behemoth Black Hole Found in an Unlikely Place",
+              "space",
+              "nasa",
+              "blackhole",
+              "nasagoddard"
+            ],
+            "date_created": "2017-12-08T00:00:00Z",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "album": "Test",
+            "title": "Behemoth Black Hole Found in an Unlikely Place",
+            "center": "GSFC",
+            "description": "This computer-simulated image shows a supermassive black hole at the core of a galaxy. The black region in the center represents the black hole’s event horizon, where no light can escape the massive object’s gravitational grip. The black hole’s powerful gravity distorts space around it like a funhouse mirror. Light from background stars is stretched and smeared as the stars skim by the black hole.  Credits: NASA, ESA, and D. Coe, J. Anderson, and R. van der Marel (STScI)  More info: Astronomers have uncovered a near-record breaking supermassive black hole, weighing 17 billion suns, in an unlikely place: in the center of a galaxy in a sparsely populated area of the universe. The observations, made by NASA’s Hubble Space Telescope and the Gemini Telescope in Hawaii, may indicate that these monster objects may be more common than once thought.  Until now, the biggest supermassive black holes – those roughly 10 billion times the mass of our sun – have been found at the cores of very large galaxies in regions of the universe packed with other large galaxies. In fact, the current record holder tips the scale at 21 billion suns and resides in the crowded Coma galaxy cluster that consists of over 1,000 galaxies. More: <a href=\"http://www.nasa.gov/feature/goddard/2016/behemoth-black-hole-found-in-an-unlikely-place\" rel=\"nofollow\">www.nasa.gov/feature/goddard/2016/behemoth-black-hole-fou...</a>  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA image use policy.</a></b>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASAGoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Like us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>  <b>Find us on <a href=\"http://instagrid.me/nasagoddard/?vm=grid\" rel=\"nofollow\">Instagram</a></b>    "
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000386/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA17567/PIA17567~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA17567",
+            "secondary_creator": "NASA/JPL-Caltech/Yale University",
+            "keywords": ["NuSTAR"],
+            "date_created": "2014-01-09T19:02:02Z",
+            "media_type": "image",
+            "title": "Different Flavors of Black Holes",
+            "description_508": "A range of supermassive black holes lights up this new image from NASA NuSTAR. All of the dots are active black holes tucked inside the hearts of galaxies, with colors representing different energies of X-ray light.",
+            "center": "JPL",
+            "description": "A range of supermassive black holes lights up this new image from NASA NuSTAR. All of the dots are active black holes tucked inside the hearts of galaxies, with colors representing different energies of X-ray light."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA17567/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA12965/PIA12965~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA12965",
+            "secondary_creator": "NASA/JPL-Caltech/University of Arizona",
+            "keywords": ["Spitzer Space Telescope"],
+            "date_created": "2010-03-17T18:00:01Z",
+            "media_type": "image",
+            "title": "How to Spot a Primitive Black Hole",
+            "description_508": "These two data plots from NASA Spitzer Space Telescope show a primitive supermassive black hole top compared to a typical one; usually, dust tori are missing and only gas disks are observed in primitive black holes.",
+            "center": "JPL",
+            "description": "These two data plots from NASA Spitzer Space Telescope show a primitive supermassive black hole top compared to a typical one; usually, dust tori are missing and only gas disks are observed in primitive black holes."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA12965/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA13168/PIA13168~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA13168",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["Spitzer Space Telescope"],
+            "date_created": "2010-06-01T17:59:00Z",
+            "media_type": "image",
+            "title": "Backward Black Hole Shoots Powerful Jets Artist Concept",
+            "description_508": "This artist concept shows a galaxy with a supermassive black hole at its core. The black hole is shooting out jets of radio waves.",
+            "center": "JPL",
+            "description": "This artist concept shows a galaxy with a supermassive black hole at its core. The black hole is shooting out jets of radio waves."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA13168/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA18907/PIA18907~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA18907",
+            "secondary_creator": "NASA/JPL-Caltech/GSFC",
+            "keywords": ["Hubble Space Telescope,NuSTAR"],
+            "date_created": "2015-01-08T17:55:18Z",
+            "media_type": "image",
+            "title": "Tale of Two Black Holes",
+            "description_508": "The real monster black hole is revealed in this image from NASA Nuclear Spectroscopic Telescope Array of colliding galaxies Arp 299.",
+            "center": "JPL",
+            "description": "The real monster black hole is revealed in this image from NASA Nuclear Spectroscopic Telescope Array of colliding galaxies Arp 299."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA18907/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA12966/PIA12966~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA12966",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["Spitzer Space Telescope"],
+            "date_created": "2010-03-17T18:00:02Z",
+            "media_type": "image",
+            "title": "Prehistoric Black Hole Artist Concept",
+            "description_508": "This artist conception illustrates one of the most primitive supermassive black holes known central black dot at the core of a young, star-rich galaxy.",
+            "center": "JPL",
+            "description": "This artist conception illustrates one of the most primitive supermassive black holes known central black dot at the core of a young, star-rich galaxy."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA12966/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000608/GSFC_20171208_Archive_e000608~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e000608",
+            "keywords": [
+              "Astronomers Identify a New Mid-size Black Hole",
+              "space",
+              "n",
+              "blackhole",
+              "nasagoddard",
+              "ngc1313"
+            ],
+            "album": "Test",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "date_created": "2017-12-08T00:00:00Z",
+            "title": "Astronomers Identify a New Mid-size Black Hole",
+            "center": "GSFC",
+            "description": "Nearly all black holes come in one of two sizes: stellar mass black holes that weigh up to a few dozen times the mass of our sun or supermassive black holes ranging from a million to several billion times the sun’s mass. Astronomers believe that medium-sized black holes between these two extremes exist, but evidence has been hard to come by, with roughly a half-dozen candidates described so far.  A team led by astronomers at the University of Maryland and NASA’s Goddard Space Flight Center has found evidence for a new intermediate-mass black hole about 5,000 times the mass of the sun. The discovery adds one more candidate to the list of potential medium-sized black holes, while strengthening the case that these objects do exist. The team reported its findings in the September 21, 2015 online edition of Astrophysical Journal Letters.  This image, taken with the European Southern Observatory’s Very Large Telescope, shows the central region of galaxy NGC1313. This galaxy is home to the ultraluminous X-ray source NCG1313X-1, which astronomers have now determined to be an intermediate-mass black hole candidate. NGC1313 is 50,000 light-years across and lies about 14 million light-years from the Milky Way in the southern constellation Reticulum.   Read more: <a href=\"http://www.nasa.gov/feature/goddard/astronomers-identify-a-new-mid-size-black-hole\" rel=\"nofollow\">www.nasa.gov/feature/goddard/astronomers-identify-a-new-m...</a>  Image credit: European Southern Observatory #nasagoddard #blackhole #space  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA image use policy.</a></b>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASAGoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Like us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>  <b>Find us on <a href=\"http://instagrid.me/nasagoddard/?vm=grid\" rel=\"nofollow\">Instagram</a></b>"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000608/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA19822/PIA19822~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA19822",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["Alfvén"],
+            "date_created": "2015-07-09T16:53:56Z",
+            "media_type": "image",
+            "title": "Magnetic Black Hole Waves",
+            "description_508": "This cartoon shows how magnetic waves, called Alfvén-waves, propagate outward from the base of black hole jets. The jet is a flow of charged particles, called a plasma, which is launched by a black hole.",
+            "center": "JPL",
+            "description": "This cartoon shows how magnetic waves, called Alfvén S-waves, propagate outward from the base of black hole jets. The jet is a flow of charged particles, called a plasma, which is launched by a black hole. The jet has a helical magnetic field (yellow coil) permeating the plasma. The waves then travel along the jet, in the direction of the plasma flow, but at a velocity determined by both the jet's magnetic properties and the plasma flow speed. The BL Lac jet examined in a new study is several light-years long, and the wave speed is about 98 percent the speed of light.  Fast-moving magnetic waves emanating from a distant supermassive black hole undulate like a whip whose handle is being shaken by a giant hand, according to a study using data from the National Radio Astronomy Observatory's Very Long Baseline Array. Scientists used this instrument to explore the galaxy/black hole system known as BL Lacertae (BL Lac) in high resolution.   http://photojournal.jpl.nasa.gov/catalog/PIA19822"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA19822/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA04207/PIA04207~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "media_type": "image",
+            "nasa_id": "PIA04207",
+            "date_created": "1999-11-30T00:00:02Z",
+            "title": "Black Hole in 3-D",
+            "description": "This three-dimensional illustration shows how the rotating space around a black hole twists up the magnetic field in the plasma falling toward the black hole. The black sphere at the center of the figure is the black hole itself. http://photojournal.jpl.nasa.gov/catalog/PIA04207"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA04207/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA16697/PIA16697~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA16697",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["NuSTAR,XMM-Newton"],
+            "date_created": "2013-02-27T17:50:03Z",
+            "media_type": "image",
+            "title": "Two Models of Black Hole Spin Artist Concept",
+            "description_508": "Scientists measure the spin rates of supermassive black holes by spreading the X-ray light into different colors. The light comes from accretion disks that swirl around black holes, as shown in both of the artist concepts.",
+            "center": "JPL",
+            "description": "Scientists measure the spin rates of supermassive black holes by spreading the X-ray light into different colors. The light comes from accretion disks that swirl around black holes, as shown in both of the artist concepts."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA16697/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA16695/PIA16695~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA16695",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["NuSTAR"],
+            "date_created": "2013-02-27T17:50:01Z",
+            "media_type": "image",
+            "title": "Black Holes: Monsters in Space Artist Concept",
+            "description_508": "This artist concept illustrates a supermassive black hole with millions to billions times the mass of our sun. Supermassive black holes are enormously dense objects buried at the hearts of galaxies.",
+            "center": "JPL",
+            "description": "This artist concept illustrates a supermassive black hole with millions to billions times the mass of our sun. Supermassive black holes are enormously dense objects buried at the hearts of galaxies."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA16695/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA14730/PIA14730~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA14730",
+            "secondary_creator": "NASA",
+            "keywords": ["Wide-field Infrared Survey Explorer WISE"],
+            "date_created": "2011-09-20T18:42:37Z",
+            "media_type": "image",
+            "title": "Flaring Black Hole Artist Concept",
+            "description_508": "This artist concept illustrates what the flaring black hole called GX 339-4 might look like. Infrared observations from NASA WISE reveal the best information yet on the chaotic and extreme environments of this black hole jets.",
+            "center": "JPL",
+            "description": "This artist concept illustrates what the flaring black hole called GX 339-4 might look like. Infrared observations from NASA WISE reveal the best information yet on the chaotic and extreme environments of this black hole jets."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA14730/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000984/GSFC_20171208_Archive_e000984~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e000984",
+            "keywords": [
+              "Hubble Helps Find Smallest Known Galaxy Containing a Supermassive Black Hole",
+              "space",
+              "nasa",
+              "blackhole",
+              "hubble",
+              "hubblespacetelescope",
+              "nasagoddard"
+            ],
+            "date_created": "2017-12-08T00:00:00Z",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "album": "Test",
+            "title": "Hubble Helps Find Smallest Known Galaxy Containing a Supermassive Black Hole",
+            "center": "GSFC",
+            "description": "This is an illustration of a supermassive black hole, weighing as much as 21 million suns, located in the middle of the ultradense galaxy M60-UCD1. The dwarf galaxy is so dense that millions of stars fill the sky as seen by an imaginary visitor. Because no light can escape from the black hole, it appears simply in silhouette against the starry background. The black hole's intense gravitational field warps the light of the background stars to form ring-like images just outside the dark edges of the black hole's event horizon. Combined observations by the Hubble Space Telescope and Gemini North telescope determined the presence of the black hole inside such a small and dense galaxy.  More info:   Astronomers using data from NASA’s Hubble Space Telescope and ground observation have found an unlikely object in an improbable place -- a monster black hole lurking inside one of the tiniest galaxies ever known.  The black hole is five times the mass of the one at the center of our Milky Way galaxy. It is inside one of the densest galaxies known to date -- the M60-UCD1 dwarf galaxy that crams 140 million stars within a diameter of about 300 light-years, which is only 1/500th of our galaxy’s diameter.  If you lived inside this dwarf galaxy, the night sky would dazzle with at least 1 million stars visible to the naked eye. Our nighttime sky as seen from Earth’s surface shows 4,000 stars.  The finding implies there are many other compact galaxies in the universe that contain supermassive black holes. The observation also suggests dwarf galaxies may actually be the stripped remnants of larger galaxies that were torn apart during collisions with other galaxies rather than small islands of stars born in isolation.  “We don’t know of any other way you could make a black hole so big in an object this small,” said University of Utah astronomer Anil Seth, lead author of an international study of the dwarf galaxy published in Thursday’s issue of the journal Nature.  Seth’s team of astronomers used the Hubble Space Telescope and the Gemini North 8-meter optical and infrared telescope on Hawaii’s Mauna Kea to observe M60-UCD1 and measure the black hole’s mass. The sharp Hubble images provide information about the galaxy’s diameter and stellar density. Gemini measures the stellar motions as affected by the black hole’s pull. These data are used to calculate the mass of the black hole.  Black holes are gravitationally collapsed, ultra-compact objects that have a gravitational pull so strong that even light cannot escape. Supermassive black holes -- those with the mass of at least one million stars like our sun -- are thought to be at the centers of many galaxies.  The black hole at the center of our Milky Way galaxy has the mass of four million suns. As heavy as that is, it is less than 0.01 percent of the Milky Way’s total mass. By comparison, the supermassive black hole at the center of M60-UCD1, which has the mass of 21 million suns, is a stunning 15 percent of the small galaxy’s total mass.  “That is pretty amazing, given that the Milky Way is 500 times larger and more than 1,000 times heavier than the dwarf galaxy M60-UCD1,” Seth said.  One explanation is that M60-UCD1 was once a large galaxy containing 10 billion stars, but then it passed very close to the center of an even larger galaxy, M60, and in that process all the stars and dark matter in the outer part of the galaxy were torn away and became part of M60.  The team believes that M60-UCD1 may eventually be pulled to fully merge with M60, which has its own monster black hole that weighs a whopping 4.5 billion solar masses, or more than 1,000 times bigger than the black hole in our galaxy. When that happens, the black holes in both galaxies also likely will merge. Both galaxies are 50 million light-years away.  The Hubble Space Telescope is a project of international cooperation between NASA and the European Space Agency. NASA's Goddard Space Flight Center in Greenbelt, Maryland, manages the telescope. The Space Telescope Science Institute (STScI) in Baltimore conducts Hubble science operations. STScI is operated for NASA by the Association of Universities for Research in Astronomy, Inc., in Washington.  For images and more information about Hubble, visit: <a href=\"http://www.nasa.gov/hubble\" rel=\"nofollow\">www.nasa.gov/hubble</a>  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA image use policy.</a></b>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission. <b>Follow us on <a href=\"http://twitter.com/NASAGoddardPix\" rel=\"nofollow\">Twitter</a></b> <b>Like us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b> <b>Find us on <a href=\"http://instagram.com/nasagoddard?vm=grid\" rel=\"nofollow\">Instagram</a></b>"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000984/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA19348/PIA19348~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA19348",
+            "secondary_creator": "Top: NASA/JPL-Caltech. Lower-left: Hubble Legacy Archive, NASA, ESA. Bottom-right: NASA/ESA",
+            "keywords": ["NuSTAR", "artist concept"],
+            "date_created": "2015-07-06T17:11:22Z",
+            "media_type": "image",
+            "title": "NuSTAR Seeks Hidden Black Holes",
+            "description_508": "A montage of images showing an artist concept of NuSTAR top; a color image of one of the galaxies targeted by NuSTAR lower left; and artist concept of a hidden black hole.",
+            "center": "JPL",
+            "description": "Top: An illustration of NASA's Nuclear Spectroscopic Telescope Array, or NuSTAR, in orbit. The unique school bus-long mast allows NuSTAR to focus high energy X-rays.  Lower-left: A color image from NASA's Hubble Space Telescope of one of the nine galaxies targeted by NuSTAR in search of hidden black holes.  Bottom-right: An artist's illustration of a supermassive black hole, actively feasting on its surroundings. The central black hole is hidden from direct view by a thick layer of encircling gas and dust.   http://photojournal.jpl.nasa.gov/catalog/PIA19348"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA19348/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001876/GSFC_20171208_Archive_e001876~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e001876",
+            "keywords": ["Best-Ever Snapshot of a Black Hole's Jets"],
+            "date_created": "2011-05-20T20:06:48Z",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "title": "Best-Ever Snapshot of a Black Hole's Jets",
+            "center": "GSFC",
+            "description": "NASA image release May 20, 2011  <b>To see a really cool video related to this image go here: <a href=\"http://www.flickr.com/photos/gsfc/5740451675/in/photostream\">www.flickr.com/photos/gsfc/5740451675/in/photostream</a></b>  This composite of visible, microwave (orange) and X-ray (blue) data reveals the jets and radio-emitting lobes emanating from Centaurus A's central black hole. Credit: ESO/WFI (visible); MPIfR/ESO/APEX/A.Weiss et al. (microwave); NASA/CXC/CfA/R.Kraft et al. (X-ray)  To read more go to: <a href=\"http://www.nasa.gov/topics/universe/features/radio-particle-jets.html\" rel=\"nofollow\">www.nasa.gov/topics/universe/features/radio-particle-jets...</a>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASA_GoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Join us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001876/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA10091/PIA10091~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA10091",
+            "secondary_creator": "NASA/JPL-Caltech/Commissariat a lEnergie Atomique",
+            "keywords": ["Spitzer Space Telescope"],
+            "date_created": "2007-10-25T16:55:01Z",
+            "media_type": "image",
+            "title": "Missing Black Holes Found!",
+            "description_508": "NASA Spitzer and Chandra space telescopes have uncovered a long-lost population of active supermassive black holes, or quasars located deep in the bellies of distant, massive galaxies circled in blue.",
+            "center": "JPL",
+            "description": "NASA Spitzer and Chandra space telescopes have uncovered a long-lost population of active supermassive black holes, or quasars located deep in the bellies of distant, massive galaxies circled in blue."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA10091/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA15429/PIA15429~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA15429",
+            "secondary_creator": "NASA/JPL-Caltech/JHU/UCSC",
+            "keywords": ["Galaxy Evolution Explorer GALEX"],
+            "date_created": "2012-05-02T17:00:01Z",
+            "media_type": "image",
+            "title": "Black Hole Erupts",
+            "description_508": "This computer-simulated image shows gas from a tidally shredded star falling into a black hole. Astronomers observed the flare in ultraviolet light using NASA Galaxy Evolution Explorer.",
+            "center": "JPL",
+            "description": "This computer-simulated image shows gas from a tidally shredded star falling into a black hole. Astronomers observed the flare in ultraviolet light using NASA Galaxy Evolution Explorer."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA15429/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA15632/PIA15632~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA15632",
+            "secondary_creator": "ESA/NASA/JPL-Caltech",
+            "keywords": ["NuSTAR"],
+            "date_created": "2012-05-30T17:08:46Z",
+            "media_type": "image",
+            "title": "Bringing Black Holes Into Focus",
+            "description_508": "NASA NuSTAR will be able to identify individual black holes making up the diffuse X-ray glow, also called the X-ray background. At bottom right is a simulated view of what NuSTAR will see.",
+            "center": "JPL",
+            "description": "NASA NuSTAR will be able to identify individual black holes making up the diffuse X-ray glow, also called the X-ray background. At bottom right is a simulated view of what NuSTAR will see."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA15632/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA17561/PIA17561~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA17561",
+            "secondary_creator": "NASA/JPL-Caltech/IRAP",
+            "keywords": ["NuSTAR"],
+            "date_created": "2013-11-26T18:58:25Z",
+            "media_type": "image",
+            "title": "Topsy Turvy Black Holes",
+            "description_508": "The magenta spots in this image from NASA NuSTAR show two black holes in the spiral galaxy called NGC 1313, or the Topsy Turvy galaxy, located about 13 million light-years away in the Reticulum constellation.",
+            "center": "JPL",
+            "description": "The magenta spots in this image from NASA NuSTAR show two black holes in the spiral galaxy called NGC 1313, or the Topsy Turvy galaxy, located about 13 million light-years away in the Reticulum constellation."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA17561/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA08001/PIA08001~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA08001",
+            "secondary_creator": "NASA/JPL-Caltech/Oxford University",
+            "keywords": ["AMS08", "Spitzer Space Telescope"],
+            "date_created": "2005-08-03T20:45:00Z",
+            "media_type": "image",
+            "title": "Gorilla Black Hole in the Mist",
+            "description_508": "This false-color image from NASA Spitzer Space Telescope shows a distant galaxy yellow that houses a quasar, a super-massive black hole circled by a ring, or torus, of gas and dust.",
+            "center": "JPL",
+            "description": "This false-color image from NASA Spitzer Space Telescope shows a distant galaxy yellow that houses a quasar, a super-massive black hole circled by a ring, or torus, of gas and dust."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA08001/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA17560/PIA17560~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA17560",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["NuSTAR"],
+            "date_created": "2013-11-26T18:58:24Z",
+            "media_type": "image",
+            "title": "Black Holes of the Circinus Galaxy",
+            "description_508": "Magenta spots in this image from NASA NuSTAR show two black holes in the Circinus galaxy, located 13 million light-years from Earth in the Circinus constellation.",
+            "center": "JPL",
+            "description": "Magenta spots in this image from NASA NuSTAR show two black holes in the Circinus galaxy, located 13 million light-years from Earth in the Circinus constellation."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA17560/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/0301628/0301628~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "0301628",
+            "keywords": ["Black Hole", "NGC 1068"],
+            "date_created": "2000-12-04T00:00:00Z",
+            "media_type": "image",
+            "title": "History of Chandra X-Ray Observatory",
+            "center": "MSFC",
+            "description": "Chandra X-Ray Observatory provided this composite X-ray (blue and green) and optical (red) image of the active galaxy NGC 1068 showing gas blowing away in a high-speed wind from the vicinity of a central supermassive black hole. Regions of intense star formation in the irner spiral arms of the galaxy are highlighted by both optical and x-ray emissions. A doughnut shaped cloud of cool gas and dust surrounding the black hole, known as the torus, appears as the elongated white spot . It has has a mass of about 5 million suns and is estimated to extend from within a few light years of the black hole out to about 300 light years."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/0301628/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA01884/PIA01884~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA01884",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["Galaxy Evolution Explorer GALEX"],
+            "date_created": "2006-12-05T18:00:24Z",
+            "media_type": "image",
+            "title": "Black Hole Grabs Starry Snack  Artist Concept",
+            "description_508": "This artist concept shows a supermassive black hole at the center of a remote galaxy digesting the remnants of a star.",
+            "center": "JPL",
+            "description": "This artist concept shows a supermassive black hole at the center of a remote galaxy digesting the remnants of a star."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA01884/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA15625/PIA15625~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA15625",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["Herschel Space Observatory"],
+            "date_created": "2012-05-09T17:43:02Z",
+            "media_type": "image",
+            "title": "Artist Concept: Active Black Hole Squashes Star Formation",
+            "description_508": "Herschel Space Observatory has shown that galaxies with the most powerful, active, supermassive black holes at their cores produce fewer stars than galaxies with less active black holes in this artist concept.",
+            "center": "JPL",
+            "description": "Herschel Space Observatory has shown that galaxies with the most powerful, active, supermassive black holes at their cores produce fewer stars than galaxies with less active black holes in this artist concept."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA15625/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001097/GSFC_20171208_Archive_e001097~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e001097",
+            "keywords": [
+              "Neutron Stars Rip Each Other Apart to Form Black Hole"
+            ],
+            "date_created": "2014-05-13T15:48:01Z",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "title": "Neutron Stars Rip Each Other Apart to Form Black Hole",
+            "center": "GSFC",
+            "description": "This supercomputer simulation shows one of the most violent events in the universe: a pair of neutron stars colliding, merging and forming a black hole. A neutron star is the compressed core left behind when a star born with between eight and 30 times the sun's mass explodes as a supernova. Neutron stars pack about 1.5 times the mass of the sun — equivalent to about half a million Earths — into a ball just 12 miles (20 km) across.  As the simulation begins, we view an unequally matched pair of neutron stars weighing 1.4 and 1.7 solar masses. They are separated by only about 11 miles, slightly less distance than their own diameters. Redder colors show regions of progressively lower density.  As the stars spiral toward each other, intense tides begin to deform them, possibly cracking their crusts. Neutron stars possess incredible density, but their surfaces are comparatively thin, with densities about a million times greater than gold. Their interiors crush matter to a much greater degree densities rise by 100 million times in their centers. To begin to imagine such mind-boggling densities, consider that a cubic centimeter of neutron star matter outweighs Mount Everest.  By 7 milliseconds, tidal forces overwhelm and shatter the lesser star. Its superdense contents erupt into the system and curl a spiral arm of incredibly hot material. At 13 milliseconds, the more massive star has accumulated too much mass to support it against gravity and collapses, and a new black hole is born. The black hole's event horizon — its point of no return — is shown by the gray sphere. While most of the matter from both neutron stars will fall into the black hole, some of the less dense, faster moving matter manages to orbit around it, quickly forming a large and rapidly rotating torus. This torus extends for about 124 miles (200 km) and contains the equivalent of 1/5th the mass of our sun.  Scientists think neutron star mergers like this produce short gamma-ray bursts (GRBs). Short GRBs last less than two seconds yet unleash as much energy as all the stars in our galaxy produce over one year.  The rapidly fading afterglow of these explosions presents a challenge to astronomers. A key element in understanding GRBs is getting instruments on large ground-based telescopes to capture afterglows as soon as possible after the burst. The rapid notification and accurate positions provided by NASA's Swift mission creates a vibrant synergy with ground-based observatories that has led to dramatically improved understanding of GRBs, especially for short bursts.  This video is public domain and can be downloaded at: : <a href=\"http://svs.gsfc.nasa.gov/goto?11530\" rel=\"nofollow\">svs.gsfc.nasa.gov/goto?11530</a> "
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001097/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000116/GSFC_20171208_Archive_e000116~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e000116",
+            "keywords": [
+              "NASA's Swift Mission Maps a Star's 'Death Spiral' into a Black Hole"
+            ],
+            "date_created": "2017-12-08T00:00:00Z",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "album": "Test",
+            "title": "NASA's Swift Mission Maps a Star's 'Death Spiral' into a Black Hole",
+            "center": "GSFC",
+            "description": "Some 290 million years ago, a star much like the sun wandered too close to the central black hole of its galaxy. Intense tides tore the star apart, which produced an eruption of optical, ultraviolet and X-ray light that first reached Earth in 2014. Now, a team of scientists using observations from NASA's Swift satellite have mapped out how and where these different wavelengths were produced in the event, named ASASSN-14li, as the shattered star's debris circled the black hole.  &quot;We discovered brightness changes in X-rays that occurred about a month after similar changes were observed in visible and UV light,&quot; said Dheeraj Pasham, an astrophysicist at the Massachusetts Institute of Technology (MIT) in Cambridge, Massachusetts, and the lead researcher of the study. &quot;We think this means the optical and UV emission arose far from the black hole, where elliptical streams of orbiting matter crashed into each other.&quot;  Read more: <a href=\"https://go.nasa.gov/2nLmSoa\" rel=\"nofollow\">go.nasa.gov/2nLmSoa</a>  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA image use policy.</a></b>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASAGoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Like us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>  <b>Find us on <a href=\"http://instagrid.me/nasagoddard/?vm=grid\" rel=\"nofollow\">Instagram</a></b>            "
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000116/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA20697/PIA20697~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA20697",
+            "secondary_creator": "ESA/ATG medialab",
+            "keywords": ["NuSTAR"],
+            "date_created": "2016-07-12T18:39:15Z",
+            "media_type": "image",
+            "title": "Black Hole with Wobbling Disk Artist Concept",
+            "description_508": "This artist impression depicts the accretion disc surrounding a black hole, in which the inner region of the disc precesses. Precession means that the orbit of material surrounding the black hole changes orientation around the central object.",
+            "center": "JPL",
+            "description": "This artist's impression depicts the accretion disc surrounding a black hole, in which the inner region of the disc precesses. \"Precession\" means that the orbit of material surrounding the black hole changes orientation around the central object.  In these three views, the precessing inner disc shines high-energy radiation that strikes the matter in the surrounding accretion disc. This causes the iron atoms in that disc to emit X-rays, depicted as the glow on the accretion disc to the right (in view a), to the front (in view b) and to the left (in view c) (see Figure 1).  In a study published in July 2016, astronomers used data from ESA's XMM-Newton X-ray Observatory and NASA's NuSTAR telescope to measure this \"wobble\" in X-ray emission from excited iron atoms. Scientists interpreted this as evidence for the Lense-Thirring effect -- a name for the precession phenomenon -- in the strong gravitational field of a black hole.  http://photojournal.jpl.nasa.gov/catalog/PIA20697"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA20697/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA10220/PIA10220~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA10220",
+            "secondary_creator": "NASA/JPL-Caltech/George Mason Univ.",
+            "keywords": ["NGC 3621", "Spitzer Space Telescope"],
+            "date_created": "2008-01-10T19:55:11Z",
+            "media_type": "image",
+            "title": "Slender Galaxy with Robust Black Hole",
+            "description_508": "This plot of data from NASA Spitzer Space Telescope indicates that a flat, spiral galaxy called NGC 3621 has a feeding, supermassive black hole lurking within it.",
+            "center": "JPL",
+            "description": "This plot of data from NASA Spitzer Space Telescope indicates that a flat, spiral galaxy called NGC 3621 has a feeding, supermassive black hole lurking within it."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA10220/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA18918/PIA18918~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA18918",
+            "secondary_creator": "NASA/JPL-Caltech/Keele Univ.",
+            "keywords": ["NuSTAR,XMM-Newton"],
+            "date_created": "2015-02-19T18:53:01Z",
+            "media_type": "image",
+            "title": "The Answer is Blowing in the Black Hole Wind",
+            "description_508": "This plot of data from two space telescopes, NASA NuSTAR and ESA XMM-Newton determines for the first time the shape of ultra-fast winds from supermassive black holes, or quasars.",
+            "center": "JPL",
+            "description": "This plot of data from two space telescopes, NASA NuSTAR and ESA XMM-Newton determines for the first time the shape of ultra-fast winds from supermassive black holes, or quasars."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA18918/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA08617/PIA08617~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA08617",
+            "secondary_creator": "NASA/JPL-Caltech/Yale Univ.",
+            "keywords": ["Hubble Space Telescope,Spitzer Space Telescope"],
+            "date_created": "2006-07-21T15:52:49Z",
+            "media_type": "image",
+            "title": "Black Hole Spills Kaleidoscope of Color",
+            "description_508": "This new false-colored image from NASA Hubble, Chandra and Spitzer space telescopes shows a giant jet of particles that has been shot out from the vicinity of a type of supermassive black hole called a quasar.",
+            "center": "JPL",
+            "description": "This new false-colored image from NASA Hubble, Chandra and Spitzer space telescopes shows a giant jet of particles that has been shot out from the vicinity of a type of supermassive black hole called a quasar."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA08617/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA15811/PIA15811~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA15811",
+            "secondary_creator": "NASA/JPL-Caltech/UCLA/STScI",
+            "keywords": ["Wide-field Infrared Survey Explorer WISE"],
+            "date_created": "2012-08-29T17:00:03Z",
+            "media_type": "image",
+            "title": "Exposing Black Holes Disguised in Dust",
+            "description_508": "This zoomed-in view of a portion of the all-sky survey from NASA Wide-field Infrared Survey Explorer shows a collection of quasar candidates shown in yellow circles. Quasars are supermassive black holes feeding off gas and dust.",
+            "center": "JPL",
+            "description": "This zoomed-in view of a portion of the all-sky survey from NASA Wide-field Infrared Survey Explorer shows a collection of quasar candidates shown in yellow circles. Quasars are supermassive black holes feeding off gas and dust."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA15811/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000719/GSFC_20171208_Archive_e000719~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e000719",
+            "keywords": [
+              "Large Hubble Survey Confirms Link between Mergers and Supermassive Black Holes with Relativistic Jets"
+            ],
+            "date_created": "2015-05-28T17:31:44Z",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "title": "Large Hubble Survey Confirms Link between Mergers and Supermassive Black Holes with Relativistic Jets",
+            "center": "GSFC",
+            "description": "Tidal disruption event Every galaxy has a black hole at its center. Usually they are quiet, without gas accretions, like the one in our Milky Way. But if a star creeps too close to the black hole, the gravitational tides can rip away the star’s gaseous matter. Like water spinning around a drain, the gas swirls into a disk around the black hole at such speeds that it heats to millions of degrees.  As an inner ring of gas spins into the black hole, gas particles shoot outward from the black hole’s polar regions. Like bullets shot from a rifle, they zoom through the jets at velocities close to the speed of light.  Astronomers using NASA’s Hubble Space Telescope observed correlations between supermassive black holes and an event similar to tidal disruption, pictured above in the Centaurus A galaxy. Certain galaxies have shining centers, illuminated by heated gas circling around a supermassive black hole. Matter escapes where it can, forming two jets of plasma moving near the speed of light.  To learn more about the relationship between galaxies and the black holes at their cores, go to NASA’s Hubble Space Telescope: <a href=\"http://www.nasa.gov/mission_pages/hubble/main/\" rel=\"nofollow\">www.nasa.gov/mission_pages/hubble/main/</a>   -------------------------------- Original caption: A team of astronomers using the Hubble Space Telescope found an unambiguous link between the presence of supermassive black holes that power high-speed, radio-signal-emitting jets and the merger history of their host galaxies. Almost all galaxies with the jets were found to be merging with another galaxy, or to have done so recently.  Credit: NASA/ESA/STScI  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA image use policy.</a></b>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASAGoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Like us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>  <b>Find us on <a href=\"http://instagrid.me/nasagoddard/?vm=grid\" rel=\"nofollow\">Instagram</a></b>"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000719/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA18013/PIA18013~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA18013",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["Wide-field Infrared Survey Explorer WISE"],
+            "date_created": "2014-05-22T18:00:24Z",
+            "media_type": "image",
+            "title": "Unified, or Doughnut, Theory of Active, Black Holes",
+            "description_508": "This infographic explains a popular theory of active supermassive black holes, referred to as the unified model -- and how new data from NASA WISE, is at conflict with the model.",
+            "center": "JPL",
+            "description": "This infographic explains a popular theory of active supermassive black holes, referred to as the unified model -- and how new data from NASA WISE, is at conflict with the model."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA18013/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001099/GSFC_20171208_Archive_e001099~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e001099",
+            "keywords": [
+              "Neutron Stars Rip Each Other Apart to Form Black Hole"
+            ],
+            "date_created": "2014-05-13T15:45:43Z",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "title": "Neutron Stars Rip Each Other Apart to Form Black Hole",
+            "center": "GSFC",
+            "description": "Simulation frames from this NASA Goddard neutron star merger animation: <a href=\"http://bit.ly/1jolBYY\" rel=\"nofollow\">bit.ly/1jolBYY</a>  Credit: NASA's Goddard Space Flight Center  This supercomputer simulation shows one of the most violent events in the universe: a pair of neutron stars colliding, merging and forming a black hole. A neutron star is the compressed core left behind when a star born with between eight and 30 times the sun's mass explodes as a supernova. Neutron stars pack about 1.5 times the mass of the sun — equivalent to about half a million Earths — into a ball just 12 miles (20 km) across.  As the simulation begins, we view an unequally matched pair of neutron stars weighing 1.4 and 1.7 solar masses. They are separated by only about 11 miles, slightly less distance than their own diameters. Redder colors show regions of progressively lower density.  As the stars spiral toward each other, intense tides begin to deform them, possibly cracking their crusts. Neutron stars possess incredible density, but their surfaces are comparatively thin, with densities about a million times greater than gold. Their interiors crush matter to a much greater degree densities rise by 100 million times in their centers. To begin to imagine such mind-boggling densities, consider that a cubic centimeter of neutron star matter outweighs Mount Everest.  By 7 milliseconds, tidal forces overwhelm and shatter the lesser star. Its superdense contents erupt into the system and curl a spiral arm of incredibly hot material. At 13 milliseconds, the more massive star has accumulated too much mass to support it against gravity and collapses, and a new black hole is born. The black hole's event horizon — its point of no return — is shown by the gray sphere. While most of the matter from both neutron stars will fall into the black hole, some of the less dense, faster moving matter manages to orbit around it, quickly forming a large and rapidly rotating torus. This torus extends for about 124 miles (200 km) and contains the equivalent of 1/5th the mass of our sun.  Scientists think neutron star mergers like this produce short gamma-ray bursts (GRBs). Short GRBs last less than two seconds yet unleash as much energy as all the stars in our galaxy produce over one year.  The rapidly fading afterglow of these explosions presents a challenge to astronomers. A key element in understanding GRBs is getting instruments on large ground-based telescopes to capture afterglows as soon as possible after the burst. The rapid notification and accurate positions provided by NASA's Swift mission creates a vibrant synergy with ground-based observatories that has led to dramatically improved understanding of GRBs, especially for short bursts.  This video is public domain and can be downloaded at: <a href=\"http://svs.gsfc.nasa.gov/vis/a010000/a011500/a011530/index.html\" rel=\"nofollow\">svs.gsfc.nasa.gov/vis/a010000/a011500/a011530/index.html</a>  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA image use policy.</a></b>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASAGoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Like us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>  <b>Find us on <a href=\"http://instagram.com/nasagoddard?vm=grid\" rel=\"nofollow\">Instagram</a></b>"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001099/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001098/GSFC_20171208_Archive_e001098~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e001098",
+            "keywords": [
+              "Neutron Stars Rip Each Other Apart to Form Black Hole"
+            ],
+            "date_created": "2014-05-13T15:45:52Z",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "title": "Neutron Stars Rip Each Other Apart to Form Black Hole",
+            "center": "GSFC",
+            "description": "Simulation frames from this NASA Goddard neutron star merger animation: <a href=\"http://bit.ly/1jolBYY\" rel=\"nofollow\">bit.ly/1jolBYY</a>  Credit: NASA's Goddard Space Flight Center  This supercomputer simulation shows one of the most violent events in the universe: a pair of neutron stars colliding, merging and forming a black hole. A neutron star is the compressed core left behind when a star born with between eight and 30 times the sun's mass explodes as a supernova. Neutron stars pack about 1.5 times the mass of the sun — equivalent to about half a million Earths — into a ball just 12 miles (20 km) across.  As the simulation begins, we view an unequally matched pair of neutron stars weighing 1.4 and 1.7 solar masses. They are separated by only about 11 miles, slightly less distance than their own diameters. Redder colors show regions of progressively lower density.  As the stars spiral toward each other, intense tides begin to deform them, possibly cracking their crusts. Neutron stars possess incredible density, but their surfaces are comparatively thin, with densities about a million times greater than gold. Their interiors crush matter to a much greater degree densities rise by 100 million times in their centers. To begin to imagine such mind-boggling densities, consider that a cubic centimeter of neutron star matter outweighs Mount Everest.  By 7 milliseconds, tidal forces overwhelm and shatter the lesser star. Its superdense contents erupt into the system and curl a spiral arm of incredibly hot material. At 13 milliseconds, the more massive star has accumulated too much mass to support it against gravity and collapses, and a new black hole is born. The black hole's event horizon — its point of no return — is shown by the gray sphere. While most of the matter from both neutron stars will fall into the black hole, some of the less dense, faster moving matter manages to orbit around it, quickly forming a large and rapidly rotating torus. This torus extends for about 124 miles (200 km) and contains the equivalent of 1/5th the mass of our sun.  Scientists think neutron star mergers like this produce short gamma-ray bursts (GRBs). Short GRBs last less than two seconds yet unleash as much energy as all the stars in our galaxy produce over one year.  The rapidly fading afterglow of these explosions presents a challenge to astronomers. A key element in understanding GRBs is getting instruments on large ground-based telescopes to capture afterglows as soon as possible after the burst. The rapid notification and accurate positions provided by NASA's Swift mission creates a vibrant synergy with ground-based observatories that has led to dramatically improved understanding of GRBs, especially for short bursts.  This video is public domain and can be downloaded at: <a href=\"http://svs.gsfc.nasa.gov/vis/a010000/a011500/a011530/index.html\" rel=\"nofollow\">svs.gsfc.nasa.gov/vis/a010000/a011500/a011530/index.html</a>  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA image use policy.</a></b>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASAGoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Like us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>  <b>Find us on <a href=\"http://instagram.com/nasagoddard?vm=grid\" rel=\"nofollow\">Instagram</a></b>"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001098/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001100/GSFC_20171208_Archive_e001100~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e001100",
+            "keywords": [
+              "Neutron Stars Rip Each Other Apart to Form Black Hole"
+            ],
+            "date_created": "2014-05-13T15:45:33Z",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "title": "Neutron Stars Rip Each Other Apart to Form Black Hole",
+            "center": "GSFC",
+            "description": "Simulation frames from this NASA Goddard neutron star merger animation: <a href=\"http://bit.ly/1jolBYY\" rel=\"nofollow\">bit.ly/1jolBYY</a>  Credit: NASA's Goddard Space Flight Center  This supercomputer simulation shows one of the most violent events in the universe: a pair of neutron stars colliding, merging and forming a black hole. A neutron star is the compressed core left behind when a star born with between eight and 30 times the sun's mass explodes as a supernova. Neutron stars pack about 1.5 times the mass of the sun — equivalent to about half a million Earths — into a ball just 12 miles (20 km) across.  As the simulation begins, we view an unequally matched pair of neutron stars weighing 1.4 and 1.7 solar masses. They are separated by only about 11 miles, slightly less distance than their own diameters. Redder colors show regions of progressively lower density.  As the stars spiral toward each other, intense tides begin to deform them, possibly cracking their crusts. Neutron stars possess incredible density, but their surfaces are comparatively thin, with densities about a million times greater than gold. Their interiors crush matter to a much greater degree densities rise by 100 million times in their centers. To begin to imagine such mind-boggling densities, consider that a cubic centimeter of neutron star matter outweighs Mount Everest.  By 7 milliseconds, tidal forces overwhelm and shatter the lesser star. Its superdense contents erupt into the system and curl a spiral arm of incredibly hot material. At 13 milliseconds, the more massive star has accumulated too much mass to support it against gravity and collapses, and a new black hole is born. The black hole's event horizon — its point of no return — is shown by the gray sphere. While most of the matter from both neutron stars will fall into the black hole, some of the less dense, faster moving matter manages to orbit around it, quickly forming a large and rapidly rotating torus. This torus extends for about 124 miles (200 km) and contains the equivalent of 1/5th the mass of our sun.  Scientists think neutron star mergers like this produce short gamma-ray bursts (GRBs). Short GRBs last less than two seconds yet unleash as much energy as all the stars in our galaxy produce over one year.  The rapidly fading afterglow of these explosions presents a challenge to astronomers. A key element in understanding GRBs is getting instruments on large ground-based telescopes to capture afterglows as soon as possible after the burst. The rapid notification and accurate positions provided by NASA's Swift mission creates a vibrant synergy with ground-based observatories that has led to dramatically improved understanding of GRBs, especially for short bursts.  This video is public domain and can be downloaded at: <a href=\"http://svs.gsfc.nasa.gov/vis/a010000/a011500/a011530/index.html\" rel=\"nofollow\">svs.gsfc.nasa.gov/vis/a010000/a011500/a011530/index.html</a>  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA image use policy.</a></b>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASAGoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Like us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>  <b>Find us on <a href=\"http://instagram.com/nasagoddard?vm=grid\" rel=\"nofollow\">Instagram</a></b>"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001100/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001101/GSFC_20171208_Archive_e001101~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e001101",
+            "keywords": [
+              "Neutron Stars Rip Each Other Apart to Form Black Hole"
+            ],
+            "date_created": "2014-05-13T15:45:28Z",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "title": "Neutron Stars Rip Each Other Apart to Form Black Hole",
+            "center": "GSFC",
+            "description": "Simulation frames from this NASA Goddard neutron star merger animation: <a href=\"http://bit.ly/1jolBYY\" rel=\"nofollow\">bit.ly/1jolBYY</a>  Credit: NASA's Goddard Space Flight Center  This supercomputer simulation shows one of the most violent events in the universe: a pair of neutron stars colliding, merging and forming a black hole. A neutron star is the compressed core left behind when a star born with between eight and 30 times the sun's mass explodes as a supernova. Neutron stars pack about 1.5 times the mass of the sun — equivalent to about half a million Earths — into a ball just 12 miles (20 km) across.  As the simulation begins, we view an unequally matched pair of neutron stars weighing 1.4 and 1.7 solar masses. They are separated by only about 11 miles, slightly less distance than their own diameters. Redder colors show regions of progressively lower density.  As the stars spiral toward each other, intense tides begin to deform them, possibly cracking their crusts. Neutron stars possess incredible density, but their surfaces are comparatively thin, with densities about a million times greater than gold. Their interiors crush matter to a much greater degree densities rise by 100 million times in their centers. To begin to imagine such mind-boggling densities, consider that a cubic centimeter of neutron star matter outweighs Mount Everest.  By 7 milliseconds, tidal forces overwhelm and shatter the lesser star. Its superdense contents erupt into the system and curl a spiral arm of incredibly hot material. At 13 milliseconds, the more massive star has accumulated too much mass to support it against gravity and collapses, and a new black hole is born. The black hole's event horizon — its point of no return — is shown by the gray sphere. While most of the matter from both neutron stars will fall into the black hole, some of the less dense, faster moving matter manages to orbit around it, quickly forming a large and rapidly rotating torus. This torus extends for about 124 miles (200 km) and contains the equivalent of 1/5th the mass of our sun.  Scientists think neutron star mergers like this produce short gamma-ray bursts (GRBs). Short GRBs last less than two seconds yet unleash as much energy as all the stars in our galaxy produce over one year.  The rapidly fading afterglow of these explosions presents a challenge to astronomers. A key element in understanding GRBs is getting instruments on large ground-based telescopes to capture afterglows as soon as possible after the burst. The rapid notification and accurate positions provided by NASA's Swift mission creates a vibrant synergy with ground-based observatories that has led to dramatically improved understanding of GRBs, especially for short bursts.  This video is public domain and can be downloaded at: <a href=\"http://svs.gsfc.nasa.gov/vis/a010000/a011500/a011530/index.html\" rel=\"nofollow\">svs.gsfc.nasa.gov/vis/a010000/a011500/a011530/index.html</a>  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA image use policy.</a></b>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASAGoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Like us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>  <b>Find us on <a href=\"http://instagram.com/nasagoddard?vm=grid\" rel=\"nofollow\">Instagram</a></b>"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001101/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/0300607/0300607~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "0300607",
+            "keywords": ["Chandra", "Sagittarius A*", "Sgr A*", "Black Hole"],
+            "date_created": "2003-01-06T00:00:00Z",
+            "media_type": "image",
+            "title": "History of Chandra X-Ray Observatory",
+            "center": "MSFC",
+            "description": "A 2 week observation through the optic eye of the Chandra X-Ray Observatory revealed this sturning explosion occurring in the super massive black hole at the Milky Way's center, known as Sagittarius A or Sgr A*. Huge lobes of 20-million degree Centigrade gas ( red loops in image) flank both sides of the black hole and extend over dozens of light years indicating that enormous explosions occurred several times over the last 10 thousand years. Weighing in at 3-million times the mass of the sun, the Sgr A* is a starved black hole, possibly because explosive events in the past have cleared much of the gas around it."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/0300607/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA20051/PIA20051~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA20051",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["NuSTAR"],
+            "date_created": "2015-10-27T16:54:13Z",
+            "media_type": "image",
+            "title": "Shifting Coronas Around Black Holes Artist Concept",
+            "description_508": "In 2014, NASA Nuclear Spectroscopic Telescope Array, or NuSTAR, and Swift space telescopes witnessed an X-flare from the supermassive black hole in a distant galaxy called Markarian 335. Artist Concept.",
+            "center": "JPL",
+            "description": "A supermassive black hole is depicted in this artist's concept, surrounded by a swirling disk of material falling onto it. The purplish ball of light above the black hole, a feature called the corona, contains highly energetic particles that generate X-ray light. If you could view the corona with your eyes, it would appear nearly invisible since we can't see its X-ray light.  The corona gathers inward (left), becoming brighter, before shooting away from the black hole (middle and right). Astronomers don't know why the coronas shift, but they have learned that this process leads to a brightening of X-ray light that can be observed by telescopes.  Normally, before a black hole's corona shifts, there is already an effect at work called relativistic boosting. As X-ray light from the corona reflects off the black hole's surrounding disk of material -- which is traveling near half the speed of light -- the X-ray light becomes brightened, as seen on the left side of the illustration. This boosting occurs on the side of the disk where the material is traveling toward us. The opposite effect, a dimming of the X-ray light, occurs on the other side of the disk moving away from us.  Another form of relativistic boosting happens when the corona shoots away from the black hole, and later collapses. Its X-ray light is also brightened as the corona travels toward us at very fast speeds, leading to X-ray flares.  In 2014, NASA's Nuclear Spectroscopic Telescope Array, or NuSTAR, and Swift space telescopes witnessed an X-flare from the supermassive black hole in a distant galaxy called Markarian 335. The observations allowed astronomers to link a shifting corona to an X-ray flare for the first time.  http://photojournal.jpl.nasa.gov/catalog/PIA20051"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA20051/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA15810/PIA15810~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA15810",
+            "secondary_creator": "NASA/JPL-Caltech/UCLA",
+            "keywords": ["Wide-field Infrared Survey Explorer WISE"],
+            "date_created": "2012-08-29T17:00:02Z",
+            "media_type": "image",
+            "title": "A Sky Chock-Full of Black Holes",
+            "description_508": "With its all-sky infrared survey, NASA Wide-field Infrared Survey Explorer, or WISE, has identified millions of quasar candidates. Quasars are supermassive black holes with masses millions to billions times greater than our sun.",
+            "center": "JPL",
+            "description": "With its all-sky infrared survey, NASA Wide-field Infrared Survey Explorer, or WISE, has identified millions of quasar candidates. Quasars are supermassive black holes with masses millions to billions times greater than our sun."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA15810/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA21466/PIA21466~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA21466",
+            "secondary_creator": "NASA/ESA/P. Jeffries (STScI)",
+            "keywords": [
+              "Hubble Space Telescope",
+              "Spitzer Space Telescope",
+              "N6946-BH1",
+              "black hole"
+            ],
+            "date_created": "2017-05-25T00:00:00Z",
+            "media_type": "image",
+            "title": "Massive Star Goes Out With a Whimper Instead of a Bang (Artist's Concept)",
+            "description_508": "This illustration shows the final stages in the life of a supermassive star that fails to explode as a supernova, but instead implodes to form a black hole.",
+            "center": "JPL",
+            "description": "Every second a star somewhere out in the universe explodes as a supernova. But some extremely massive stars go out with a whimper instead of a bang. When they do, they can collapse under the crushing tug of gravity and vanish out of sight, only to leave behind a black hole.  The doomed star N6946-BH1 was 25 times as massive as our sun. It began to brighten weakly in 2009. But, by 2015, it appeared to have winked out of existence. By a careful process of elimination, based on observations by the Large Binocular Telescope and NASA's Hubble and Spitzer space telescopes, researchers eventually concluded that the star must have become a black hole. This may be the fate for extremely massive stars in the universe.  This illustration shows the final stages in the life of a supermassive star that fails to explode as a supernova, but instead implodes to form a black hole.   https://photojournal.jpl.nasa.gov/catalog/PIA21466"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA21466/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA18919/PIA18919~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA18919",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["NuSTAR,XMM-Newton"],
+            "date_created": "2015-02-19T18:53:02Z",
+            "media_type": "image",
+            "title": "How Black Hole Winds Blow Artist Concept",
+            "description_508": "Supermassive black holes at the cores of galaxies blast radiation and ultra-fast winds outward, as illustrated in this artist conception based on NASA NuSTAR and ESA XMM-Newton telescopes.",
+            "center": "JPL",
+            "description": "Supermassive black holes at the cores of galaxies blast radiation and ultra-fast winds outward, as illustrated in this artist conception based on NASA NuSTAR and ESA XMM-Newton telescopes."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA18919/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA10093/PIA10093~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA10093",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["Spitzer Space Telescope"],
+            "date_created": "2007-10-25T16:55:03Z",
+            "media_type": "image",
+            "title": "Bursting with Stars and Black Holes  Artist Concept",
+            "description_508": "A growing black hole, called a quasar, is seen at the center of a faraway galaxy in this artist concept. Astronomers using NASA Spitzer and Chandra space telescopes discovered swarms of similar quasars hiding in dusty galaxies in the distant universe.",
+            "center": "JPL",
+            "description": "A growing black hole, called a quasar, is seen at the center of a faraway galaxy in this artist concept. Astronomers using NASA Spitzer and Chandra space telescopes discovered swarms of similar quasars hiding in dusty galaxies in the distant universe."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA10093/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA18467/PIA18467~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA18467",
+            "secondary_creator": "NASA/JPL-Caltech/Institute for Astronomy, Cambridge",
+            "keywords": ["NuSTAR"],
+            "date_created": "2014-08-12T16:38:40Z",
+            "media_type": "image",
+            "title": "Big, Spinning Black Hole Blurs Light",
+            "description_508": "This data plot captured by NASA Nuclear Spectroscopic Telescope Array, or NuSTAR, shows X-ray light streaming from regions near a supermassive black hole known as Markarian 335.",
+            "center": "JPL",
+            "description": "This data plot captured by NASA Nuclear Spectroscopic Telescope Array, or NuSTAR, shows X-ray light streaming from regions near a supermassive black hole known as Markarian 335."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA18467/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA16696/PIA16696~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA16696",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["NuSTAR,XMM-Newton"],
+            "date_created": "2013-02-27T17:50:02Z",
+            "media_type": "image",
+            "title": "How to Measure the Spin of a Black Hole Artist Concept",
+            "description_508": "Black holes are tremendous objects whose immense gravity can distort and twist space-time, the fabric that shapes our universe as this chart from NASA NuSTAR and ESA XMM-Newton telescope illustrates.",
+            "center": "JPL",
+            "description": "Black holes are tremendous objects whose immense gravity can distort and twist space-time, the fabric that shapes our universe as this chart from NASA NuSTAR and ESA XMM-Newton telescope illustrates."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA16696/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/ACD17-0168-12/ACD17-0168-12~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "ACD17-0168-12",
+            "title": "Active Galactic Nucleus",
+            "description": "SCI2017_0007: Artist illustration of the thick ring of dust that can obscure the energetic processes that occur near the supermassive black hole of an active galactic nuclei. The SOFIA studies suggest that the dust distribution is about 30 percent smaller than previously thought. Credit: NASA/SOFIA/Lynette Cook",
+            "photographer": "NASA",
+            "secondary_creator": "SOFIA/Lynette Cook",
+            "keywords": [
+              "black hole",
+              "Galactic nuclei",
+              "artwork",
+              "Lynette Cook"
+            ],
+            "album": "SOFIA",
+            "location": "Ames",
+            "media_type": "image",
+            "date_created": "2017-09-14T00:00:00Z",
+            "description_508": "Artist illustration of the thick ring of dust that can obscure the energetic processes that occur near the supermassive black hole of an active galactic nuclei.",
+            "center": "ARC"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/ACD17-0168-12/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA17562/PIA17562~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA17562",
+            "secondary_creator": "NASA",
+            "keywords": ["Wide-field Infrared Survey Explorer WISE"],
+            "date_created": "2013-12-03T17:58:16Z",
+            "media_type": "image",
+            "title": "Two Black Holes on Way to Becoming One Artist Concept",
+            "description_508": "NASA Wide-field Infrared Survey Explorer, or WISE, helped lead astronomers to what appears to be a new example of a dancing black hole duo.",
+            "center": "JPL",
+            "description": "NASA Wide-field Infrared Survey Explorer, or WISE, helped lead astronomers to what appears to be a new example of a dancing black hole duo."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA17562/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA16214/PIA16214~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA16214",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["NuSTAR"],
+            "date_created": "2012-10-23T18:03:32Z",
+            "media_type": "image",
+            "title": "Pointing X-ray Eyes at our Resident Supermassive Black Hole",
+            "description_508": "NASA NuSTAR has captured these first, focused views of the supermassive black hole at the heart of our Milky Way galaxy in high-energy X-ray light.",
+            "center": "JPL",
+            "description": "NASA NuSTAR has captured these first, focused views of the supermassive black hole at the heart of our Milky Way galaxy in high-energy X-ray light."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA16214/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA20027/PIA20027~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA20027",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": [
+              "Wide-field Infrared Survey Explorer WISE",
+              "artist's concept"
+            ],
+            "date_created": "2016-09-15T15:51:41Z",
+            "media_type": "image",
+            "title": "Infrared Echoes of a Black Hole Eating a Star Illustration",
+            "description_508": "This illustration shows a glowing stream of material from a star as it is being devoured by a supermassive black hole in a tidal disruption flare. Astronomers gained new insights into tidal disruption flares thanks to data from NASA's WISE.",
+            "center": "JPL",
+            "description": "This illustration shows a glowing stream of material from a star as it is being devoured by a supermassive black hole in a tidal disruption flare.  When a star passes within a certain distance of a black hole -- close enough to be gravitationally disrupted -- the stellar material gets stretched and compressed as it falls into the black hole. In the process of being accreted, the gas heats up and creates a lot of optical and ultraviolet light, which destroys nearby dust but merely heats dust further out. The farther dust that is heated emits a large amount of infrared light. In recent years, a few dozen such flares have been discovered, but they are not well understood.  Astronomers gained new insights into tidal disruption flares thanks to data from NASA's Wide-field Infrared Survey Explorer (WISE). Studies using WISE data characterized tidal disruption flares by studying how surrounding dust absorbs and re-emits their light, like echoes. This approach allowed scientists to measure the energy of flares from stellar tidal disruption events more precisely than ever before.   http://photojournal.jpl.nasa.gov/catalog/PIA20027"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA20027/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001102/GSFC_20171208_Archive_e001102~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e001102",
+            "keywords": [
+              "Neutron Stars Rip Each Other Apart to Form Black Hole",
+              "star",
+              "space",
+              "nasa",
+              "universe",
+              "blackhole",
+              "neutronstar",
+              "nasagoddard"
+            ],
+            "album": "Test",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "date_created": "2017-12-08T00:00:00Z",
+            "title": "Neutron Stars Rip Each Other Apart to Form Black Hole",
+            "center": "GSFC",
+            "description": "Simulation frames from this NASA Goddard neutron star merger animation: <a href=\"http://bit.ly/1jolBYY\" rel=\"nofollow\">bit.ly/1jolBYY</a>  Credit: NASA's Goddard Space Flight Center  This supercomputer simulation shows one of the most violent events in the universe: a pair of neutron stars colliding, merging and forming a black hole. A neutron star is the compressed core left behind when a star born with between eight and 30 times the sun's mass explodes as a supernova. Neutron stars pack about 1.5 times the mass of the sun — equivalent to about half a million Earths — into a ball just 12 miles (20 km) across.  As the simulation begins, we view an unequally matched pair of neutron stars weighing 1.4 and 1.7 solar masses. They are separated by only about 11 miles, slightly less distance than their own diameters. Redder colors show regions of progressively lower density.  As the stars spiral toward each other, intense tides begin to deform them, possibly cracking their crusts. Neutron stars possess incredible density, but their surfaces are comparatively thin, with densities about a million times greater than gold. Their interiors crush matter to a much greater degree densities rise by 100 million times in their centers. To begin to imagine such mind-boggling densities, consider that a cubic centimeter of neutron star matter outweighs Mount Everest.  By 7 milliseconds, tidal forces overwhelm and shatter the lesser star. Its superdense contents erupt into the system and curl a spiral arm of incredibly hot material. At 13 milliseconds, the more massive star has accumulated too much mass to support it against gravity and collapses, and a new black hole is born. The black hole's event horizon — its point of no return — is shown by the gray sphere. While most of the matter from both neutron stars will fall into the black hole, some of the less dense, faster moving matter manages to orbit around it, quickly forming a large and rapidly rotating torus. This torus extends for about 124 miles (200 km) and contains the equivalent of 1/5th the mass of our sun.  Scientists think neutron star mergers like this produce short gamma-ray bursts (GRBs). Short GRBs last less than two seconds yet unleash as much energy as all the stars in our galaxy produce over one year.  The rapidly fading afterglow of these explosions presents a challenge to astronomers. A key element in understanding GRBs is getting instruments on large ground-based telescopes to capture afterglows as soon as possible after the burst. The rapid notification and accurate positions provided by NASA's Swift mission creates a vibrant synergy with ground-based observatories that has led to dramatically improved understanding of GRBs, especially for short bursts.  This video is public domain and can be downloaded at: <a href=\"http://svs.gsfc.nasa.gov/vis/a010000/a011500/a011530/index.html\" rel=\"nofollow\">svs.gsfc.nasa.gov/vis/a010000/a011500/a011530/index.html</a>  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA image use policy.</a></b>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASAGoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Like us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>  <b>Find us on <a href=\"http://instagram.com/nasagoddard?vm=grid\" rel=\"nofollow\">Instagram</a></b>"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001102/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA15806/PIA15806~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA15806",
+            "secondary_creator": "NASA/CXC/Ohio State Univ./C.Grier et al.; Optical: NASA/STScI, ESO/WFI; Infrared: NASA/JPL-Caltech",
+            "keywords": [
+              "Chandra X-ray Observatory,Hubble Space Telescope,Spitzer Space T"
+            ],
+            "date_created": "2012-12-13T23:43:43Z",
+            "media_type": "image",
+            "title": "NGC 3627: Revealing Hidden Black Holes",
+            "description_508": "The spiral galaxy NGC 3627, located about 30 million light years from Earth as seen by four NASA telescopes; inset shows the central region, which contains a bright X-ray source that is likely powered by material falling onto a supermassive black hole.",
+            "center": "JPL",
+            "description": "The spiral galaxy NGC 3627, located about 30 million light years from Earth as seen by four NASA telescopes; inset shows the central region, which contains a bright X-ray source that is likely powered by material falling onto a supermassive black hole."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA15806/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA18842/PIA18842~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA18842",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["NuSTAR"],
+            "date_created": "2014-10-08T17:00:03Z",
+            "media_type": "image",
+            "title": "Mass Chart for Dead Stars and Black Holes",
+            "description_508": "This chart illustrates relative masses of super-dense cosmic objects, ranging from white dwarfs to supermassive black holes encased in the cores of most galaxies. The first three dead stars left all form when stars more massive than our sun explode.",
+            "center": "JPL",
+            "description": "This chart illustrates relative masses of super-dense cosmic objects, ranging from white dwarfs to supermassive black holes encased in the cores of most galaxies. The first three dead stars left all form when stars more massive than our sun explode."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA18842/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA10221/PIA10221~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA10221",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["Spitzer Space Telescope"],
+            "date_created": "2008-01-10T19:55:12Z",
+            "media_type": "image",
+            "title": "Galaxies of all Shapes Host Black Holes Artist Concept",
+            "description_508": "Observations from NASA Spitzer Space Telescope provide strong evidence that the slender, bulgeless galaxies can, like their chubbier counterparts, harbor supermassive black holes at their cores in this artist concept.",
+            "center": "JPL",
+            "description": "Observations from NASA Spitzer Space Telescope provide strong evidence that the slender, bulgeless galaxies can, like their chubbier counterparts, harbor supermassive black holes at their cores in this artist concept."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA10221/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA08697/PIA08697~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA08697",
+            "secondary_creator": "NASA/JPL-Caltech/Yonsei University",
+            "keywords": ["Galaxy Evolution Explorer GALEX"],
+            "date_created": "2006-08-23T17:55:15Z",
+            "media_type": "image",
+            "title": "Big Black Holes Mean Bad News for Stars diagram",
+            "description_508": "This diagram illustrates research from NASA Galaxy Evolution Explorer showing that black holes once they reach a critical size can put the brakes on new star formation in elliptical galaxies.",
+            "center": "JPL",
+            "description": "This diagram illustrates research from NASA Galaxy Evolution Explorer showing that black holes once they reach a critical size can put the brakes on new star formation in elliptical galaxies."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA08697/collection.json"
+      },
+      {
+        "links": [
+          {
+            "rel": "captions",
+            "href": "https://images-assets.nasa.gov/video/84_DinerCenterGalaxy/84_DinerCenterGalaxy.srt"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "84_DinerCenterGalaxy",
+            "keywords": [
+              "NASA",
+              "Science",
+              "ScienceCasts",
+              "SMD",
+              "Science Mission Directorate",
+              "astrophysics",
+              "black holes",
+              "Milky Way",
+              "NuSTAR",
+              "Chandra",
+              "x-rays"
+            ],
+            "album": "NASA ScienceCasts",
+            "media_type": "video",
+            "date_created": "2012-11-15T00:00:00Z",
+            "title": "ScienceCast 84: The Diner at the Center of the Galaxy",
+            "center": "HQ",
+            "description": "The Milky Way's supermassive black hole is generally a picky eater, but NASA's NuSTAR spacecraft recently caught it in the act of having a snack!"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/video/84_DinerCenterGalaxy/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001886/GSFC_20171208_Archive_e001886~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e001886",
+            "keywords": [
+              "Best-Ever Snapshot of a Black Hole's Jets",
+              "space",
+              "jets",
+              "nasa",
+              "galaxy",
+              "blackhole",
+              "radiotelescope",
+              "centaurusa"
+            ],
+            "album": "Test",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "date_created": "2017-12-08T00:00:00Z",
+            "title": "Best-Ever Snapshot of a Black Hole's Jets",
+            "center": "GSFC",
+            "description": "NASA image release May 20, 2011  <b>To see a really cool video related to this image go here: <a href=\"http://www.flickr.com/photos/gsfc/5740451675/in/photostream\">www.flickr.com/photos/gsfc/5740451675/in/photostream</a></b>  The giant elliptical galaxy NGC 5128 is the radio source known as Centaurus A. Vast radio-emitting lobes (shown as orange in this optical/radio composite) extend nearly a million light-years from the galaxy. Credit: Capella Observatory (optical), with radio data from Ilana Feain, Tim Cornwell, and Ron Ekers (CSIRO/ATNF), R. Morganti (ASTRON), and N. Junkes (MPIfR).  To read more go to: <a href=\"http://www.nasa.gov/topics/universe/features/radio-particle-jets.html\" rel=\"nofollow\">www.nasa.gov/topics/universe/features/radio-particle-jets...</a>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASA_GoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Join us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001886/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001872/GSFC_20171208_Archive_e001872~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "GSFC_20171208_Archive_e001872",
+            "keywords": [
+              "Space Telescopes Reveal Secrets of Turbulent Black Hole",
+              "star",
+              "space",
+              "nasa",
+              "blackhole",
+              "goddard",
+              "hubble",
+              "hst"
+            ],
+            "date_created": "2017-12-08T00:00:00Z",
+            "location": "Greenbelt, MD",
+            "media_type": "image",
+            "album": "Test",
+            "title": "Space Telescopes Reveal Secrets of Turbulent Black Hole",
+            "center": "GSFC",
+            "description": "NASA image release September 29, 2011  This image of the distant active galaxy Markarian 509 was taken in April 2007 with the Hubble Space Telescope's Wide Field Camera 2.   To read more go to: <a href=\"http://www.nasa.gov/mission_pages/hubble/science/turbulent-black-hole.html\" rel=\"nofollow\">www.nasa.gov/mission_pages/hubble/science/turbulent-black...</a>  Credit: NASA, ESA, G. Kriss (STScI), and J. de Plaa (SRON Netherlands Institute for Space Research); Acknowledgment: B. Peterson (Ohio State University)  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA image use policy.</a></b>  <b><a href=\"http://www.nasa.gov/centers/goddard/home/index.html\" rel=\"nofollow\">NASA Goddard Space Flight Center</a></b> enables NASA’s mission through four scientific endeavors: Earth Science, Heliophysics, Solar System Exploration, and Astrophysics. Goddard plays a leading role in NASA’s accomplishments by contributing compelling scientific knowledge to advance the Agency’s mission.  <b>Follow us on <a href=\"http://twitter.com/NASA_GoddardPix\" rel=\"nofollow\">Twitter</a></b>  <b>Like us on <a href=\"http://www.facebook.com/pages/Greenbelt-MD/NASA-Goddard/395013845897?ref=tsd\" rel=\"nofollow\">Facebook</a></b>  <b>Find us on <a href=\"http://instagrid.me/nasagoddard/?vm=grid\" rel=\"nofollow\">Instagram</a></b>"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001872/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/KSC-2011-6955/KSC-2011-6955~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "KSC-2011-6955",
+            "keywords": ["Pegasus XL, NuSTAR, black holes, Kwajalein Atoll"],
+            "date_created": "2011-09-13T00:00:00Z",
+            "location": "Vandenberg AFB, CA",
+            "media_type": "image",
+            "title": "KSC-2011-6955",
+            "center": "KSC",
+            "description": "VANDENBERG AIR FORCE BASE, Calif. – In a clean room at Vandenberg Air Force Base in California, technicians prepare to do a fillet and wing fit check on the Pegasus XL launch vehicle. The Orbital Sciences Corp. Pegasus rocket will launch the Nuclear Spectroscopic Telescope Array (NuSTAR) into space.    After the rocket and spacecraft are processed at Vandenberg, they will be flown on the Orbital Sciences’ L-1011 carrier aircraft to the Ronald Reagan Ballistic Missile Defense Test Site at the Pacific Ocean’s Kwajalein Atoll for launch. The high-energy X-ray telescope will conduct a census for black holes, map radioactive material in young supernovae remnants, and study the origins of cosmic rays and the extreme physics around collapsed stars. For more information, visit science.nasa.gov/missions/nustar/. Photo credit: NASA/Randy Beaudoin, VAFB"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/KSC-2011-6955/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/KSC-2011-6956/KSC-2011-6956~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "KSC-2011-6956",
+            "keywords": ["Pegasus XL, NuSTAR, black holes, Kwajalein Atoll"],
+            "date_created": "2011-09-13T00:00:00Z",
+            "location": "Vandenberg AFB, CA",
+            "media_type": "image",
+            "title": "KSC-2011-6956",
+            "center": "KSC",
+            "description": "VANDENBERG AIR FORCE BASE, Calif. – In a clean room at Vandenberg Air Force Base in California, technicians perform a fillet and wing fit check on the Pegasus XL launch vehicle. The Orbital Sciences Corp. Pegasus rocket will launch the Nuclear Spectroscopic Telescope Array (NuSTAR) into space.    After the rocket and spacecraft are processed at Vandenberg, they will be flown on the Orbital Sciences’ L-1011 carrier aircraft to the Ronald Reagan Ballistic Missile Defense Test Site at the Pacific Ocean’s Kwajalein Atoll for launch. The high-energy X-ray telescope will conduct a census for black holes, map radioactive material in young supernovae remnants, and study the origins of cosmic rays and the extreme physics around collapsed stars. For more information, visit science.nasa.gov/missions/nustar/. Photo credit: NASA/Randy Beaudoin, VAFB"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/KSC-2011-6956/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/KSC-2011-7032/KSC-2011-7032~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "KSC-2011-7032",
+            "keywords": ["NuSTAR, black holes, VAFB, Kwajalein Atoll, Pegasus"],
+            "date_created": "2011-09-16T00:00:00Z",
+            "location": "Vandenberg AFB, CA",
+            "media_type": "image",
+            "title": "KSC-2011-7032",
+            "center": "KSC",
+            "description": "VANDENBERG AIR FORCE BASE, Calif. – In a clean room at Vandenberg Air Force Base in California, technicians complete a second fillet and wing fit check on the Pegasus XL launch vehicle. The Orbital Sciences Corp. Pegasus rocket will launch the Nuclear Spectroscopic Telescope Array (NuSTAR) into space.    After the rocket and spacecraft are processed at Vandenberg, they will be flown on the Orbital Sciences’ L-1011 carrier aircraft to the Ronald Reagan Ballistic Missile Defense Test Site at the Pacific Ocean’s Kwajalein Atoll for launch. The high-energy X-ray telescope will conduct a census for black holes, map radioactive material in young supernovae remnants, and study the origins of cosmic rays and the extreme physics around collapsed stars. For more information, visit science.nasa.gov/missions/nustar/. Photo credit: NASA/Randy Beaudoin, VAFB"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/KSC-2011-7032/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/KSC-2011-7033/KSC-2011-7033~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "KSC-2011-7033",
+            "keywords": ["NuSTAR, black holes, VAFB, Kwajalein Atoll, Pegasus"],
+            "date_created": "2011-09-16T00:00:00Z",
+            "location": "Vandenberg AFB, CA",
+            "media_type": "image",
+            "title": "KSC-2011-7033",
+            "center": "KSC",
+            "description": "VANDENBERG AIR FORCE BASE, Calif. – In a clean room at Vandenberg Air Force Base in California, technicians complete a second fillet and wing fit check on the Pegasus XL launch vehicle. The Orbital Sciences Corp. Pegasus rocket will launch the Nuclear Spectroscopic Telescope Array (NuSTAR) into space.    After the rocket and spacecraft are processed at Vandenberg, they will be flown on the Orbital Sciences’ L-1011 carrier aircraft to the Ronald Reagan Ballistic Missile Defense Test Site at the Pacific Ocean’s Kwajalein Atoll for launch. The high-energy X-ray telescope will conduct a census for black holes, map radioactive material in young supernovae remnants, and study the origins of cosmic rays and the extreme physics around collapsed stars. For more information, visit science.nasa.gov/missions/nustar/. Photo credit: NASA/Randy Beaudoin, VAFB"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/KSC-2011-7033/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/KSC-2011-7034/KSC-2011-7034~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "KSC-2011-7034",
+            "keywords": ["NuSTAR, black holes, VAFB, Kwajalein Atoll, Pegasus"],
+            "date_created": "2011-09-16T00:00:00Z",
+            "location": "Vandenberg AFB, CA",
+            "media_type": "image",
+            "title": "KSC-2011-7034",
+            "center": "KSC",
+            "description": "VANDENBERG AIR FORCE BASE, Calif. – In a clean room at Vandenberg Air Force Base in California, technicians complete a second fillet and wing fit check on the Pegasus XL launch vehicle. The Orbital Sciences Corp. Pegasus rocket will launch the Nuclear Spectroscopic Telescope Array (NuSTAR) into space.    After the rocket and spacecraft are processed at Vandenberg, they will be flown on the Orbital Sciences’ L-1011 carrier aircraft to the Ronald Reagan Ballistic Missile Defense Test Site at the Pacific Ocean’s Kwajalein Atoll for launch. The high-energy X-ray telescope will conduct a census for black holes, map radioactive material in young supernovae remnants, and study the origins of cosmic rays and the extreme physics around collapsed stars. For more information, visit science.nasa.gov/missions/nustar/. Photo credit: NASA/Randy Beaudoin, VAFB"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/KSC-2011-7034/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/KSC-2011-6952/KSC-2011-6952~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "KSC-2011-6952",
+            "keywords": ["Pegasus XL, NuSTAR, black holes, Kwajalein Atoll"],
+            "date_created": "2011-09-13T00:00:00Z",
+            "location": "Vandenberg AFB, CA",
+            "media_type": "image",
+            "title": "KSC-2011-6952",
+            "center": "KSC",
+            "description": "VANDENBERG AIR FORCE BASE, Calif. – In a clean room at Vandenberg Air Force Base in California, technicians prepare to do a fillet and wing fit check on the Pegasus XL launch vehicle. The Orbital Sciences Corp. Pegasus rocket will launch the Nuclear Spectroscopic Telescope Array (NuSTAR) into space.    After the rocket and spacecraft are processed at Vandenberg, they will be flown on the Orbital Sciences’ L-1011 carrier aircraft to the Ronald Reagan Ballistic Missile Defense Test Site at the Pacific Ocean’s Kwajalein Atoll for launch. The high-energy X-ray telescope will conduct a census for black holes, map radioactive material in young supernovae remnants, and study the origins of cosmic rays and the extreme physics around collapsed stars. For more information, visit science.nasa.gov/missions/nustar/. Photo credit: NASA/Randy Beaudoin, VAFB"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/KSC-2011-6952/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/KSC-2011-6953/KSC-2011-6953~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "KSC-2011-6953",
+            "keywords": ["Pegasus XL, NuSTAR, black holes, Kwajalein Atoll"],
+            "date_created": "2011-09-13T00:00:00Z",
+            "location": "Vandenberg AFB, CA",
+            "media_type": "image",
+            "title": "KSC-2011-6953",
+            "center": "KSC",
+            "description": "VANDENBERG AIR FORCE BASE, Calif. – In a clean room at Vandenberg Air Force Base in California, the Pegasus XL launch vehicle awaits a fillet and wing fit check. The Orbital Sciences Corp. Pegasus rocket will launch the Nuclear Spectroscopic Telescope Array (NuSTAR) into space.    After the rocket and spacecraft are processed at Vandenberg, they will be flown on the Orbital Sciences’ L-1011 carrier aircraft to the Ronald Reagan Ballistic Missile Defense Test Site at the Pacific Ocean’s Kwajalein Atoll for launch. The high-energy X-ray telescope will conduct a census for black holes, map radioactive material in young supernovae remnants, and study the origins of cosmic rays and the extreme physics around collapsed stars. For more information, visit science.nasa.gov/missions/nustar/. Photo credit: NASA/Randy Beaudoin, VAFB"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/KSC-2011-6953/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/KSC-2011-6954/KSC-2011-6954~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "KSC-2011-6954",
+            "keywords": ["Pegasus XL, NuSTAR, black holes, Kwajalein Atoll"],
+            "date_created": "2011-09-13T00:00:00Z",
+            "location": "Vandenberg AFB, CA",
+            "media_type": "image",
+            "title": "KSC-2011-6954",
+            "center": "KSC",
+            "description": "VANDENBERG AIR FORCE BASE, Calif. – In a clean room at Vandenberg Air Force Base in California, technicians prepare to do a fillet and wing fit check on the Pegasus XL launch vehicle. The Orbital Sciences Corp. Pegasus rocket will launch the Nuclear Spectroscopic Telescope Array (NuSTAR) into space.    After the rocket and spacecraft are processed at Vandenberg, they will be flown on the Orbital Sciences’ L-1011 carrier aircraft to the Ronald Reagan Ballistic Missile Defense Test Site at the Pacific Ocean’s Kwajalein Atoll for launch. The high-energy X-ray telescope will conduct a census for black holes, map radioactive material in young supernovae remnants, and study the origins of cosmic rays and the extreme physics around collapsed stars. For more information, visit science.nasa.gov/missions/nustar/. Photo credit: NASA/Randy Beaudoin, VAFB"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/KSC-2011-6954/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/KSC-2011-6957/KSC-2011-6957~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "KSC-2011-6957",
+            "keywords": ["Pegasus XL, NuSTAR, black holes, Kwajalein Atoll"],
+            "date_created": "2011-09-13T00:00:00Z",
+            "location": "Vandenberg AFB, CA",
+            "media_type": "image",
+            "title": "KSC-2011-6957",
+            "center": "KSC",
+            "description": "VANDENBERG AIR FORCE BASE, Calif. – In a clean room at Vandenberg Air Force Base in California, technicians perform a fillet and wing fit check on the Pegasus XL launch vehicle. The Orbital Sciences Corp. Pegasus rocket will launch the Nuclear Spectroscopic Telescope Array (NuSTAR) into space.    After the rocket and spacecraft are processed at Vandenberg, they will be flown on the Orbital Sciences’ L-1011 carrier aircraft to the Ronald Reagan Ballistic Missile Defense Test Site at the Pacific Ocean’s Kwajalein Atoll for launch. The high-energy X-ray telescope will conduct a census for black holes, map radioactive material in young supernovae remnants, and study the origins of cosmic rays and the extreme physics around collapsed stars. For more information, visit science.nasa.gov/missions/nustar/. Photo credit: NASA/Randy Beaudoin, VAFB"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/KSC-2011-6957/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/KSC-2011-6958/KSC-2011-6958~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "KSC-2011-6958",
+            "keywords": ["Pegasus XL, NuSTAR, black holes, Kwajalein Atoll"],
+            "date_created": "2011-09-13T00:00:00Z",
+            "location": "Vandenberg AFB, CA",
+            "media_type": "image",
+            "title": "KSC-2011-6958",
+            "center": "KSC",
+            "description": "VANDENBERG AIR FORCE BASE, Calif. – In a clean room at Vandenberg Air Force Base in California, technicians perform a fillet and wing fit check on the Pegasus XL launch vehicle. The Orbital Sciences Corp. Pegasus rocket will launch the Nuclear Spectroscopic Telescope Array (NuSTAR) into space.    After the rocket and spacecraft are processed at Vandenberg, they will be flown on the Orbital Sciences’ L-1011 carrier aircraft to the Ronald Reagan Ballistic Missile Defense Test Site at the Pacific Ocean’s Kwajalein Atoll for launch. The high-energy X-ray telescope will conduct a census for black holes, map radioactive material in young supernovae remnants, and study the origins of cosmic rays and the extreme physics around collapsed stars. For more information, visit science.nasa.gov/missions/nustar/. Photo credit: NASA/Randy Beaudoin, VAFB"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/KSC-2011-6958/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/KSC-2011-7028/KSC-2011-7028~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "KSC-2011-7028",
+            "keywords": ["NuSTAR, black holes, VAFB, Kwajalein Atoll, Pegasus"],
+            "date_created": "2011-09-16T00:00:00Z",
+            "location": "Vandenberg AFB, CA",
+            "media_type": "image",
+            "title": "KSC-2011-7028",
+            "center": "KSC",
+            "description": "VANDENBERG AIR FORCE BASE, Calif. – In a clean room at Vandenberg Air Force Base in California, technicians prepare to complete a second fillet and wing fit check on the Pegasus XL launch vehicle. The Orbital Sciences Corp. Pegasus rocket will launch the Nuclear Spectroscopic Telescope Array (NuSTAR) into space.    After the rocket and spacecraft are processed at Vandenberg, they will be flown on the Orbital Sciences’ L-1011 carrier aircraft to the Ronald Reagan Ballistic Missile Defense Test Site at the Pacific Ocean’s Kwajalein Atoll for launch. The high-energy X-ray telescope will conduct a census for black holes, map radioactive material in young supernovae remnants, and study the origins of cosmic rays and the extreme physics around collapsed stars. For more information, visit science.nasa.gov/missions/nustar/. Photo credit: NASA/Randy Beaudoin, VAFB"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/KSC-2011-7028/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/KSC-2011-7029/KSC-2011-7029~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "KSC-2011-7029",
+            "keywords": ["NuSTAR, black holes, VAFB, Kwajalein Atoll, Pegasus"],
+            "date_created": "2011-09-16T00:00:00Z",
+            "location": "Vandenberg AFB, CA",
+            "media_type": "image",
+            "title": "KSC-2011-7029",
+            "center": "KSC",
+            "description": "VANDENBERG AIR FORCE BASE, Calif. – In a clean room at Vandenberg Air Force Base in California, technicians prepare to complete a second fillet and wing fit check on the Pegasus XL launch vehicle. The Orbital Sciences Corp. Pegasus rocket will launch the Nuclear Spectroscopic Telescope Array (NuSTAR) into space.    After the rocket and spacecraft are processed at Vandenberg, they will be flown on the Orbital Sciences’ L-1011 carrier aircraft to the Ronald Reagan Ballistic Missile Defense Test Site at the Pacific Ocean’s Kwajalein Atoll for launch. The high-energy X-ray telescope will conduct a census for black holes, map radioactive material in young supernovae remnants, and study the origins of cosmic rays and the extreme physics around collapsed stars. For more information, visit science.nasa.gov/missions/nustar/. Photo credit: NASA/Randy Beaudoin, VAFB"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/KSC-2011-7029/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/KSC-2011-7030/KSC-2011-7030~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "KSC-2011-7030",
+            "keywords": ["NuSTAR, black holes, VAFB, Kwajalein Atoll, Pegasus"],
+            "date_created": "2011-09-16T00:00:00Z",
+            "location": "Vandenberg AFB, CA",
+            "media_type": "image",
+            "title": "KSC-2011-7030",
+            "center": "KSC",
+            "description": "VANDENBERG AIR FORCE BASE, Calif. – In a clean room at Vandenberg Air Force Base in California, technicians prepare to complete a second fillet and wing fit check on the Pegasus XL launch vehicle. The Orbital Sciences Corp. Pegasus rocket will launch the Nuclear Spectroscopic Telescope Array (NuSTAR) into space.    After the rocket and spacecraft are processed at Vandenberg, they will be flown on the Orbital Sciences’ L-1011 carrier aircraft to the Ronald Reagan Ballistic Missile Defense Test Site at the Pacific Ocean’s Kwajalein Atoll for launch. The high-energy X-ray telescope will conduct a census for black holes, map radioactive material in young supernovae remnants, and study the origins of cosmic rays and the extreme physics around collapsed stars. For more information, visit science.nasa.gov/missions/nustar/. Photo credit: NASA/Randy Beaudoin, VAFB"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/KSC-2011-7030/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/KSC-2011-7031/KSC-2011-7031~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "KSC-2011-7031",
+            "keywords": ["NuSTAR, black holes, VAFB, Kwajalein Atoll, Pegasus"],
+            "date_created": "2011-09-16T00:00:00Z",
+            "location": "Vandenberg AFB, CA",
+            "media_type": "image",
+            "title": "KSC-2011-7031",
+            "center": "KSC",
+            "description": "VANDENBERG AIR FORCE BASE, Calif. – In a clean room at Vandenberg Air Force Base in California, technicians complete a second fillet and wing fit check on the Pegasus XL launch vehicle. The Orbital Sciences Corp. Pegasus rocket will launch the Nuclear Spectroscopic Telescope Array (NuSTAR) into space.    After the rocket and spacecraft are processed at Vandenberg, they will be flown on the Orbital Sciences’ L-1011 carrier aircraft to the Ronald Reagan Ballistic Missile Defense Test Site at the Pacific Ocean’s Kwajalein Atoll for launch. The high-energy X-ray telescope will conduct a census for black holes, map radioactive material in young supernovae remnants, and study the origins of cosmic rays and the extreme physics around collapsed stars. For more information, visit science.nasa.gov/missions/nustar/. Photo credit: NASA/Randy Beaudoin, VAFB"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/KSC-2011-7031/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA22356/PIA22356~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA22356",
+            "secondary_creator": "NRAO/AUI/NSF/NASA/STScI",
+            "keywords": [
+              "Hubble Space Telescope",
+              "black hole",
+              "TDE",
+              "tidal disruption event",
+              "ARP299A"
+            ],
+            "date_created": "2018-06-15T00:00:00Z",
+            "media_type": "image",
+            "title": "A Tidal Disruption Event in Arp299B",
+            "description_508": "An image of the galaxy Arp299B, which is undergoing a merging process with Arp299A (the galaxy to the left), captured by NASA's Hubble space telescope.",
+            "center": "JPL",
+            "description": "An image of the galaxy Arp299B, which is undergoing a merging process with Arp299A (the galaxy to the left), captured by NASA's Hubble space telescope. The inset features an artist's illustration of a tidal disruption event (TDE), which occurs when a star passes fatally close to a supermassive black hole. A TDE was recently observed near the center of Arp299B.   https://photojournal.jpl.nasa.gov/catalog/PIA22356"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA22356/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA08696/PIA08696~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA08696",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["Galaxy Evolution Explorer GALEX"],
+            "date_created": "2006-08-23T17:55:14Z",
+            "media_type": "image",
+            "title": "An Unwelcome Place for New Stars artist concept",
+            "description_508": "This artist concept depicts a supermassive black hole at the center of a galaxy. NASA Galaxy Evolution Explorer found evidence that black holes once they grow to a critical size stifle the formation of new stars in elliptical galaxies.",
+            "center": "JPL",
+            "description": "This artist concept depicts a supermassive black hole at the center of a galaxy. NASA Galaxy Evolution Explorer found evidence that black holes once they grow to a critical size stifle the formation of new stars in elliptical galaxies."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA08696/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA15414/PIA15414~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA15414",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["Wide-field Infrared Survey Explorer WISE"],
+            "date_created": "2012-04-12T21:05:00Z",
+            "media_type": "image",
+            "title": "Cosmic Jets Coming at You Artist Concept",
+            "description_508": "This artist concept shows a feeding, or active, supermassive black hole with a jet streaming outward at nearly the speed of light. Such active black holes are often found at the hearts of elliptical galaxies.",
+            "center": "JPL",
+            "description": "This artist concept shows a feeding, or active, supermassive black hole with a jet streaming outward at nearly the speed of light. Such active black holes are often found at the hearts of elliptical galaxies."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA15414/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA15424/PIA15424~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA15424",
+            "secondary_creator": "NASA/JPL-Caltech/UCLA",
+            "keywords": ["Wide-field Infrared Survey Explorer WISE"],
+            "date_created": "2012-04-12T21:06:00Z",
+            "media_type": "image",
+            "title": "Lone Blazar",
+            "description_508": "This image from NASA WISE spacecraft shows a blazar, a voracious supermassive black hole inside a galaxy with a jet that happens to be pointed right toward Earth. Active black holes are often found at the hearts of elliptical galaxies.",
+            "center": "JPL",
+            "description": "This image from NASA WISE spacecraft shows a blazar, a voracious supermassive black hole inside a galaxy with a jet that happens to be pointed right toward Earth. Active black holes are often found at the hearts of elliptical galaxies."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA15424/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA16213/PIA16213~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA16213",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["NuSTAR"],
+            "date_created": "2012-10-23T18:03:31Z",
+            "media_type": "image",
+            "title": "First Look at Milky Way Monster in High-Energy X-ray Light",
+            "description_508": "These images, taken by NASA black-hole hunter, NuSTAR, are the first, focused high-energy X-ray views of the area surrounding the supermassive black hole, called Sagittarius A*, at the center of our galaxy.",
+            "center": "JPL",
+            "description": "These images, taken by NASA black-hole hunter, NuSTAR, are the first, focused high-energy X-ray views of the area surrounding the supermassive black hole, called Sagittarius A*, at the center of our galaxy."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA16213/collection.json"
+      },
+      {
+        "links": [
+          {
+            "rel": "captions",
+            "href": "https://images-assets.nasa.gov/video/176_Nanoflares/176_Nanoflares.srt"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "176_Nanoflares",
+            "keywords": [
+              "NASA",
+              "Science",
+              "ScienceCasts",
+              "SMD",
+              "Science Mission Directorate",
+              "astrophysics",
+              "NuSTAR",
+              "black holes",
+              "solar cycle",
+              "coronal heating",
+              "heliophysics",
+              "nanoflares"
+            ],
+            "album": "NASA ScienceCasts",
+            "media_type": "video",
+            "date_created": "2015-03-18T00:00:00Z",
+            "title": "ScienceCast 176: The Mystery of Nanoflares",
+            "center": "HQ",
+            "description": "Tiny solar flares on the sun may be having an outsized effect on the temperature of the sun's atmosphere. To investigate, scientists will observe these \"nanoflares\" using a space telescope built for black holes."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/video/176_Nanoflares/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA16114/PIA16114~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA16114",
+            "secondary_creator": "NASA/ESA",
+            "date_created": "2012-08-31T01:12:13Z",
+            "media_type": "image",
+            "title": "Quasar Drenched in Water Vapor Artist Concept",
+            "description_508": "Artist concept illustrates a quasar, or feeding black hole, similar to APM 08279+5255, where astronomers discovered huge amounts of water vapor. Gas and dust likely form a torus around the central black hole, with clouds of charged gas above and below.",
+            "center": "JPL",
+            "description": "Artist concept illustrates a quasar, or feeding black hole, similar to APM 08279+5255, where astronomers discovered huge amounts of water vapor. Gas and dust likely form a torus around the central black hole, with clouds of charged gas above and below."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA16114/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/8003548/8003548~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "8003548",
+            "keywords": [
+              "High Energy Astronomy Observatory (HEAO)-2",
+              "HEAO-2",
+              "Einstein Observatory",
+              "Black Hole",
+              "Cygnus X-1"
+            ],
+            "date_created": "1980-01-01T00:00:00Z",
+            "media_type": "image",
+            "title": "High Energy Astronomy Observatory (HEAO)",
+            "center": "MSFC",
+            "description": "This image of the suspected Black Hole, Cygnus X-1, was the first object seen by the High Energy Astronomy Observatory (HEAO)-2/Einstein Observatory. According to the theories to date, one concept of a black hole is a star, perhaps 10 times more massive than the Sun, that has entered the last stages of stelar evolution. There is an explosion triggered by nuclear reactions after which the star's outer shell of lighter elements and gases is blown away into space and the heavier elements in the stellar core begin to collapse upon themselves. Once this collapse begins, the inexorable force of gravity continues to compact the material until it becomes so dense it is squeezed into a mere point and nothing can escape from its extreme gravitational field, not even light. The HEAO-2, the first imaging and largest x-ray telescope built to date, was capable of producing actual photographs of x-ray objects. Shortly after launch, the HEAO-2 was nicknamed the Einstein Observatory by its scientific experimenters in honor of the centernial of the birth of Albert Einstein, whose concepts of relativity and gravitation have influenced much of modern astrophysics, particularly x-ray astronomy. "
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/8003548/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/0200206/0200206~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "0200206",
+            "keywords": [
+              "Chandra X-Ray Observatory",
+              "CXO",
+              "Spectrum",
+              "Black Hole"
+            ],
+            "date_created": "2000-04-01T00:00:00Z",
+            "media_type": "image",
+            "title": "History of Chandra X-Ray Observatory",
+            "center": "MSFC",
+            "description": "This Chandra X-Ray Observatory (CXO) image is a spectrum of a black hole, which is similar to the colorful spectrum of sunlight produced by a prism. The x-rays of interest are shown here recorded in bright stripes that run rightward and leftward from the center of the image. These x-rays are sorted precisely according to their energy with the highest-energy x-rays near the center of the image and the lower-energy x-rays farther out. The spectrum was obtained by using the Low Energy Transmission Grating (LETG), which intercepts x-rays and changes their direction by the amounts that depend sensitively on the x-ray energy. The assembly holds 540 gold transmission gratings. When in place behind the mirrors, the gratings intercept the x-rays reflected from the telescope. The bright spot at the center is due to a fraction of the x-ray radiation that is not deflected by the LETG. The spokes that intersect the central spot and the faint diagonal rays that flank the spectrum itself are artifacts due to the structure that supports the LETG grating elements. (Photo credit: NASA Cfa/J. McClintock et al)"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/0200206/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA17440/PIA17440~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA17440",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["NuSTAR"],
+            "date_created": "2013-09-05T16:00:00Z",
+            "media_type": "image",
+            "title": "Black Holes Shine for NuSTAR",
+            "description_508": "NASA NuSTAR serendipitous discovery in this field lies to the left of a galaxy, called IC751, at which the telescope originally intended to look.",
+            "center": "JPL",
+            "description": "NASA NuSTAR serendipitous discovery in this field lies to the left of a galaxy, called IC751, at which the telescope originally intended to look."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA17440/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA15620/PIA15620~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA15620",
+            "secondary_creator": "NASA/JPL-Caltech/JHU/UCSC",
+            "keywords": ["Galaxy Evolution Explorer GALEX"],
+            "date_created": "2012-05-02T17:00:02Z",
+            "media_type": "image",
+            "title": "Black Hole Swallows a Star",
+            "description_508": "These images, taken with NASA Galaxy Evolution Explorer and the Pan-STARRS1 telescope in Hawaii, show a brightening inside a galaxy caused by a flare from its nucleus. The arrow in each image points to the galaxy.",
+            "center": "JPL",
+            "description": "These images, taken with NASA Galaxy Evolution Explorer and the Pan-STARRS1 telescope in Hawaii, show a brightening inside a galaxy caused by a flare from its nucleus. The arrow in each image points to the galaxy."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA15620/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA15777/PIA15777~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA15777",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["NuSTAR"],
+            "date_created": "2012-05-22T18:12:17Z",
+            "media_type": "image",
+            "title": "NuSTAR Orbits Earth Artist Concept",
+            "description_508": "This artist concept shows NASA NuSTAR mission orbiting Earth. NuSTAR will hunt for hidden black holes and other exotic cosmic objects.",
+            "center": "JPL",
+            "description": "This artist concept shows NASA NuSTAR mission orbiting Earth. NuSTAR will hunt for hidden black holes and other exotic cosmic objects."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA15777/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA20912/PIA20912~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA20912",
+            "secondary_creator": "NASA/JPL-Caltech/GSFC",
+            "keywords": [
+              "Wide-field Infrared Survey Explorer WISE",
+              "blazars",
+              "artist concept"
+            ],
+            "date_created": "2016-08-24T14:45:29Z",
+            "media_type": "image",
+            "title": "Blazar Artist Concept",
+            "description_508": "Black-hole-powered galaxies called blazars are the most common sources detected by NASA's Fermi Gamma-ray Space Telescope as shown in this artist concept.",
+            "center": "JPL",
+            "description": "Black-hole-powered galaxies called blazars are the most common sources detected by NASA's Fermi Gamma-ray Space Telescope. As matter falls toward the supermassive black hole at the galaxy's center, some of it is accelerated outward at nearly the speed of light along jets pointed in opposite directions. When one of the jets happens to be aimed in the direction of Earth, as illustrated here, the galaxy appears especially bright and is classified as a blazar.  http://photojournal.jpl.nasa.gov/catalog/PIA20912"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA20912/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA20058/PIA20058~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA20058",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": [
+              "Hubble Space Telescope,NuSTAR",
+              "spiral galaxy",
+              "Galaxy NGC 1068"
+            ],
+            "date_created": "2015-12-17T16:50:02Z",
+            "media_type": "image",
+            "title": "Hidden Lair at the Heart of Galaxy NGC 1068",
+            "description_508": "Galaxy NGC 1068 can be seen in close-up in this view from NASA's Hubble Space Telescope. NuSTAR data revealed that the torus of gas and dust surrounding the black hole, also referred to as a doughnut, is more clumpy than previously thought.",
+            "center": "JPL",
+            "description": "Galaxy NGC 1068 can be seen in close-up in this view from NASA's Hubble Space Telescope. NuSTAR's high-energy X-rays eyes were able to obtain the best view yet into the hidden lair of the galaxy's central, supermassive black hole. This active black hole -- shown as an illustration in the zoomed-in inset -- is one of the most obscured known, meaning that it is surrounded by extremely thick clouds of gas and dust.  The NuSTAR data revealed that the torus of gas and dust surrounding the black hole, also referred to as a doughnut, is more clumpy than previously thought. doughnuts around active, supermassive black holes were originally proposed in the mid-1980s to be smooth entities. More recently, researchers have been finding that doughnuts are not so smooth but have lumps. NuSTAR's latest finding shows that this is true for even the thickest of doughnuts.  http://photojournal.jpl.nasa.gov/catalog/PIA20058"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA20058/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA21467/PIA21467~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA21467",
+            "secondary_creator": "NASA/ESA/C. Kochanek (OSU)",
+            "keywords": [
+              "Hubble Space Telescope",
+              "N6946-BH1",
+              "spiral galaxy",
+              "NGC 6946"
+            ],
+            "date_created": "2017-05-25T00:00:00Z",
+            "media_type": "image",
+            "title": "Massive Star Goes Out With a Whimper Instead of a Bang",
+            "description_508": "This pair of visible-light and near-infrared photos from NASA's Hubble Space Telescope shows the giant star N6946-BH1 before and after it vanished out of sight by imploding to form a black hole.",
+            "center": "JPL",
+            "description": "This pair of visible-light and near-infrared photos from NASA's Hubble Space Telescope shows the giant star N6946-BH1 before and after it vanished out of sight by imploding to form a black hole.  The left image shows the star, which is 25 times the mass of our sun, as it looked in 2007. In 2009, the star shot up in brightness to become over 1 million times more luminous than our sun for several months. But then it seemed to vanish, as seen in the right panel image from 2015. A small amount of infrared light has been detected from where the star used to be. This radiation probably comes from debris falling onto a black hole.  The black hole is located 22 million light-years away in the spiral galaxy NGC 6946.  https://photojournal.jpl.nasa.gov/catalog/PIA21467"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA21467/collection.json"
+      },
+      {
+        "links": [
+          {
+            "rel": "captions",
+            "href": "https://images-assets.nasa.gov/video/NHQ_2017_1201_James Webb Space Telescope Out of Chamber “A” on This Week @NASA – December 1, 2017/NHQ_2017_1201_James Webb Space Telescope Out of Chamber “A” on This Week @NASA – December 1, 2017.srt"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "NHQ_2017_1201_James Webb Space Telescope Out of Chamber “A” on This Week @NASA – December 1, 2017",
+            "keywords": [
+              "This Week at NASA",
+              "James Webb Space Telescope",
+              "Johnson Space Center",
+              "Mars Rover",
+              "Black Hole",
+              "SpaceX",
+              "Andromeda Galaxy",
+              "Apollo Mission Control Center"
+            ],
+            "date_created": "2017-12-01T00:00:00Z",
+            "media_type": "video",
+            "title": "James Webb Space Telescope Out of Chamber “A” on This Week @NASA – December 1, 2017",
+            "center": "HQ",
+            "description": "Our James Webb Space Telescope is now out of the historic Chamber A vacuum facility at our Johnson Space Center in Houston, after completing cryogenic testing designed to ensure the telescope works well in the cold, airless environment of space. Set to launch in 2019, Webb will study every phase in the history of our Universe, starting with the first luminous glows following the Big Bang. Also, NASA’s Next Mars Rover Mission, New Space Station Crew Trains for Launch, Update for Next SpaceX Launch to Space Station, Giant Black Hole Pair Photobombs Andromeda Galaxy, and Historic Apollo Mission Control Center Will Be Restored!"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/video/NHQ_2017_1201_James Webb Space Telescope Out of Chamber “A” on This Week @NASA – December 1, 2017/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA17997/PIA17997~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA17997",
+            "secondary_creator": "NASA/JPL-Caltech",
+            "keywords": ["Spitzer Space Telescope"],
+            "date_created": "2014-03-26T18:00:39Z",
+            "media_type": "image",
+            "title": "Bulgeless Galaxy Hides Black Hole",
+            "description_508": "The galaxy NGC 4395 is shown here in infrared light, captured by NASA Spitzer Space Telescope. This dwarf galaxy is relatively small in comparison with our Milky Way galaxy, which is nearly 1,000 times more massive.",
+            "center": "JPL",
+            "description": "The galaxy NGC 4395 is shown here in infrared light, captured by NASA Spitzer Space Telescope. This dwarf galaxy is relatively small in comparison with our Milky Way galaxy, which is nearly 1,000 times more massive."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA17997/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA09932/PIA09932~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA09932",
+            "secondary_creator": "NASA/JPL-Caltech/University of Manchester",
+            "keywords": ["Spitzer Space Telescope"],
+            "date_created": "2007-10-09T17:19:51Z",
+            "media_type": "image",
+            "title": "A Wealth of Dust Grains in Quasar Winds",
+            "description_508": "This plot of data captured by NASA Spitzer Space Telescope reveals dust entrained in the winds rushing away from a quasar, or growing black hole. The quasar is called PG2112+059",
+            "center": "JPL",
+            "description": "This plot of data captured by NASA Spitzer Space Telescope reveals dust entrained in the winds rushing away from a quasar, or growing black hole. The quasar is called PG2112+059"
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA09932/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA18844/PIA18844~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA18844",
+            "secondary_creator": "NASA/JPL-Caltech/SAO",
+            "keywords": ["NuSTAR"],
+            "date_created": "2014-10-08T17:00:05Z",
+            "media_type": "image",
+            "title": "Ultraluminous X-ray Sources in M82 Galaxy",
+            "description_508": "NuSTAR has added a new twist to the mystery of ultraluminous X-ray sources ULXs by showing that one of the ULXs in M82, called M82 X-2, is not a black hole but a pulsar.",
+            "center": "JPL",
+            "description": "NuSTAR has added a new twist to the mystery of ultraluminous X-ray sources ULXs by showing that one of the ULXs in M82, called M82 X-2, is not a black hole but a pulsar."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA18844/collection.json"
+      },
+      {
+        "links": [
+          {
+            "render": "image",
+            "rel": "preview",
+            "href": "https://images-assets.nasa.gov/image/PIA17009/PIA17009~thumb.jpg"
+          }
+        ],
+        "data": [
+          {
+            "nasa_id": "PIA17009",
+            "secondary_creator": "ESA/C. Carreau",
+            "keywords": ["Herschel Space Observatory"],
+            "date_created": "2013-05-07T17:00:09Z",
+            "media_type": "image",
+            "title": "Hustle and Bustle at Center of Milky Way",
+            "description_508": "This artist concept illustrates the frenzied activity at the core of our Milky Way galaxy. The galactic center hosts a supermassive black hole in the region known as Sagittarius A*, or Sgr A*, with a mass of about four million times that of our sun.",
+            "center": "JPL",
+            "description": "This artist concept illustrates the frenzied activity at the core of our Milky Way galaxy. The galactic center hosts a supermassive black hole in the region known as Sagittarius A*, or Sgr A*, with a mass of about four million times that of our sun."
+          }
+        ],
+        "href": "https://images-assets.nasa.gov/image/PIA17009/collection.json"
+      }
+    ],
+    "href": "https://images-api.nasa.gov/search?q=black%20hole"
+  }
+}

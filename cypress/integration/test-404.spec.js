@@ -1,4 +1,4 @@
-import { ErrorTitle, NoItemsTitle } from '../../src/utils/constants/constants';
+import { ErrorTitle, NoAssetTitle } from '../../src/utils/constants/constants';
 
 describe('Error Page Tests', () => {
   it('Test 404 appears when invalid route added', () => {
@@ -9,11 +9,11 @@ describe('Error Page Tests', () => {
       .contains(ErrorTitle);
   });
 
-  it('Test 404 appears when invalid card requested', () => {
-    cy.visit('/card/borked-product-no');
-
+  it('Test 404 appears when invalid asset requested', () => {
+    cy.visit('/asset/no-asset-vdfvdddfvd55');
+    cy.wait(2000);
     cy.get(`h1`)
       .should('be.visible')
-      .contains(NoItemsTitle);
+      .contains(NoAssetTitle);
   });
 });

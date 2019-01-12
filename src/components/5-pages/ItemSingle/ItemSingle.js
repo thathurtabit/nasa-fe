@@ -10,7 +10,12 @@ import Loading from '../../1-atoms/Loading/Loading';
 import { fetchSearchData } from '../../../state/actions/fetchSearchData';
 import { fetchAssetData } from '../../../state/actions/fetchAssetData';
 import { setSearch } from '../../../state/actions/setSearch';
-import { ReturnText, mediaType } from '../../../utils/constants/constants';
+import {
+  ReturnText,
+  mediaType,
+  NoAssetTitle,
+  NoAssetSubtitle,
+} from '../../../utils/constants/constants';
 import ItemImage from '../../1-atoms/ItemImage/ItemImage';
 import Return from '../../1-atoms/Return/Return';
 import { areEqual } from '../../../utils/helpers/areEqual';
@@ -36,8 +41,8 @@ const mapDispatchToProps = dispatch => ({
 export class ItemSingle extends Component {
   state = {
     item: {
-      title: 'No results found',
-      desc: `It's not you, it's us.`,
+      title: NoAssetTitle,
+      desc: NoAssetSubtitle,
       href: '',
       type: '',
       itemID: '',

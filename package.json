@@ -30,6 +30,7 @@
     "eject": "react-scripts eject",
     "deploy": "yarn build && aws s3 sync build/ s3://nasa-media.org --delete",
     "e2e": "cypress run",
+    "cypress": "cypress open",
     "analyze": "source-map-explorer build/static/js/main.*"
   },
   "eslintConfig": {
