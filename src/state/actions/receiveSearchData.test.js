@@ -7,7 +7,7 @@ describe('receiveSearchData Action', () => {
     const payload = { collection: { items: [] } };
     const expectedAction = {
       type: RECEIVE_SEARCH_DATA,
-      payload: NoSearchData,
+      payload: [],
     };
     expect(actions.receiveSearchData(payload)).toEqual(expectedAction);
   });
