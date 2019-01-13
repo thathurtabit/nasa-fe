@@ -1,18 +1,19 @@
-# Sainsburys FE task (NASA)
+# Sainsbury's FE task (NASA)
 
-Demo can be viewed here: [live demo](http://nasa-fe.s3-website.eu-west-2.amazonaws.com/)
+Demo can be viewed here: [https://nasa-media.org/](https://nasa-media.org/)
 
 ## Notes
 
-- Trying to fetch from the endpoint specified in task gives a CORB error - the data here is mocked (and truncated) from a cURL call
-- Uses IntersectionObserver as well as React's lazy/Suspense methods to lazy load content based on the user's interactions
-- Cards can be viewed either in a Modal format, or directly via the card url (opens single page)
+- Uses IntersectionObserver as well as React's lazy/Suspense methods to lazy load content based on the user's interactions / viewport
+- Uses Redux Thunk to handle api calls and return data
+- Images/assets can be viewed either in a Modal format, or directly via the asset/ID url (opens single page) for direct access to specific media
 
 ## Snags
 
-- https would be nice - but the free S3 bucket the demo is hosted on won't allow it without a domain name purchase for CloudFront to use. Same for gzipping content
-- A CDN for the images (which optimised and serves up different sizes based on responsive widths) would improve things
-- React Transition Group seems to want to transition everything all of the time (a little annoying)
+- Generally due to the potential scale of the task, there's plenty of areas for improvment (code cleanliness, more robust testing, design, etc.)
+- Given more time, providing more suitable image variations (sizes) over screen sizes would improve performance / experience
+- Cypress.io was added for end-to-end testing, but as it doesn't currently support Fetch (and workarounds aren't great) I can't cover as much as I would like
+- ReactTransitionGroup seems to want to transition everything all of the time (a little annoying)
 - Given more time, pagination would be good to use at some point (while still lazy loading)
 
 ## Available Scripts
