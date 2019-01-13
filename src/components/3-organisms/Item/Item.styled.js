@@ -6,6 +6,18 @@ export const ThumbLink = styled.a`
   width: 100%;
 `;
 
+export const Figure = styled.figure`
+  margin: 0;
+  position: relative;
+`;
+
+export const Credit = styled.figcaption`
+  color: ${props => props.theme.colors.copy};
+  font-size: calc(${props => props.theme.fonts.baseSize} - 4px);
+  padding: 10px;
+  text-align: center;
+`;
+
 export const ItemContent = styled.article`
   display: flex;
   flex-direction: column;
@@ -13,7 +25,6 @@ export const ItemContent = styled.article`
   width: calc(100% - 80px);
 
   img {
-    margin: 0;
     max-width: 100%;
     width: initial;
   }

@@ -8,8 +8,8 @@ const IMG = styled.img`
   box-shadow: ${props => (props.thumb ? props.theme.thumb.boxShadow : 'none')};
   display: block;
   margin: 0 auto;
+  max-height: ${props => (props.modal ? '350px' : '100%')};
   max-width: 100%;
-  max-height: 100%;
   opacity: 0;
   transform: scale(0.97);
   transition: opacity ${props => props.theme.thumb.transition.duration}

@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { CSSTransition } from 'react-transition-group';
-import ItemModalStyled, { ItemModalBG } from './ItemModal.styled';
+import ItemModalStyled, { ItemModalBG, ModalTitle } from './ItemModal.styled';
 import {
   ItemContent,
   ShortDescription,
   ItemLeft,
   ItemRight,
   ThumbLink,
+  Figure,
+  Credit,
 } from '../Item/Item.styled';
 import {
   loadDelay,
@@ -19,7 +21,6 @@ import {
 } from '../../../utils/constants/constants';
 import CloseModal from '../../1-atoms/CloseModal/CloseModal';
 import LoadingSmall from '../../1-atoms/LoadingSmall/LoadingSmall';
-import PageTitle from '../../1-atoms/PageTitle/PageTitle';
 import ItemImage from '../../1-atoms/ItemImage/ItemImage';
 import Button from '../../1-atoms/Button/Button';
 import IconVideo from '../../1-atoms/IconVideo/IconVideo';
@@ -73,7 +74,7 @@ export class ItemModal extends Component {
             ) : (
               <ItemContent>
                 <ItemRight>
-                  <PageTitle title={item.title || NoTitle} />
+                  <ModalTitle>{item.title || NoTitle}</ModalTitle>
                   <ShortDescription
                     dangerouslySetInnerHTML={{ __html: item.desc || NoDesc }}
                   />
@@ -81,29 +82,32 @@ export class ItemModal extends Component {
                 </ItemRight>
                 <ItemLeft>
                   <ThumbLink href={item.link}>
-                    {item.type === mediaType.image && (
-                      <ItemImage url={item.href} title={item.title} />
-                    )}
-                    {item.type === mediaType.video && (
-                      <IconWrap
-                        thumb
-                        large
-                        type={item.type}
-                        itemID={item.itemID}
-                      >
-                        <IconVideo title={item.type} />
-                      </IconWrap>
-                    )}
-                    {item.type === mediaType.audio && (
-                      <IconWrap
-                        thumb
-                        large
-                        type={item.type}
-                        itemID={item.itemID}
-                      >
-                        <IconAudio title={item.type} />
-                      </IconWrap>
-                    )}
+                    <Figure>
+                      {item.type === mediaType.image && (
+                        <ItemImage url={item.href} modal title={item.title} />
+                      )}
+                      {item.type === mediaType.video && (
+                        <IconWrap
+                          thumb
+                          large
+                          type={item.type}
+                          itemID={item.itemID}
+                        >
+                          <IconVideo title={item.type} />
+                        </IconWrap>
+                      )}
+                      {item.type === mediaType.audio && (
+                        <IconWrap
+                          thumb
+                          large
+                          type={item.type}
+                          itemID={item.itemID}
+                        >
+                          <IconAudio title={item.type} />
+                        </IconWrap>
+                      )}
+                      <Credit>{item.credit}</Credit>
+                    </Figure>
                   </ThumbLink>
                 </ItemLeft>
               </ItemContent>

@@ -36,7 +36,7 @@ export default class ItemImage extends Component {
 
   render() {
     const { isLoading } = this.state;
-    const { title, url, thumb } = this.props;
+    const { title, url, thumb, modal } = this.props;
 
     return (
       <Fragment>
@@ -48,7 +48,13 @@ export default class ItemImage extends Component {
             appear
             timeout={loadDelay}
           >
-            <IMG className="image" src={url} alt={title} thumb={thumb} />
+            <IMG
+              className="image"
+              src={url}
+              alt={title}
+              modal={modal}
+              thumb={thumb}
+            />
           </CSSTransition>
         )}
       </Fragment>
@@ -58,11 +64,13 @@ export default class ItemImage extends Component {
 
 ItemImage.propTypes = {
   thumb: PropTypes.bool,
+  modal: PropTypes.bool,
   url: PropTypes.string.isRequired,
   title: PropTypes.string,
 };
 
 ItemImage.defaultProps = {
   thumb: false,
+  modal: false,
   title: 'NASA Image',
 };

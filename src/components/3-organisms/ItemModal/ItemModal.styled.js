@@ -1,4 +1,13 @@
 import styled from 'styled-components';
+import Title from '../../1-atoms/PageTitle/PageTitle.styled';
+
+export const ModalTitle = styled(Title)`
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  max-height: 110px;
+  overflow: hidden;
+`;
 
 export const ItemModalBG = styled.section`
   background: ${props => props.theme.modal.bg};
