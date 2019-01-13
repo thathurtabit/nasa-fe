@@ -1,4 +1,4 @@
-# Sainsbury's FE task (NASA)
+# NASA Media Search
 
 Demo can be viewed here: [https://nasa-media.org/](https://nasa-media.org/)
 
