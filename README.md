@@ -19,7 +19,7 @@ Demo can be viewed here: [https://nasa-media.org](https://nasa-media.org)
 ## Deployment
 
 - For the task I've set up an AWS S3 bucket, CloudFront and Route 53 hosting solution.
-- It uses CircleCI to run tests before deploying to AWS
+- It uses CircleCI to run tests before deploying to AWS - [https://nasa-media.org](https://nasa-media.org)
 
 ## Available Scripts
 
