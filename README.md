@@ -16,6 +16,11 @@ Demo can be viewed here: [https://nasa-media.org](https://nasa-media.org)
 - ReactTransitionGroup seems to want to transition everything all of the time (a little annoying)
 - Given more time, pagination would be good to use at some point (while still lazy loading)
 
+## Deployment
+
+- For the task I've set up an AWS S3 bucket, CloudFront and Route 53 hosting solution.
+- It uses CircleCI to run tests before deploying to AWS
+
 ## Available Scripts
 
 In the project directory, you can run:
