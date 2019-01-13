@@ -1,5 +1,5 @@
 export const api = 'https://images-api.nasa.gov';
-export const apiAssets = 'http://images-assets.nasa.gov';
+export const apiAssets = 'https://images-assets.nasa.gov';
 export const apiKey = '?api_key=ejPLPC3ZlGf2gRQLnw3CcFenw4TGgtvxiKeFF1aL';
 export const ErrorTitle = 'Houston, we have a problem';
 export const NoAssetTitle = 'No results found';
