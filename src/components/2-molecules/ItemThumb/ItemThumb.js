@@ -81,6 +81,7 @@ export default connect(
 )(ItemThumb);
 
 ItemThumb.propTypes = {
+  num: PropTypes.number.isRequired,
   modalOpen: PropTypes.bool,
   toggleModal: PropTypes.func.isRequired,
   item: PropTypes.objectOf(

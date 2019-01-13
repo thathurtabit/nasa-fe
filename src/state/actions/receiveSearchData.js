@@ -4,10 +4,9 @@ import { NoTitle, NoDesc, NoURL } from '../../utils/constants/constants';
 
 export const receiveSearchData = json => {
   const response = json.collection.items;
-  let responseFiltered;
 
   // Check for required values, and keep only what we need
-  responseFiltered = response.map(item => ({
+  const responseFiltered = response.map(item => ({
     title: hasKey(item, `data[0].title`) ? item.data[0].title : NoTitle,
     desc: hasKey(item, `data[0].description`)
       ? item.data[0].description
@@ -15,6 +14,9 @@ export const receiveSearchData = json => {
     href: hasKey(item, `links[0].href`) ? item.links[0].href : NoURL,
     itemID: hasKey(item, `data[0].nasa_id`) ? item.data[0].nasa_id : null,
     type: hasKey(item, `data[0].media_type`) ? item.data[0].media_type : null,
+    credit: hasKey(item, `data[0].secondary_creator`)
+      ? item.data[0].secondary_creator
+      : null,
     link: `/asset/${
       hasKey(item, `data[0].nasa_id`) ? item.data[0].nasa_id : 'null'
     }`,

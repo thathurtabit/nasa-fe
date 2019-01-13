@@ -1,8 +1,15 @@
 import styled from 'styled-components';
 
-export const MediaWrap = styled.section`
-  position: relative;
+export const MediaWrap = styled.figure`
+  margin: 0;
   min-height: 200px;
+  position: relative;
+`;
+
+export const Credit = styled.figcaption`
+  font-size: calc(${props => props.theme.fonts.baseSize} - 2px);
+  padding: 20px;
+  text-align: center;
 `;
 
 export const Title = styled.h1`

@@ -5,6 +5,7 @@ import ItemSingleStyled, {
   Title,
   Description,
   MediaWrap,
+  Credit,
 } from './ItemSingle.styled';
 import Loading from '../../1-atoms/Loading/Loading';
 import { fetchSearchData } from '../../../state/actions/fetchSearchData';
@@ -40,20 +41,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export class ItemSingle extends Component {
-  state = {
-    item: {
-      title: NoAssetTitle,
-      desc: NoAssetSubtitle,
-      href: '',
-      type: '',
-      itemID: '',
-    },
-    assets: {
-      videoURL: '',
-      subtitle: '',
-      audioURL: '',
-    },
-  };
+  state = {};
 
   componentDidMount() {
     const { fetchSearchData, fetchAssetData, location } = this.props;
@@ -85,6 +73,7 @@ export class ItemSingle extends Component {
     const title = hasKey(item, 'title') ? item.title : NoAssetTitle;
     const type = hasKey(item, 'type') ? item.type : null;
     const desc = hasKey(item, 'desc') ? item.desc : NoAssetSubtitle;
+    const credit = hasKey(item, 'credit') ? item.credit : null;
 
     return (
       <ItemSingleStyled>
@@ -116,6 +105,8 @@ export class ItemSingle extends Component {
                     Sorry, your browser does not support the audio element.
                   </audio>
                 )}
+
+                {credit && <Credit>{credit}</Credit>}
               </MediaWrap>
               <Return text={ReturnText} />
             </Fragment>
