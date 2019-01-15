@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import GoogleAnalytics from "react-ga";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import GoogleAnalytics from 'react-ga';
+import PropTypes from 'prop-types';
 
-GoogleAnalytics.initialize("UA-XXXXXXXX");
+GoogleAnalytics.initialize('UA-128530185-2');
 
 const GATracker = (WrappedComponent, options = {}) => {
   const trackPage = page => {
     GoogleAnalytics.set({
       page,
-      ...options
+      ...options,
     });
     GoogleAnalytics.pageview(page);
   };
@@ -38,8 +38,8 @@ const GATracker = (WrappedComponent, options = {}) => {
 
 GATracker.propTypes = {
   location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired
-  }).isRequired
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default GATracker;
