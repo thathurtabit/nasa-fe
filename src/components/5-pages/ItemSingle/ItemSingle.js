@@ -19,7 +19,6 @@ import {
 } from '../../../utils/constants/constants';
 import ItemImage from '../../1-atoms/ItemImage/ItemImage';
 import Return from '../../1-atoms/Return/Return';
-import { areEqual } from '../../../utils/helpers/areEqual';
 import { getItemID } from '../../../utils/helpers/getItemID';
 import { hasKey } from '../../../utils/helpers/hasKey';
 
@@ -54,26 +53,29 @@ export class ItemSingle extends Component {
     fetchAssetData(itemID);
   }
 
-  componentDidUpdate(prevProps) {
-    const { items, assets } = this.props;
+  // componentDidUpdate(prevProps) {
+  //   const { items, assets } = this.props;
 
-    // If props have updated, update State
-    if (
-      !areEqual(prevProps.items, items) ||
-      !areEqual(prevProps.assets, assets)
-    ) {
-      this.setState({ item: items[0], assets });
-    }
-  }
+  //   // If props have updated, update State
+  //   if (
+  //     !areEqual(prevProps.items, items) ||
+  //     !areEqual(prevProps.assets, assets)
+  //   ) {
+  //     this.setState({ item: items[0], assets });
+  //   }
+  // }
 
   render() {
-    const { fetchError, fetching } = this.props;
-    const { item, assets } = this.state;
+    const { fetchError, fetching, items, assets } = this.props;
 
-    const title = hasKey(item, 'title') ? item.title : NoAssetTitle;
-    const type = hasKey(item, 'type') ? item.type : null;
-    const desc = hasKey(item, 'desc') ? item.desc : NoAssetSubtitle;
-    const credit = hasKey(item, 'credit') ? item.credit : null;
+    const title = hasKey(items[0], 'title') ? items[0].title : NoAssetTitle;
+    const type = hasKey(items[0], 'type') ? items[0].type : null;
+    const desc = hasKey(items[0], 'desc') ? items[0].desc : NoAssetSubtitle;
+    const credit = hasKey(items[0], 'credit') ? items[0].credit : null;
+    const href = hasKey(items[0], 'href') ? items[0].href : null;
+
+    const videoURL = hasKey(assets, 'videoURL') ? assets.videoURL : null;
+    const audioURL = hasKey(assets, 'audioURL') ? assets.audioURL : null;
 
     return (
       <ItemSingleStyled>
@@ -91,16 +93,16 @@ export class ItemSingle extends Component {
               )}
               <MediaWrap>
                 {type === mediaType.image && (
-                  <ItemImage title={item.title} url={item.href} />
+                  <ItemImage title={title} url={href} />
                 )}
                 {type === mediaType.video && (
-                  <video controls src={assets.videoURL} width="100%">
+                  <video controls src={videoURL} width="100%">
                     {/* <track default kind="subtitles" srcLang="en" src={subtitles} /> */}
                     Sorry, your browser does not support embedded videos.
                   </video>
                 )}
                 {type === mediaType.audio && (
-                  <audio controls src={assets.audioURL} width="100%">
+                  <audio controls src={audioURL} width="100%">
                     {/* <track default kind="subtitles" srcLang="en" src={subtitles} /> */}
                     Sorry, your browser does not support the audio element.
                   </audio>
