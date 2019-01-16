@@ -53,18 +53,6 @@ export class ItemSingle extends Component {
     fetchAssetData(itemID);
   }
 
-  // componentDidUpdate(prevProps) {
-  //   const { items, assets } = this.props;
-
-  //   // If props have updated, update State
-  //   if (
-  //     !areEqual(prevProps.items, items) ||
-  //     !areEqual(prevProps.assets, assets)
-  //   ) {
-  //     this.setState({ item: items[0], assets });
-  //   }
-  // }
-
   render() {
     const { fetchError, fetching, items, assets } = this.props;
 
