@@ -20,7 +20,6 @@ import {
   mediaType,
 } from '../../../utils/constants/constants';
 import CloseModal from '../../1-atoms/CloseModal/CloseModal';
-import LoadingSmall from '../../1-atoms/LoadingSmall/LoadingSmall';
 import ItemImage from '../../1-atoms/ItemImage/ItemImage';
 import Button from '../../1-atoms/Button/Button';
 import IconVideo from '../../1-atoms/IconVideo/IconVideo';
@@ -35,26 +34,17 @@ const mapStateToProps = state => ({
 export class ItemModal extends Component {
   constructor(props) {
     super(props);
-
     this.modalRef = React.createRef();
-
-    this.state = {
-      isLoading: true,
-    };
   }
 
   componentDidMount() {
-    const { location, items } = this.props;
-    const itemURLID = getItemID(location);
-    const itemData = items.filter(item => item.itemID === itemURLID)[0];
-
-    this.setState({ item: itemData, isLoading: false });
-
     this.modalRef.current.focus();
   }
 
   render() {
-    const { item, isLoading } = this.state;
+    const { location, items } = this.props;
+    const itemURLID = getItemID(location);
+    const item = items.filter(i => i.itemID === itemURLID)[0];
 
     return (
       <ItemModalBG>
@@ -69,49 +59,45 @@ export class ItemModal extends Component {
             ref={this.modalRef}
           >
             <CloseModal />
-            {isLoading ? (
-              <LoadingSmall isLoading />
-            ) : (
-              <ItemContent>
-                <ItemRight>
-                  <ModalTitle>{item.title || NoTitle}</ModalTitle>
-                  <ShortDescription
-                    dangerouslySetInnerHTML={{ __html: item.desc || NoDesc }}
-                  />
-                  <Button title={FullImage} url={item.link} external />
-                </ItemRight>
-                <ItemLeft>
-                  <ThumbLink href={item.link}>
-                    <Figure>
-                      {item.type === mediaType.image && (
-                        <ItemImage url={item.href} modal title={item.title} />
-                      )}
-                      {item.type === mediaType.video && (
-                        <IconWrap
-                          thumb
-                          large
-                          type={item.type}
-                          itemID={item.itemID}
-                        >
-                          <IconVideo title={item.type} />
-                        </IconWrap>
-                      )}
-                      {item.type === mediaType.audio && (
-                        <IconWrap
-                          thumb
-                          large
-                          type={item.type}
-                          itemID={item.itemID}
-                        >
-                          <IconAudio title={item.type} />
-                        </IconWrap>
-                      )}
-                      <Credit>{item.credit}</Credit>
-                    </Figure>
-                  </ThumbLink>
-                </ItemLeft>
-              </ItemContent>
-            )}
+            <ItemContent>
+              <ItemRight>
+                <ModalTitle>{item.title || NoTitle}</ModalTitle>
+                <ShortDescription
+                  dangerouslySetInnerHTML={{ __html: item.desc || NoDesc }}
+                />
+                <Button title={FullImage} url={item.link} external />
+              </ItemRight>
+              <ItemLeft>
+                <ThumbLink href={item.link}>
+                  <Figure>
+                    {item.type === mediaType.image && (
+                      <ItemImage url={item.href} modal title={item.title} />
+                    )}
+                    {item.type === mediaType.video && (
+                      <IconWrap
+                        thumb
+                        large
+                        type={item.type}
+                        itemID={item.itemID}
+                      >
+                        <IconVideo title={item.type} />
+                      </IconWrap>
+                    )}
+                    {item.type === mediaType.audio && (
+                      <IconWrap
+                        thumb
+                        large
+                        type={item.type}
+                        itemID={item.itemID}
+                      >
+                        <IconAudio title={item.type} />
+                      </IconWrap>
+                    )}
+                    <Credit>{item.credit}</Credit>
+                  </Figure>
+                </ThumbLink>
+              </ItemLeft>
+            </ItemContent>
           </ItemModalStyled>
         </CSSTransition>
       </ItemModalBG>
@@ -125,7 +111,3 @@ ItemModal.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
   location: PropTypes.string.isRequired,
 };
-
-// ItemModal.defaultProps = {
-//   location: null,
-// };
