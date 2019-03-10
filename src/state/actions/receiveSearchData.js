@@ -1,3 +1,4 @@
+import uuidv1 from 'uuid/v1';
 import { RECEIVE_SEARCH_DATA } from '../constants/stateConstants';
 import { hasKey } from '../../utils/helpers/hasKey';
 import { NoTitle, NoDesc, NoURL } from '../../utils/constants/constants';
@@ -7,6 +8,7 @@ export const receiveSearchData = json => {
 
   // Check for required values, and keep only what we need
   const responseFiltered = response.map(item => ({
+    uuid: uuidv1(),
     title: hasKey(item, `data[0].title`) ? item.data[0].title : NoTitle,
     desc: hasKey(item, `data[0].description`)
       ? item.data[0].description

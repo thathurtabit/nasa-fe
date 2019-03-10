@@ -54,9 +54,7 @@ class Home extends Component {
           {fetchError.length ? (
             <Error error="It's not you, it's us." />
           ) : items.length ? (
-            <Fragment>
-              <ItemList items={items} />
-            </Fragment>
+            <ItemList items={items} />
           ) : (
             !fetching && <NoItems text="Assets will apear here" />
           )}
